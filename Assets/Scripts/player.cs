@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
         rb.freezeRotation = true; // Bloquea todas las rotaciones
 
 
-        // Asegúrate de que rb no sea null
+        // Asegï¿½rate de que rb no sea null
         if (rb == null)
         {
             Debug.LogError("Rigidbody no encontrado en el objeto!");
@@ -51,17 +51,18 @@ public class Player : MonoBehaviour
         movementX = movementVector.x;
         movementY = movementVector.y;
     }
-
-    // FixedUpdate is called once per fixed frame-rate frame.
-    private void FixedUpdate()
+    void OnCollisionEnter(Collision collision)
     {
-        // Crear un vector de movimiento usando las entradas de movimiento.
-        Vector3 movement = new Vector3(movementX, 0.0f, movementY);
-
-        // Mover la nave solo horizontalmente en el plano X-Z
-        Vector3 newPosition = rb.position + movement * speed * Time.deltaTime;
-
-        // Solo ajustar la posición en X y Z para que no se mueva en Y (ni caiga)
-        rb.MovePosition(new Vector3(newPosition.x, rb.position.y, newPosition.z));
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            rb.linearVelocity = Vector3.zero; // Evita que se mueva por el impacto
+        }
     }
+    // FixedUpdate is called once per fixed frame-rate frame.
+    void FixedUpdate()
+    {
+        Vector3 movement = new Vector3(movementX, 0f, movementY).normalized;
+        rb.linearVelocity = movement * speed;
+    }
+
 }

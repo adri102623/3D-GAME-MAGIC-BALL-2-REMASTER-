@@ -4,8 +4,11 @@ public class PickupHealth : MonoBehaviour
 {
     public int vidas = 1;
 
+    public Material material3vidas;
     public Material material2vidas;
     public Material material1vida;
+
+    public GameObject explosionPrefab; 
 
     private Renderer rend;
 
@@ -28,6 +31,12 @@ public class PickupHealth : MonoBehaviour
         vidas--;
         if (vidas <= 0)
         {
+            if (explosionPrefab != null)
+            {
+                GameObject particles = Instantiate(explosionPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
+                Debug.Log("Partículas instanciadas: " + particles.name);
+            }
+
             Destroy(gameObject);
         }
         else
@@ -38,7 +47,10 @@ public class PickupHealth : MonoBehaviour
 
     void UpdateMaterial()
     {
-        if (vidas == 2 && material2vidas != null)
+        if(vidas == 3 && material3vidas != null){
+            rend.material = material3vidas;
+        }
+        else if (vidas == 2 && material2vidas != null)
         {
             rend.material = material2vidas;
         }
@@ -48,3 +60,4 @@ public class PickupHealth : MonoBehaviour
         }
     }
 }
+            
