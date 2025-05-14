@@ -31,6 +31,20 @@ public class PickupHealth : MonoBehaviour
         vidas--;
         if (vidas <= 0)
         {
+            /*
+            // Activar física del bloque de arriba (si hay)
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, Vector3.up, out hit, 10f)) // 2f = altura máxima de un bloque
+            {
+                Rigidbody rbArriba = hit.collider.GetComponent<Rigidbody>();
+                if (rbArriba != null)
+                {
+                    rbArriba.isKinematic = false;
+                    rbArriba.useGravity = true;
+                }
+            }
+            */
+
             if (explosionPrefab != null)
             {
                 GameObject particles = Instantiate(explosionPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
