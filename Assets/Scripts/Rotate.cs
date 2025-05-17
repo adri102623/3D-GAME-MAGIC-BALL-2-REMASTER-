@@ -1,77 +1,42 @@
 using UnityEngine;
 
-public class PickupHealth : MonoBehaviour
+public class RotateObject : MonoBehaviour
 {
-    public int vidas = 1;
+    public Vector3 rotationAxis = Vector3.forward; // Eje de rotación (por defecto, eje Z)
+    public float rotationSpeed = 90f; // Velocidad de rotación en grados por segundo
+    public float maxAngle = 160f; // Máximo ángulo de rotación (media vuelta)
 
-    public Material material3vidas;
-    public Material material2vidas;
-    public Material material1vida;
+    private float currentAngle = 60f; // Ángulo acumulado de rotación
+    private bool movingForward = true; // Dirección del movimiento (true = adelante, false = regreso)
 
-    public GameObject explosionPrefab; 
-
-    private Renderer rend;
-
-    void Start()
+    void Update()
     {
-        rend = GetComponent<Renderer>();
-        UpdateMaterial();
-    }
-    void OnCollisionEnter(Collision collision)
-    {
+        // Calcular el cambio de ángulo basado en la velocidad y el tiempo
+        float angleChange = rotationSpeed * Time.deltaTime;
 
-        if (collision.gameObject.CompareTag("Ball"))
+        if (movingForward)
         {
-            TocarPelota();
-        }
-    }
+            // Rotar hacia adelante hasta llegar a maxAngle
+            currentAngle += angleChange;
+            transform.Rotate(rotationAxis * angleChange, Space.Self);
 
-    public void TocarPelota()
-    {
-        vidas--;
-        if (vidas <= 0)
-        {
-            /*
-            // Activar física del bloque de arriba (si hay)
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, Vector3.up, out hit, 10f)) // 2f = altura máxima de un bloque
+            if (currentAngle >= maxAngle)
             {
-                Rigidbody rbArriba = hit.collider.GetComponent<Rigidbody>();
-                if (rbArriba != null)
-                {
-                    rbArriba.isKinematic = false;
-                    rbArriba.useGravity = true;
-                }
+                currentAngle = maxAngle;
+                movingForward = false; // Cambiar dirección
             }
-            */
-
-            if (explosionPrefab != null)
-            {
-                GameObject particles = Instantiate(explosionPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
-                Debug.Log("Partículas instanciadas: " + particles.name);
-            }
-
-            Destroy(gameObject);
         }
         else
         {
-            UpdateMaterial();
-        }
-    }
+            // Rotar hacia atrás hasta llegar a 0
+            currentAngle -= angleChange;
+            transform.Rotate(rotationAxis * -angleChange, Space.Self);
 
-    void UpdateMaterial()
-    {
-        if(vidas == 3 && material3vidas != null){
-            rend.material = material3vidas;
-        }
-        else if (vidas == 2 && material2vidas != null)
-        {
-            rend.material = material2vidas;
-        }
-        else if (vidas == 1 && material1vida != null)
-        {
-            rend.material = material1vida;
+            if (currentAngle <= 0f)
+            {
+                currentAngle = 0f;
+                movingForward = true; // Cambiar dirección
+            }
         }
     }
 }
-            
