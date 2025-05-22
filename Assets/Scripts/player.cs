@@ -14,16 +14,28 @@ public class Player : MonoBehaviour
     private int count;
 
 
-    // Movement along X and Y axes.
-    private float movementX;
-    private float movementY;
+
 
     // Speed at which the player moves.
     public float speed = 0;
 
     public TextMeshProUGUI countText;
 
-    
+
+
+
+    // Movement along X and Y axes.
+    private float movementX;
+    private float movementY;
+
+
+
+    // Referencia a la pelota
+    private Ball ball;
+
+    // Trigger frontal para detectar monedas
+    public Transform frontTrigger; // Asignar un objeto hijo con un collider trigger
+
     // Start is called before the first frame update.
     void Start()
     {
@@ -33,11 +45,23 @@ public class Player : MonoBehaviour
 
         rb.freezeRotation = true; // Bloquea todas las rotaciones
 
-
-        // Aseg�rate de que rb no sea null
+        // Asegúrate de que rb no sea null
         if (rb == null)
         {
             Debug.LogError("Rigidbody no encontrado en el objeto!");
+        }
+
+        // Buscar la pelota al inicio
+        ball = FindFirstObjectByType<Ball>();
+        if (ball == null)
+        {
+            Debug.LogWarning("Ball not found! Ensure an object with Ball component exists in the scene.");
+        }
+
+        // Asegurarse de que frontTrigger esté asignado
+        if (frontTrigger == null)
+        {
+            Debug.LogWarning("FrontTrigger not assigned! Please assign a Transform with a trigger collider in the Inspector.");
         }
     }
 
@@ -51,6 +75,7 @@ public class Player : MonoBehaviour
         movementX = movementVector.x;
         movementY = movementVector.y;
     }
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
@@ -58,11 +83,37 @@ public class Player : MonoBehaviour
             rb.linearVelocity = Vector3.zero; // Evita que se mueva por el impacto
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        // Solo el trigger frontal detectará las monedas
+        if (other.CompareTag("Coin"))
+        {
+            PowerUpCoin coin = other.GetComponent<PowerUpCoin>();
+            if (coin != null)
+            {
+                if (ball != null)
+                {
+                    ball.ApplyPowerUp();
+                    Debug.Log("Power-up applied: Maximize");
+                }
+                else
+                {
+                    Debug.LogWarning("Ball reference is null in Player!");
+                }
+                Destroy(other.gameObject);
+            }
+            else
+            {
+                Debug.LogWarning("PowerUpCoin component not found on collided object!");
+            }
+        }
+    }
+
     // FixedUpdate is called once per fixed frame-rate frame.
     void FixedUpdate()
     {
         Vector3 movement = new Vector3(movementX, 0f, movementY).normalized;
         rb.linearVelocity = movement * speed;
     }
-
 }

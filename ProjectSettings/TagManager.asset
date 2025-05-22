@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PickUp
   - Ball
+  - Coin
   layers:
   - Default
   - TransparentFX

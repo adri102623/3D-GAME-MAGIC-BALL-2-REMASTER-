@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 70
   countText: {fileID: 0}
+  frontTrigger: {fileID: -8679921383154817045, guid: 0ed498c10b5852d4da01df1c829991df, type: 3}
 --- !u!114 &5797852030406211877
 MonoBehaviour:
   m_ObjectHideFlags: 0

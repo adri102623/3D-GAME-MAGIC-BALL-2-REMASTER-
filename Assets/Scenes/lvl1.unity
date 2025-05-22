@@ -219,6 +219,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (38)
@@ -341,6 +345,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (18)
@@ -458,6 +466,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (21)
@@ -576,6 +588,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (100)
@@ -699,6 +715,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (63)
@@ -822,6 +842,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (18)
@@ -939,6 +963,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (7)
@@ -1057,6 +1085,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (36)
@@ -1184,6 +1216,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (37)
@@ -1297,6 +1333,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (52)
@@ -1481,7 +1521,7 @@ PrefabInstance:
       objectReference: {fileID: 1352996540}
     - target: {fileID: 1899027235776096891, guid: 173d83fe1d61794408437df5db549b4f, type: 3}
       propertyPath: m_VersionIndex
-      value: 4092
+      value: 4095
       objectReference: {fileID: 0}
     - target: {fileID: 2480852401443128302, guid: 173d83fe1d61794408437df5db549b4f, type: 3}
       propertyPath: m_Name
@@ -1537,7 +1577,7 @@ PrefabInstance:
       objectReference: {fileID: 1229823617}
     - target: {fileID: 7960669159848970548, guid: 173d83fe1d61794408437df5db549b4f, type: 3}
       propertyPath: m_VersionIndex
-      value: 1507
+      value: 1510
       objectReference: {fileID: 0}
     - target: {fileID: 8184047156504136723, guid: 173d83fe1d61794408437df5db549b4f, type: 3}
       propertyPath: m_Mesh
@@ -1666,6 +1706,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (5)
@@ -1900,6 +1944,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (102)
@@ -2022,6 +2070,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (3)
@@ -2252,6 +2304,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (35)
@@ -2374,6 +2430,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (36)
@@ -2492,6 +2552,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (49)
@@ -2614,6 +2678,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (7)
@@ -2727,6 +2795,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (64)
@@ -2845,6 +2917,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (4)
@@ -2962,6 +3038,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (33)
@@ -3079,6 +3159,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (12)
@@ -3196,6 +3280,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (1)
@@ -3336,6 +3424,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (79)
@@ -3463,6 +3555,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (39)
@@ -3590,6 +3686,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (14)
@@ -3712,6 +3812,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (17)
@@ -3829,6 +3933,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (41)
@@ -3942,6 +4050,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (29)
@@ -4060,6 +4172,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (90)
@@ -4182,6 +4298,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (15)
@@ -4299,6 +4419,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (24)
@@ -4423,6 +4547,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 0}
 --- !u!54 &696848564
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4628,6 +4753,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (37)
@@ -4750,6 +4879,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (13)
@@ -4863,6 +4996,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (101)
@@ -4981,6 +5118,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (74)
@@ -5113,6 +5254,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (11)
@@ -5231,6 +5376,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (66)
@@ -5363,6 +5512,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (22)
@@ -5578,6 +5731,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (4)
@@ -5696,6 +5853,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (25)
@@ -5813,6 +5974,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (6)
@@ -5931,6 +6096,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (46)
@@ -6199,6 +6368,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (69)
@@ -6321,6 +6494,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (31)
@@ -6434,6 +6611,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (35)
@@ -6552,6 +6733,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (109)
@@ -6674,6 +6859,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (4)
@@ -6899,6 +7088,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (32)
@@ -7022,6 +7215,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (55)
@@ -7309,6 +7506,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (1)
@@ -7431,6 +7632,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (2)
@@ -7563,6 +7768,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (30)
@@ -7680,6 +7889,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (8)
@@ -7797,6 +8010,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (19)
@@ -7910,6 +8127,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (51)
@@ -8033,6 +8254,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (78)
@@ -8151,6 +8376,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (91)
@@ -8428,6 +8657,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (38)
@@ -8580,6 +8813,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (28)
@@ -8868,6 +9105,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (108)
@@ -8995,6 +9236,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (25)
@@ -9112,6 +9357,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (13)
@@ -9230,6 +9479,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (96)
@@ -9352,6 +9605,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (2)
@@ -9469,6 +9726,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (18)
@@ -9756,6 +10017,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: 'Pickup3Life '
@@ -9869,6 +10134,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (24)
@@ -10094,6 +10363,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (23)
@@ -10207,6 +10480,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (80)
@@ -10335,6 +10612,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (23)
@@ -10452,6 +10733,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (5)
@@ -10569,6 +10854,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (43)
@@ -10687,6 +10976,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (50)
@@ -10809,6 +11102,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (34)
@@ -11091,6 +11388,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (3)
@@ -11208,6 +11509,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (20)
@@ -11321,6 +11626,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (103)
@@ -11453,6 +11762,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (40)
@@ -11575,6 +11888,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (9)
@@ -11697,6 +12014,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (10)
@@ -11829,6 +12150,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (23)
@@ -11946,6 +12271,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (27)
@@ -12064,6 +12393,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (97)
@@ -12186,6 +12519,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (46)
@@ -12299,6 +12636,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (99)
@@ -12501,6 +12842,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (41)
@@ -12563,6 +12908,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 0}
 --- !u!54 &1655861564
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12699,6 +13045,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (8)
@@ -12812,6 +13162,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (22)
@@ -12930,6 +13284,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (5)
@@ -13047,6 +13405,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (19)
@@ -13164,6 +13526,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (44)
@@ -13286,6 +13652,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (45)
@@ -13403,6 +13773,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (21)
@@ -13520,6 +13894,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (47)
@@ -13637,6 +14015,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (20)
@@ -13754,6 +14136,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (17)
@@ -13886,6 +14272,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (10)
@@ -13999,6 +14389,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (83)
@@ -14121,6 +14515,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (48)
@@ -14234,6 +14632,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (65)
@@ -14352,6 +14754,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (32)
@@ -14470,6 +14876,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (98)
@@ -14593,6 +15003,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (14)
@@ -14710,6 +15124,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (6)
@@ -14828,6 +15246,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (60)
@@ -14955,6 +15377,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (22)
@@ -15190,6 +15616,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (14)
@@ -15308,6 +15738,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (77)
@@ -15540,6 +15974,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup1Life (12)
@@ -15571,7 +16009,7 @@ PrefabInstance:
       objectReference: {fileID: 1514503453}
     - target: {fileID: 1899027235776096891, guid: 173d83fe1d61794408437df5db549b4f, type: 3}
       propertyPath: m_VersionIndex
-      value: 4092
+      value: 4095
       objectReference: {fileID: 0}
     - target: {fileID: 2480852401443128302, guid: 173d83fe1d61794408437df5db549b4f, type: 3}
       propertyPath: m_Name
@@ -15627,7 +16065,7 @@ PrefabInstance:
       objectReference: {fileID: 1059247917}
     - target: {fileID: 7960669159848970548, guid: 173d83fe1d61794408437df5db549b4f, type: 3}
       propertyPath: m_VersionIndex
-      value: 1507
+      value: 1510
       objectReference: {fileID: 0}
     - target: {fileID: 8184047156504136723, guid: 173d83fe1d61794408437df5db549b4f, type: 3}
       propertyPath: m_Mesh
@@ -15746,6 +16184,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (42)
@@ -15868,6 +16310,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup3Life  (16)
@@ -16069,6 +16515,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: Pickup2Life (9)
@@ -16095,6 +16545,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1388111076130545832, guid: 4130abd465d9e6d49bfe481271a6f3f8, type: 3}
+      propertyPath: frontTrigger
+      value: 
+      objectReference: {fileID: -8679921383154817045, guid: 0ed498c10b5852d4da01df1c829991df, type: 3}
     - target: {fileID: 8124997413618856444, guid: 4130abd465d9e6d49bfe481271a6f3f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1

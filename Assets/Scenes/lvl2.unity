@@ -219,6 +219,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!135 &6914199
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -692,6 +693,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (72)
@@ -790,6 +799,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (47)
@@ -888,6 +905,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (37)
@@ -931,6 +956,34 @@ Transform:
   - {fileID: 1347948445}
   - {fileID: 1917578364}
   - {fileID: 1983060226}
+  - {fileID: 1770669375}
+  - {fileID: 296133714}
+  - {fileID: 1985548428}
+  - {fileID: 1738779549}
+  - {fileID: 82806652}
+  - {fileID: 239938233}
+  - {fileID: 1103762495}
+  - {fileID: 1693510645}
+  - {fileID: 1275647006}
+  - {fileID: 536479331}
+  - {fileID: 1476283434}
+  - {fileID: 199517846}
+  - {fileID: 1252208736}
+  - {fileID: 774691856}
+  - {fileID: 107693483}
+  - {fileID: 571240797}
+  - {fileID: 499067533}
+  - {fileID: 1449121306}
+  - {fileID: 1876517718}
+  - {fileID: 1902763177}
+  - {fileID: 1955067275}
+  - {fileID: 797099966}
+  - {fileID: 504371143}
+  - {fileID: 1695288560}
+  - {fileID: 1704446250}
+  - {fileID: 954284129}
+  - {fileID: 2061512944}
+  - {fileID: 1963893428}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81349488 stripped
@@ -976,6 +1029,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &82806648
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1085,12 +1139,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82806646}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -20.5, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -14.556103, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 4, y: 4, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &84304553
 PrefabInstance:
@@ -1335,6 +1389,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (74)
@@ -1392,6 +1454,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &107693479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1501,12 +1564,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107693477}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: 2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.056103, y: -34.741814, z: -21.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &128834547
 Mesh:
@@ -1762,6 +1825,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (47)
@@ -1995,6 +2066,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!64 &193950899
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2055,6 +2127,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &199517842
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2164,12 +2237,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199517840}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 21.099998, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 27.043896, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &217861038
 PrefabInstance:
@@ -2336,6 +2409,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (69)
@@ -2569,6 +2650,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!64 &236918151
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2629,6 +2711,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &239938229
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2738,12 +2821,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239938227}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 35.6, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 41.543896, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 4, y: 4, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &243405368
 PrefabInstance:
@@ -2829,6 +2912,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (48)
@@ -2972,6 +3063,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &296133710
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3081,12 +3173,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296133708}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.1, y: 2, z: -5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 42.043896, y: -34.741814, z: -16.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &297718738
 PrefabInstance:
@@ -3172,6 +3264,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (44)
@@ -3505,6 +3605,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1001 &318848859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3589,6 +3690,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (43)
@@ -3692,6 +3801,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (28)
@@ -3785,6 +3902,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (67)
@@ -3883,6 +4008,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (43)
@@ -3981,6 +4114,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (49)
@@ -4079,6 +4220,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (41)
@@ -4177,6 +4326,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (29)
@@ -4270,6 +4427,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (46)
@@ -4377,6 +4542,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1001 &435521797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4461,6 +4627,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (63)
@@ -4559,6 +4733,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (27)
@@ -4632,6 +4814,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!64 &469100392
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4738,6 +4921,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (62)
@@ -4795,6 +4986,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &499067529
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4904,12 +5096,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499067527}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 2, z: -5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.056103, y: -34.741814, z: -16.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &504371137
 GameObject:
@@ -4949,6 +5141,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &504371139
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5058,12 +5251,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504371137}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: 2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -24.056103, y: -34.741814, z: -21.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &516985344
 PrefabInstance:
@@ -5149,6 +5342,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (50)
@@ -5541,6 +5742,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &536479327
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5650,12 +5852,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536479325}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 25.599998, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 31.543896, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 4, y: 4, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!43 &548873559
 Mesh:
@@ -5941,6 +6143,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &571240793
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6050,12 +6253,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571240791}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.1, y: 2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 42.043896, y: -34.741814, z: -21.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &572967317
 PrefabInstance:
@@ -6141,6 +6344,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (42)
@@ -6239,6 +6450,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (68)
@@ -6337,6 +6556,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (45)
@@ -6405,6 +6632,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!64 &719277794
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6681,6 +6909,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (58)
@@ -6814,6 +7050,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &774691852
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6923,12 +7160,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774691850}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 18.599998, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 24.543896, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!43 &781828733
 Mesh:
@@ -7149,6 +7386,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!64 &789257068
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7255,6 +7493,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (77)
@@ -7312,6 +7558,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &797099962
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7421,12 +7668,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797099960}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.1, y: 2, z: -5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 32.0439, y: -34.741814, z: -16.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &864107184
 PrefabInstance:
@@ -7512,6 +7759,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (61)
@@ -7610,6 +7865,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (65)
@@ -7878,6 +8141,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (54)
@@ -7971,6 +8242,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (37)
@@ -8074,6 +8353,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (39)
@@ -8483,6 +8770,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!135 &952591197
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8595,6 +8883,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &954284125
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8704,12 +8993,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954284123}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.099998, y: 2, z: -5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 27.043896, y: -34.741814, z: -16.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &955042948
 PrefabInstance:
@@ -8795,6 +9084,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (59)
@@ -9058,6 +9355,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (26)
@@ -9151,6 +9456,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (44)
@@ -9258,6 +9571,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!4 &986366055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2233008469367548951, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
@@ -9285,6 +9599,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!4 &1049744419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2233008469367548951, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
@@ -9423,6 +9738,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (70)
@@ -9806,6 +10129,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (36)
@@ -9853,6 +10184,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1103762491
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9962,12 +10294,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103762489}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -25.5, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -19.556103, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 4, y: 4, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1107753880
 PrefabInstance:
@@ -10135,6 +10467,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (35)
@@ -10228,6 +10568,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (64)
@@ -10326,6 +10674,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (40)
@@ -10424,6 +10780,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (73)
@@ -10522,6 +10886,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (51)
@@ -10716,6 +11088,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (75)
@@ -10814,6 +11194,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (45)
@@ -10912,6 +11300,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (56)
@@ -10964,6 +11360,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1252208732
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11073,12 +11470,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252208730}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -37.5, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -31.556103, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &1256470375 stripped
 Transform:
@@ -11288,6 +11685,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1275647002
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11397,12 +11795,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275647000}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -30.5, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -24.556103, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 4, y: 4, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1299323435
 PrefabInstance:
@@ -11488,6 +11886,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (60)
@@ -11600,6 +12006,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1001 &1324882792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12065,6 +12472,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (52)
@@ -12172,6 +12587,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!4 &1400998991 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2233008469367548951, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
@@ -12346,6 +12762,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (41)
@@ -12435,6 +12859,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!135 &1442689098
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12547,6 +12972,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1449121302
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12656,12 +13082,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449121300}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.099998, y: 2, z: -5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 37.043896, y: -34.741814, z: -16.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1458144519
 PrefabInstance:
@@ -12747,6 +13173,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (76)
@@ -12845,6 +13279,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (36)
@@ -12881,6 +13323,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1001 &1475581115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12965,6 +13408,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (30)
@@ -13012,6 +13463,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1476283430
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13121,12 +13573,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476283428}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -35, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -29.056103, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1503673452
 PrefabInstance:
@@ -13212,6 +13664,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (38)
@@ -13253,6 +13713,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!4 &1543614867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2233008469367548951, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
@@ -13769,6 +14230,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1001 &1620862279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13853,6 +14315,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (57)
@@ -13951,6 +14421,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (32)
@@ -14114,6 +14592,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!4 &1666446659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2233008469367548951, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
@@ -14203,6 +14682,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (79)
@@ -14255,6 +14742,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1693510641
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14364,12 +14852,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693510639}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 30.599998, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 36.543896, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 4, y: 4, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1695078647
 PrefabInstance:
@@ -14455,6 +14943,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (33)
@@ -14502,6 +14998,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1695288556
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14611,12 +15108,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695288554}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.099998, y: 2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 32.043896, y: -34.741814, z: -21.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1703423650
 PrefabInstance:
@@ -14737,6 +15234,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1704446246
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14846,12 +15344,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704446244}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35, y: 2, z: -5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -29.056103, y: -34.741814, z: -16.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1713436817 stripped
 GameObject:
@@ -14875,6 +15373,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!43 &1728880511
 Mesh:
   m_ObjectHideFlags: 0
@@ -15186,6 +15685,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1738779545
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15295,12 +15795,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738779543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 38.6, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 44.543896, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1759094085
 PrefabInstance:
@@ -15386,6 +15886,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (34)
@@ -15549,6 +16057,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1 &1770669369
 GameObject:
   m_ObjectHideFlags: 0
@@ -15587,6 +16096,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1770669371
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15696,12 +16206,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770669369}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: 2, z: -5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.056103, y: -34.741814, z: -16.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1824033857
 PrefabInstance:
@@ -15801,6 +16311,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1 &1853636702 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3014743245100757235, guid: fdee12a7e204a72499784471c41490a4, type: 3}
@@ -15823,6 +16334,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!4 &1856174139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2233008469367548951, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
@@ -15912,6 +16424,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (78)
@@ -15964,6 +16484,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1876517714
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16073,12 +16594,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876517712}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.056103, y: -34.741814, z: -21.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1882438332
 PrefabInstance:
@@ -16164,6 +16685,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (71)
@@ -16280,6 +16809,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1 &1902763171
 GameObject:
   m_ObjectHideFlags: 0
@@ -16318,6 +16848,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1902763173
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16427,12 +16958,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902763171}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.099998, y: 2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 37.043896, y: -34.741814, z: -21.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1917578363
 GameObject:
@@ -16549,6 +17080,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!64 &1921255441
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16624,6 +17156,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1955067271
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16733,12 +17266,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955067269}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: 2, z: -5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -24.056103, y: -34.741814, z: -16.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1963893422
 GameObject:
@@ -16778,6 +17311,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1963893424
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16887,12 +17421,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963893422}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.099998, y: 2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 27.043896, y: -34.741814, z: -21.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1964132581 stripped
 Transform:
@@ -17092,6 +17626,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (42)
@@ -17185,6 +17727,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (55)
@@ -17353,6 +17903,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &1985548424
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17462,12 +18013,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985548422}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -17.5, y: 2, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.556103, y: -34.741814, z: -19.035812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &2002972847
 PrefabInstance:
@@ -17553,6 +18104,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (38)
@@ -17642,6 +18201,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!135 &2007278333
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17814,6 +18374,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1 &2030885988
 GameObject:
   m_ObjectHideFlags: 0
@@ -17968,6 +18529,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1 &2035303003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3014743245100757235, guid: fdee12a7e204a72499784471c41490a4, type: 3}
@@ -17990,6 +18552,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1001 &2043749541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18074,6 +18637,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (31)
@@ -18223,6 +18794,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 0}
 --- !u!54 &2049439128
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18348,6 +18920,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1001 &2059260641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18432,6 +19005,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (46)
@@ -18484,6 +19065,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!54 &2061512940
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18593,12 +19175,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061512938}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35, y: 2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -29.056103, y: -34.741814, z: -21.535812}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 77394135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2074059178
 PrefabInstance:
@@ -18684,6 +19266,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (53)
@@ -18791,6 +19381,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!4 &2089961393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2233008469367548951, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
@@ -18880,6 +19471,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (39)
@@ -18911,6 +19510,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1001 &2103575626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18995,6 +19595,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: fence (66)
@@ -19098,6 +19706,14 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMaximizePrefab
+      value: 
+      objectReference: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
+    - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
+      propertyPath: coinMinimizePrefab
+      value: 
+      objectReference: {fileID: 467421828385742206, guid: 61d8b59f58e26014290d06cd8ad465ef, type: 3}
     - target: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Name
       value: cube  (40)
@@ -19322,6 +19938,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  coinMaximizePrefab: {fileID: 789934450855195340, guid: dd11eae8b63f0204b83596c4a1e0afb9, type: 3}
 --- !u!1001 &7483554057521025374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19392,31 +20009,3 @@ SceneRoots:
   - {fileID: 13902897}
   - {fileID: 7483554057521025374}
   - {fileID: 77394135}
-  - {fileID: 1770669375}
-  - {fileID: 296133714}
-  - {fileID: 1985548428}
-  - {fileID: 1738779549}
-  - {fileID: 82806652}
-  - {fileID: 239938233}
-  - {fileID: 1103762495}
-  - {fileID: 1693510645}
-  - {fileID: 1275647006}
-  - {fileID: 536479331}
-  - {fileID: 1476283434}
-  - {fileID: 199517846}
-  - {fileID: 1252208736}
-  - {fileID: 774691856}
-  - {fileID: 107693483}
-  - {fileID: 571240797}
-  - {fileID: 499067533}
-  - {fileID: 1449121306}
-  - {fileID: 1876517718}
-  - {fileID: 1902763177}
-  - {fileID: 1955067275}
-  - {fileID: 797099966}
-  - {fileID: 504371143}
-  - {fileID: 1695288560}
-  - {fileID: 1704446250}
-  - {fileID: 954284129}
-  - {fileID: 2061512944}
-  - {fileID: 1963893428}

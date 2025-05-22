@@ -8,14 +8,62 @@ public class PickupHealth : MonoBehaviour
     public Material material2vidas;
     public Material material1vida;
 
-    public GameObject explosionPrefab; 
-
+    public GameObject explosionPrefab;
+    public GameObject coinMaximizePrefab; // Prefab de la moneda de maximizar
+    private Transform playerTransform; // Referencia a la nave
     private Renderer rend;
 
     void Start()
     {
         rend = GetComponent<Renderer>();
         UpdateMaterial();
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerTransform = player.transform;
+        }
+        // Cargar el prefab dinámicamente desde Resources al inicio
+        coinMaximizePrefab = Resources.Load<GameObject>("Prefabs/CoinMaximize");
+        if (coinMaximizePrefab == null)
+        {
+            Debug.LogWarning("CoinMaximize prefab not found in Resources/Prefabs! Please ensure the prefab exists.");
+        }
+    }
+
+    void SpawnPowerUp()
+    {
+        // Probabilidad de 25% de generar el power-up de aumentar
+        float randomValue = Random.value; // Valor entre 0 y 1
+
+        if (randomValue < 0.25f) // 25% de probabilidad de maximizar
+        {
+            SpawnCoin(coinMaximizePrefab);
+        }
+        // 75% de probabilidad de no generar nada
+    }
+
+    void SpawnCoin(GameObject coinPrefab)
+    {
+        if (playerTransform == null || coinPrefab == null)
+        {
+            Debug.LogWarning("Cannot spawn coin: PlayerTransform or coinPrefab is null.");
+            return;
+        }
+
+        // Instanciar la moneda en la posición del bloque
+        GameObject coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+
+        // Configurar el eje Z objetivo (el de la nave)
+        PowerUpCoin coinScript = coin.GetComponent<PowerUpCoin>();
+        if (coinScript != null)
+        {
+            coinScript.SetTargetZ(playerTransform.position.z);
+            Debug.Log("Coin spawned at position: " + transform.position);
+        }
+        else
+        {
+            Debug.LogWarning("PowerUpCoin script not found on instantiated coin!");
+        }
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -31,26 +79,12 @@ public class PickupHealth : MonoBehaviour
         vidas--;
         if (vidas <= 0)
         {
-            /*
-            // Activar física del bloque de arriba (si hay)
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, Vector3.up, out hit, 10f)) // 2f = altura máxima de un bloque
-            {
-                Rigidbody rbArriba = hit.collider.GetComponent<Rigidbody>();
-                if (rbArriba != null)
-                {
-                    rbArriba.isKinematic = false;
-                    rbArriba.useGravity = true;
-                }
-            }
-            */
 
             if (explosionPrefab != null)
             {
                 GameObject particles = Instantiate(explosionPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
-                Debug.Log("Partículas instanciadas: " + particles.name);
             }
-
+            SpawnPowerUp();
             Destroy(gameObject);
         }
         else
