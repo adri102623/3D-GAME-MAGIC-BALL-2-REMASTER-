@@ -10,6 +10,7 @@ public class PickupHealth : MonoBehaviour
 
     public GameObject explosionPrefab;
     public GameObject coinMaximizePrefab; // Prefab de la moneda de maximizar
+    private GameObject coinScaleBarrierPrefab; // Prefab de la moneda para escalar la barrera
     private Transform playerTransform; // Referencia a la nave
     private Renderer rend;
 
@@ -24,47 +25,52 @@ public class PickupHealth : MonoBehaviour
         }
         // Cargar el prefab dinámicamente desde Resources al inicio
         coinMaximizePrefab = Resources.Load<GameObject>("Prefabs/CoinMaximize");
-        if (coinMaximizePrefab == null)
-        {
-            Debug.LogWarning("CoinMaximize prefab not found in Resources/Prefabs! Please ensure the prefab exists.");
-        }
+        coinScaleBarrierPrefab = Resources.Load<GameObject>("Prefabs/CoinScaleBarrier");
     }
-
     void SpawnPowerUp()
     {
-        // Probabilidad de 25% de generar el power-up de aumentar
-        float randomValue = Random.value; // Valor entre 0 y 1
+        float randomValue = Random.value;
 
-        if (randomValue < 0.25f) // 25% de probabilidad de maximizar
+        if (randomValue < 0.25f) // 25% de probabilidad de maximizar la pelota
         {
-            SpawnCoin(coinMaximizePrefab);
+            SpawnCoin(coinMaximizePrefab, transform.position);
         }
-        // 75% de probabilidad de no generar nada
+        else if (randomValue < 0.5f) // 25% de probabilidad de escalar la barrera
+        {
+            // Ajustar la posición para que esté en el rango [-8, 8] en X
+            Vector3 spawnPosition = transform.position;
+            spawnPosition.x = Mathf.Clamp(spawnPosition.x, -8f, 8f);
+            SpawnCoin(coinScaleBarrierPrefab, spawnPosition);
+        }
+        // 50% de probabilidad de no generar nada (0.5 a 1)
     }
 
-    void SpawnCoin(GameObject coinPrefab)
+    void SpawnCoin(GameObject coinPrefab, Vector3 spawnPosition)
     {
         if (playerTransform == null || coinPrefab == null)
         {
-            Debug.LogWarning("Cannot spawn coin: PlayerTransform or coinPrefab is null.");
-            return;
+            Debug.LogWarning("Cannot spawn coin: PlayerTransform or coinPrefab is null. Retrying to find Player...");
+            if (playerTransform == null || coinPrefab == null)
+            {
+                Debug.LogError("Failed to spawn coin after retry. Check Player and prefab setup.");
+                return;
+            }
         }
 
-        // Instanciar la moneda en la posición del bloque
-        GameObject coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+        GameObject coin = Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
 
-        // Configurar el eje Z objetivo (el de la nave)
         PowerUpCoin coinScript = coin.GetComponent<PowerUpCoin>();
         if (coinScript != null)
         {
             coinScript.SetTargetZ(playerTransform.position.z);
-            Debug.Log("Coin spawned at position: " + transform.position);
+            Debug.Log("Coin spawned at position: " + spawnPosition);
         }
         else
         {
             Debug.LogWarning("PowerUpCoin script not found on instantiated coin!");
         }
     }
+
     void OnCollisionEnter(Collision collision)
     {
 

@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using System.Threading;
 
 
 public class Player : MonoBehaviour
@@ -35,6 +36,10 @@ public class Player : MonoBehaviour
 
     // Trigger frontal para detectar monedas
     public Transform frontTrigger; // Asignar un objeto hijo con un collider trigger
+    private Transform barrier;
+    private Vector3 initialBarrierScale;
+    private float maxBarrierScaleFactor = 3f; // Máximo 2x la escala inicial en X
+    private float minBarrierScaleFactor = 1f; // Mínimo 0.5x la escala inicial en X
 
     // Start is called before the first frame update.
     void Start()
@@ -63,6 +68,16 @@ public class Player : MonoBehaviour
         {
             Debug.LogWarning("FrontTrigger not assigned! Please assign a Transform with a trigger collider in the Inspector.");
         }
+
+        barrier = transform.Find("Barrier");
+        if (barrier == null)
+        {
+            Debug.LogError("Barrier not found as a child of Fighter_01! Ensure the hierarchy contains a Barrier object.");
+        }
+        else
+        {
+            initialBarrierScale = barrier.localScale;
+        }
     }
 
     // This function is called when a move input is detected.
@@ -84,32 +99,46 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    public void ApplyPowerUp_MaxBarrier()
     {
-        // Solo el trigger frontal detectará las monedas
-        if (other.CompareTag("Coin"))
+        if (barrier != null)
         {
-            PowerUpCoin coin = other.GetComponent<PowerUpCoin>();
-            if (coin != null)
+            Vector3 newScale = barrier.localScale;
+            Debug.Log("Before scaling - Barrier scale: " + newScale);
+            newScale.x *= 1.5f;
+            // Limitar el factor entre minBarrierScaleFactor y maxBarrierScaleFactor
+            newScale.x = Mathf.Clamp(newScale.x, minBarrierScaleFactor, maxBarrierScaleFactor);
+            barrier.localScale = newScale;
+            Debug.Log("After scaling - Barrier scale: " + barrier.localScale);
+
+            // Actualizar el Collider si existe
+            BoxCollider barrierCollider = barrier.GetComponent<BoxCollider>();
+            if (barrierCollider != null)
             {
-                if (ball != null)
-                {
-                    ball.ApplyPowerUp();
-                    Debug.Log("Power-up applied: Maximize");
-                }
-                else
-                {
-                    Debug.LogWarning("Ball reference is null in Player!");
-                }
-                Destroy(other.gameObject);
+                barrierCollider.size = new Vector3(newScale.x, barrierCollider.size.y, barrierCollider.size.z);
+                Debug.Log("Barrier Collider size updated to: " + barrierCollider.size);
             }
             else
             {
-                Debug.LogWarning("PowerUpCoin component not found on collided object!");
+                Debug.LogWarning("Barrier has no BoxCollider or incompatible Collider type!");
+            }
+
+            // Verificar el estado del Rigidbody del jugador
+            if (rb != null)
+            {
+                Debug.Log("Player Rigidbody velocity after scaling: " + rb.linearVelocity);
+                Debug.Log("Player Rigidbody constraints: " + rb.constraints);
+            }
+            else
+            {
+                Debug.LogError("Rigidbody is null after scaling!");
             }
         }
+        else
+        {
+            Debug.LogWarning("Barrier reference is null in Player!");
+        }
     }
-
     // FixedUpdate is called once per fixed frame-rate frame.
     void FixedUpdate()
     {

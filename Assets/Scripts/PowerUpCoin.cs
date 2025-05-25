@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PowerUpCoin : MonoBehaviour
 {
-    public enum PowerUpType { Maximize, Minimize }
+    public enum PowerUpType { Maximize, ScaleBarrier }
     public PowerUpType powerUpType; // Tipo de power-up (Maximizar o Minimizar)
     public float speed = 5f; // Velocidad fija de movimiento
     private float targetZ; // Eje Z de la nave
@@ -32,22 +32,37 @@ public class PowerUpCoin : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        // Si colisiona con la nave, aplicar el power-up y destruir la moneda
-        if (other.CompareTag("Player"))
+        // Si colisiona con el frontTrigger, aplicar el power-up y destruir la moneda
+        if (other.CompareTag("FrontTrigger"))
         {
-            Ball ballController = FindFirstObjectByType<Ball>();
-            if (ballController != null)
+            if (powerUpType == PowerUpType.Maximize)
             {
-                ballController.ApplyPowerUp();
-                Debug.Log("Power-up applied: Maximize");
+                Ball ballController = FindFirstObjectByType<Ball>();
+                if (ballController != null)
+                {
+                    ballController.ApplyPowerUp();
+                    Debug.Log("Power-up applied: MaximizeBall");
+                }
+                else
+                {
+                    Debug.LogWarning("Ball not found!");
+                }
+                Destroy(gameObject);
             }
-            else
+            else if (powerUpType == PowerUpType.ScaleBarrier)
             {
-                Debug.LogWarning("BallController not found!");
+                Player player = FindFirstObjectByType<Player>();
+                if (player != null)
+                {
+                    player.ApplyPowerUp_MaxBarrier();
+                    Debug.Log("Power-up applied: ScaleBarrier");
+                }
+                else
+                {
+                    Debug.LogWarning("Player not found!");
+                }
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
         }
     }
-
-
 }
