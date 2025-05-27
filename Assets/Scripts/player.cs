@@ -110,29 +110,24 @@ public class Player : MonoBehaviour
             newScale.x = Mathf.Clamp(newScale.x, minBarrierScaleFactor, maxBarrierScaleFactor);
             barrier.localScale = newScale;
             Debug.Log("After scaling - Barrier scale: " + barrier.localScale);
+        }
+        else
+        {
+            Debug.LogWarning("Barrier reference is null in Player!");
+        }
+    }
 
-            // Actualizar el Collider si existe
-            BoxCollider barrierCollider = barrier.GetComponent<BoxCollider>();
-            if (barrierCollider != null)
-            {
-                barrierCollider.size = new Vector3(newScale.x, barrierCollider.size.y, barrierCollider.size.z);
-                Debug.Log("Barrier Collider size updated to: " + barrierCollider.size);
-            }
-            else
-            {
-                Debug.LogWarning("Barrier has no BoxCollider or incompatible Collider type!");
-            }
-
-            // Verificar el estado del Rigidbody del jugador
-            if (rb != null)
-            {
-                Debug.Log("Player Rigidbody velocity after scaling: " + rb.linearVelocity);
-                Debug.Log("Player Rigidbody constraints: " + rb.constraints);
-            }
-            else
-            {
-                Debug.LogError("Rigidbody is null after scaling!");
-            }
+    public void ApplyPowerUp_MinBarrier()
+    {
+        if (barrier != null)
+        {
+            Vector3 newScale = barrier.localScale;
+            Debug.Log("Before scaling - Barrier scale: " + newScale);
+            newScale.x /= 1.5f;
+            // Limitar el factor entre minBarrierScaleFactor y maxBarrierScaleFactor
+            newScale.x = Mathf.Clamp(newScale.x, minBarrierScaleFactor, maxBarrierScaleFactor);
+            barrier.localScale = newScale;
+            Debug.Log("After scaling - Barrier scale: " + barrier.localScale);
         }
         else
         {

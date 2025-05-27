@@ -9,8 +9,9 @@ public class PickupHealth : MonoBehaviour
     public Material material1vida;
 
     public GameObject explosionPrefab;
-    public GameObject coinMaximizePrefab; // Prefab de la moneda de maximizar
+    private GameObject coinMaximizePrefab; // Prefab de la moneda de maximizar
     private GameObject coinScaleBarrierPrefab; // Prefab de la moneda para escalar la barrera
+    private GameObject coinUnScaleBarrierPrefab; // Prefab de la moneda para escalar la barrera
     private Transform playerTransform; // Referencia a la nave
     private Renderer rend;
 
@@ -26,6 +27,7 @@ public class PickupHealth : MonoBehaviour
         // Cargar el prefab dinámicamente desde Resources al inicio
         coinMaximizePrefab = Resources.Load<GameObject>("Prefabs/CoinMaximize");
         coinScaleBarrierPrefab = Resources.Load<GameObject>("Prefabs/CoinScaleBarrier");
+        coinUnScaleBarrierPrefab = Resources.Load<GameObject>("Prefabs/CoinUnScaleBarrier");
     }
     void SpawnPowerUp()
     {
@@ -42,7 +44,12 @@ public class PickupHealth : MonoBehaviour
             spawnPosition.x = Mathf.Clamp(spawnPosition.x, -8f, 8f);
             SpawnCoin(coinScaleBarrierPrefab, spawnPosition);
         }
-        // 50% de probabilidad de no generar nada (0.5 a 1)
+        else if (randomValue < 0.75f) // 25% de probabilidad de escalar la barrera
+        {
+            // Ajustar la posición para que esté en el rango [-8, 8] en X
+
+            SpawnCoin(coinUnScaleBarrierPrefab, transform.position);
+        }
     }
 
     void SpawnCoin(GameObject coinPrefab, Vector3 spawnPosition)

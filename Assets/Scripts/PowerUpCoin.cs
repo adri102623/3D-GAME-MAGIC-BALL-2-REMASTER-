@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PowerUpCoin : MonoBehaviour
 {
-    public enum PowerUpType { Maximize, ScaleBarrier }
+    public enum PowerUpType { Maximize, ScaleBarrier, UnScaleBarrier}
     public PowerUpType powerUpType; // Tipo de power-up (Maximizar o Minimizar)
     public float speed = 5f; // Velocidad fija de movimiento
     private float targetZ; // Eje Z de la nave
@@ -56,6 +56,20 @@ public class PowerUpCoin : MonoBehaviour
                 {
                     player.ApplyPowerUp_MaxBarrier();
                     Debug.Log("Power-up applied: ScaleBarrier");
+                }
+                else
+                {
+                    Debug.LogWarning("Player not found!");
+                }
+                Destroy(gameObject);
+            }
+            else if (powerUpType == PowerUpType.UnScaleBarrier)
+            {
+                Player player = FindFirstObjectByType<Player>();
+                if (player != null)
+                {
+                    player.ApplyPowerUp_MinBarrier();
+                    Debug.Log("Power-up applied: UnScaleBarrier");
                 }
                 else
                 {
