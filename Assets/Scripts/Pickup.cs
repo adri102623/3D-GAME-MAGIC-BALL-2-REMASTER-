@@ -4,52 +4,91 @@ public class PickupHealth : MonoBehaviour
 {
     public int vidas = 1;
 
+    // Materiales para diferentes niveles de vida
     public Material material3vidas;
     public Material material2vidas;
     public Material material1vida;
 
+    [Header("Efectos y Partículas")]
     public GameObject explosionPrefab;
-    private GameObject coinMaximizePrefab; // Prefab de la moneda de maximizar
-    private GameObject coinScaleBarrierPrefab; // Prefab de la moneda para escalar la barrera
-    private GameObject coinUnScaleBarrierPrefab; // Prefab de la moneda para escalar la barrera
-    private Transform playerTransform; // Referencia a la nave
+
+    [Header("Configuración de PowerUps")]
+    [Range(0f, 1f)]
+    public float probabilidadPowerUp = 0.2f; // 20% de probabilidad por defecto
+    public int numPowerUps = 3; // Número de power-ups disponibles
+
+    // Referencias a los prefabs de power-ups
+    private GameObject[] powerUpPrefabs;
+    private Transform playerTransform;
     private Renderer rend;
 
     void Start()
     {
         rend = GetComponent<Renderer>();
         UpdateMaterial();
+
+        // Buscar la nave del jugador
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
             playerTransform = player.transform;
         }
-        // Cargar el prefab dinámicamente desde Resources al inicio
-        coinMaximizePrefab = Resources.Load<GameObject>("Prefabs/CoinMaximize");
-        coinScaleBarrierPrefab = Resources.Load<GameObject>("Prefabs/CoinScaleBarrier");
-        coinUnScaleBarrierPrefab = Resources.Load<GameObject>("Prefabs/CoinUnScaleBarrier");
+
+        // Cargar los prefabs de power-ups dinámicamente
+        CargarPrefabsPowerUps();
     }
+
+    void CargarPrefabsPowerUps()
+    {
+        // Inicializar el array con el número especificado de power-ups
+        powerUpPrefabs = new GameObject[numPowerUps];
+
+        // Cargar cada prefab según su índice
+        powerUpPrefabs[0] = Resources.Load<GameObject>("Prefabs/CoinMaximize");
+        powerUpPrefabs[1] = Resources.Load<GameObject>("Prefabs/CoinScaleBarrier");
+        powerUpPrefabs[2] = Resources.Load<GameObject>("Prefabs/CoinUnScaleBarrier");
+
+        // Verificar que todos los prefabs se cargaron correctamente
+        for (int i = 0; i < numPowerUps; i++)
+        {
+            if (powerUpPrefabs[i] == null)
+            {
+                Debug.LogWarning($"No se pudo cargar el prefab de PowerUp en el índice {i}. Asegúrate de que existe en la carpeta Resources.");
+            }
+        }
+    }
+
     void SpawnPowerUp()
     {
-        float randomValue = Random.value;
-
-        if (randomValue < 0.25f) // 25% de probabilidad de maximizar la pelota
+        // Verificar primero si debemos generar un power-up según la probabilidad
+        if (Random.value > probabilidadPowerUp)
         {
-            SpawnCoin(coinMaximizePrefab, transform.position);
+            Debug.Log("No se generó power-up (fuera del porcentaje de probabilidad)");
+            return;
         }
-        else if (randomValue < 0.5f) // 25% de probabilidad de escalar la barrera
+
+        // Seleccionar un power-up aleatorio entre los disponibles
+        int powerUpIndex = Random.Range(0, numPowerUps);
+        GameObject selectedPowerUp = powerUpPrefabs[powerUpIndex];
+
+        if (selectedPowerUp == null)
         {
-            // Ajustar la posición para que esté en el rango [-8, 8] en X
-            Vector3 spawnPosition = transform.position;
+            Debug.LogWarning($"El prefab de PowerUp en el índice {powerUpIndex} es nulo.");
+            return;
+        }
+
+        // Posición para el spawn
+        Vector3 spawnPosition = transform.position;
+
+        // Ajustar la posición si es necesario según el tipo de power-up
+        if (powerUpIndex == 1) // CoinScaleBarrier necesita estar en el rango [-8, 8] en X
+        {
             spawnPosition.x = Mathf.Clamp(spawnPosition.x, -8f, 8f);
-            SpawnCoin(coinScaleBarrierPrefab, spawnPosition);
         }
-        else if (randomValue < 0.75f) // 25% de probabilidad de escalar la barrera
-        {
-            // Ajustar la posición para que esté en el rango [-8, 8] en X
 
-            SpawnCoin(coinUnScaleBarrierPrefab, transform.position);
-        }
+        // Generar el power-up
+        SpawnCoin(selectedPowerUp, spawnPosition);
+        Debug.Log($"PowerUp generado: {selectedPowerUp.name} en posición {spawnPosition}");
     }
 
     void SpawnCoin(GameObject coinPrefab, Vector3 spawnPosition)
@@ -57,6 +96,12 @@ public class PickupHealth : MonoBehaviour
         if (playerTransform == null || coinPrefab == null)
         {
             Debug.LogWarning("Cannot spawn coin: PlayerTransform or coinPrefab is null. Retrying to find Player...");
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                playerTransform = player.transform;
+            }
+
             if (playerTransform == null || coinPrefab == null)
             {
                 Debug.LogError("Failed to spawn coin after retry. Check Player and prefab setup.");
@@ -80,7 +125,6 @@ public class PickupHealth : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-
         if (collision.gameObject.CompareTag("Ball"))
         {
             TocarPelota();
@@ -89,14 +133,15 @@ public class PickupHealth : MonoBehaviour
 
     public void TocarPelota()
     {
+        // Mostrar partículas con CADA impacto, no solo al final
+        if (explosionPrefab != null)
+        {
+            GameObject particles = Instantiate(explosionPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
+        }
+
         vidas--;
         if (vidas <= 0)
         {
-
-            if (explosionPrefab != null)
-            {
-                GameObject particles = Instantiate(explosionPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
-            }
             SpawnPowerUp();
             Destroy(gameObject);
         }
@@ -108,7 +153,8 @@ public class PickupHealth : MonoBehaviour
 
     void UpdateMaterial()
     {
-        if(vidas == 3 && material3vidas != null){
+        if (vidas == 3 && material3vidas != null)
+        {
             rend.material = material3vidas;
         }
         else if (vidas == 2 && material2vidas != null)
@@ -121,4 +167,3 @@ public class PickupHealth : MonoBehaviour
         }
     }
 }
-            

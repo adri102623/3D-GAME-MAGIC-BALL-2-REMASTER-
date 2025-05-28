@@ -15,10 +15,8 @@ public class Player : MonoBehaviour
     private int count;
 
 
-
-
     // Speed at which the player moves.
-    public float speed = 0;
+    public float speed = 5.0f;
 
     public TextMeshProUGUI countText;
 
