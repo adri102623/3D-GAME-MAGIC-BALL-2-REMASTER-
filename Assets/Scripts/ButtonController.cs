@@ -9,9 +9,14 @@ public class ButtonController : MonoBehaviour
         SceneManager.LoadScene("lvl1");
     }
 
+    public void Return()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     public void Credits()
     {
-        SceneManager.LoadScene("credits");
+        SceneManager.LoadScene("Credtis");
     }
 
     public void QuitGame()
