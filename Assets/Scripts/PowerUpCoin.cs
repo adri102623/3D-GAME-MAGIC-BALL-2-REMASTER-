@@ -30,11 +30,24 @@ public class PowerUpCoin : MonoBehaviour
         }
     }
 
+    private void IncrementScoreForPowerUp()
+{
+    if (ScoreManager.Instance != null)
+    {
+        ScoreManager.Instance.IncrementScoreForPowerUp();
+    }
+    else
+    {
+        Debug.LogWarning("ScoreManager not found! Make sure ScoreManager is in the scene.");
+    }
+}
+
     void OnTriggerEnter(Collider other)
     {
         // Si colisiona con el frontTrigger, aplicar el power-up y destruir la moneda
         if (other.CompareTag("FrontTrigger"))
         {
+            IncrementScoreForPowerUp();
             if (powerUpType == PowerUpType.Maximize)
             {
                 Ball ballController = FindFirstObjectByType<Ball>();

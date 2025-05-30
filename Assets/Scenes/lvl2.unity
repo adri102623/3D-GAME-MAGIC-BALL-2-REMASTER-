@@ -157,6 +157,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1296922
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -373,6 +375,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!135 &6914199
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -508,6 +512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialSpeed: 30
+  powerBallMaterial: {fileID: 0}
+  defaultMaterial: {fileID: 0}
 --- !u!135 &13902894
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -741,6 +747,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &56332608
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1059,6 +1067,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &82806648
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1304,6 +1314,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &85953823
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1530,6 +1542,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &107693479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1699,6 +1713,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &125393070
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1859,6 +1875,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!64 &193950899
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1934,6 +1952,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &195856028
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2089,6 +2109,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!64 &236918151
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2164,6 +2186,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &243231415
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2535,6 +2559,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!1001 &318848859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2674,6 +2700,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &340538390
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2848,6 +2876,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &374932659
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2971,6 +3001,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!64 &386511465
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3634,6 +3666,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!64 &469100392
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3694,6 +3728,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &499067529
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3875,6 +3911,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &504371139
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4130,6 +4168,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &521892063
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4246,6 +4286,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &524609488
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1410633234}
+    m_Modifications:
+    - target: {fileID: 5215650349802316424, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_Name
+      value: ScoreText
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+--- !u!224 &524609489 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6978431890231838187, guid: 1268cb4c74a6d764d9b81aab46f96cba, type: 3}
+  m_PrefabInstance: {fileID: 524609488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &525975475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2233008469367548951, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
@@ -4412,6 +4554,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &605686164
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4535,6 +4679,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &626210633
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4637,6 +4783,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &636513044
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4791,6 +4939,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &643925466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5031,6 +5181,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &667259699
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5206,6 +5358,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!64 &719277794
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5287,6 +5441,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!64 &789257068
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5362,6 +5518,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &819580447
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5804,6 +5962,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!135 &952591197
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5916,6 +6076,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &957931229
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6287,6 +6449,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &981953953
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6436,6 +6600,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1075239810
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6725,6 +6891,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1103762491
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7488,6 +7656,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1234002993
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7575,6 +7745,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1252208732
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7734,6 +7906,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1275647002
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8197,6 +8371,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2233008469367548951, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
   m_PrefabInstance: {fileID: 1759094085}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1410633230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1410633234}
+  - component: {fileID: 1410633233}
+  - component: {fileID: 1410633232}
+  - component: {fileID: 1410633231}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1410633231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410633230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1410633232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410633230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1410633233
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410633230}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1410633234
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410633230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 524609489}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &1415880147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8460,6 +8736,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!135 &1442689098
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8755,6 +9033,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1476283430
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9299,6 +9579,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!4 &1666446659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2233008469367548951, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
@@ -9357,6 +9639,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1680184061
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9597,6 +9881,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1704446246
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9766,6 +10052,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1707282166
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9975,6 +10263,66 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735949650}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1743315329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743315332}
+  - component: {fileID: 1743315331}
+  - component: {fileID: 1743315330}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1743315330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743315329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5733aeb16a4a52d40b8d448822de690f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1743315331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743315329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1197b1d880452434898d6764e6fc1652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePerHit: 10
+  scorePerPowerUp: 20
+  scoreText: {fileID: 0}
+--- !u!4 &1743315332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743315329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 609.6468, y: 661.7918, z: 44.951706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1754173075
 GameObject:
   m_ObjectHideFlags: 0
@@ -10028,6 +10376,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1754173078
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10384,6 +10734,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!1 &1770669369
 GameObject:
   m_ObjectHideFlags: 0
@@ -10422,6 +10774,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1770669371
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10591,6 +10945,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1796219937
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10714,6 +11070,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!64 &1809702466
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10861,6 +11219,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1837797146
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11005,6 +11365,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1876517714
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11170,6 +11532,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!1 &1917578363
 GameObject:
   m_ObjectHideFlags: 0
@@ -11285,6 +11649,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!64 &1921255441
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11355,6 +11721,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1955067271
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11950,6 +12318,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &1985548424
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12247,6 +12617,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!135 &2007278333
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12475,6 +12847,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!1001 &2043749541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12716,6 +13090,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &2049439128
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12781,6 +13157,8 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+  numPowerUps: 3
 --- !u!54 &2061512940
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13412,6 +13790,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2049439125}
+  - {fileID: 1410633234}
   - {fileID: 941404455}
   - {fileID: 1969425211}
   - {fileID: 1086675807}
@@ -13433,3 +13812,4 @@ SceneRoots:
   - {fileID: 56332612}
   - {fileID: 85953827}
   - {fileID: 1296926}
+  - {fileID: 1743315332}

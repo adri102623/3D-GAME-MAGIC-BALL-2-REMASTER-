@@ -132,7 +132,8 @@ public class PickupHealth : MonoBehaviour
     }
 
 
-    public void set_1(){
+    public void set_1()
+    {
         vidas = 1;
     }
     public void TocarPelota()
@@ -143,6 +144,8 @@ public class PickupHealth : MonoBehaviour
             GameObject particles = Instantiate(explosionPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
         }
 
+        // Incrementar puntuación
+        IncrementScore();
         vidas--;
         if (vidas <= 0)
         {
@@ -152,6 +155,18 @@ public class PickupHealth : MonoBehaviour
         else
         {
             UpdateMaterial();
+        }
+    }
+
+    private void IncrementScore()
+    {
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.IncrementScore();
+        }
+        else
+        {
+            Debug.LogWarning("ScoreManager not found! Make sure ScoreManager is in the scene.");
         }
     }
 
