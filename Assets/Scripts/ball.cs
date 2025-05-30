@@ -7,6 +7,9 @@ public class Ball : MonoBehaviour
     private Vector3 initialScale; // Escala inicial de la pelota
     private float maxScaleFactor = 2f; // Máximo 2x la escala inicial
     private float minScaleFactor = 0.5f; // Mínimo 0.5x la escala inicial
+    public Material powerBallMaterial;
+    public Material defaultMaterial;
+    private bool god;
 
     void Start()
     {
@@ -14,20 +17,62 @@ public class Ball : MonoBehaviour
         // Dispara la pelota hacia adelante
         rb.linearVelocity = Vector3.forward * initialSpeed;
         initialScale = transform.localScale;
-
+        god = false;
     }
 
-    void OnCollisionEnter(Collision collision)
+    // void UpdatePickUpColliders()
+    // {
+    //     GameObject[] pickUps = GameObject.FindGameObjectsWithTag("PickUp");
+    //     foreach (GameObject pickUp in pickUps)
+    //     {
+    //         Collider collider = pickUp.GetComponent<Collider>();
+    //         if (collider != null)
+    //         {
+    //             collider.isTrigger = god; // Triggers en modo god, no triggers en modo normal
+    //         }
+    //     }
+    // }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            god = !god;
+            
+            GetComponent<Renderer>().material = god ? powerBallMaterial : defaultMaterial;
+            UpdatePickUpColliders(); // Actualizar colliders de PickUps
+        }
+    }
+
+    void UpdatePickUpColliders(){
+    GameObject[] pickUps = GameObject.FindGameObjectsWithTag("PickUp");
+    Collider ballCollider = GetComponent<Collider>();
+
+    foreach (GameObject pickUp in pickUps)
+    {
+        Collider pickupCollider = pickUp.GetComponent<Collider>();
+        if (pickupCollider != null)
+        {
+            // Ignore or re-enable collision with the ball
+            Physics.IgnoreCollision(ballCollider, pickupCollider, god);
+        }
+    }
+    }
+
+    void OnTriggerEnter(Collider other)
     {
         // Rebote manteniendo velocidad constante
         rb.linearVelocity = rb.linearVelocity.normalized * initialSpeed;
-
-        if (collision.gameObject.CompareTag("PickUp"))
-        {
-            // Empezamos una rutina para desactivar el objeto despu�s de un frame
-            //StartCoroutine(DeactivateAfterPhysics(collision.gameObject));
-        }
+            if (god && other.CompareTag("PickUp")){
+                PickupHealth pickup = other.GetComponent<PickupHealth>();
+                if (pickup != null)
+                {
+                pickup.set_1();
+                pickup.TocarPelota();
+                }
+            }
     }
+    
 
     public void ApplyPowerUp()
     {

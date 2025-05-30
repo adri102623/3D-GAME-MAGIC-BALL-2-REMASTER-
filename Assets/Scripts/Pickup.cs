@@ -9,13 +9,13 @@ public class PickupHealth : MonoBehaviour
     public Material material2vidas;
     public Material material1vida;
 
-    [Header("Efectos y Partículas")]
+    [Header("Efectos y Partï¿½culas")]
     public GameObject explosionPrefab;
 
-    [Header("Configuración de PowerUps")]
+    [Header("Configuraciï¿½n de PowerUps")]
     [Range(0f, 1f)]
     public float probabilidadPowerUp = 0.2f; // 20% de probabilidad por defecto
-    public int numPowerUps = 3; // Número de power-ups disponibles
+    public int numPowerUps = 3; // Nï¿½mero de power-ups disponibles
 
     // Referencias a los prefabs de power-ups
     private GameObject[] powerUpPrefabs;
@@ -34,16 +34,16 @@ public class PickupHealth : MonoBehaviour
             playerTransform = player.transform;
         }
 
-        // Cargar los prefabs de power-ups dinámicamente
+        // Cargar los prefabs de power-ups dinï¿½micamente
         CargarPrefabsPowerUps();
     }
 
     void CargarPrefabsPowerUps()
     {
-        // Inicializar el array con el número especificado de power-ups
+        // Inicializar el array con el nï¿½mero especificado de power-ups
         powerUpPrefabs = new GameObject[numPowerUps];
 
-        // Cargar cada prefab según su índice
+        // Cargar cada prefab segï¿½n su ï¿½ndice
         powerUpPrefabs[0] = Resources.Load<GameObject>("Prefabs/CoinMaximize");
         powerUpPrefabs[1] = Resources.Load<GameObject>("Prefabs/CoinScaleBarrier");
         powerUpPrefabs[2] = Resources.Load<GameObject>("Prefabs/CoinUnScaleBarrier");
@@ -53,17 +53,17 @@ public class PickupHealth : MonoBehaviour
         {
             if (powerUpPrefabs[i] == null)
             {
-                Debug.LogWarning($"No se pudo cargar el prefab de PowerUp en el índice {i}. Asegúrate de que existe en la carpeta Resources.");
+                Debug.LogWarning($"No se pudo cargar el prefab de PowerUp en el ï¿½ndice {i}. Asegï¿½rate de que existe en la carpeta Resources.");
             }
         }
     }
 
     void SpawnPowerUp()
     {
-        // Verificar primero si debemos generar un power-up según la probabilidad
+        // Verificar primero si debemos generar un power-up segï¿½n la probabilidad
         if (Random.value > probabilidadPowerUp)
         {
-            Debug.Log("No se generó power-up (fuera del porcentaje de probabilidad)");
+            Debug.Log("No se generï¿½ power-up (fuera del porcentaje de probabilidad)");
             return;
         }
 
@@ -73,14 +73,14 @@ public class PickupHealth : MonoBehaviour
 
         if (selectedPowerUp == null)
         {
-            Debug.LogWarning($"El prefab de PowerUp en el índice {powerUpIndex} es nulo.");
+            Debug.LogWarning($"El prefab de PowerUp en el ï¿½ndice {powerUpIndex} es nulo.");
             return;
         }
 
-        // Posición para el spawn
+        // Posiciï¿½n para el spawn
         Vector3 spawnPosition = transform.position;
 
-        // Ajustar la posición si es necesario según el tipo de power-up
+        // Ajustar la posiciï¿½n si es necesario segï¿½n el tipo de power-up
         if (powerUpIndex == 1) // CoinScaleBarrier necesita estar en el rango [-8, 8] en X
         {
             spawnPosition.x = Mathf.Clamp(spawnPosition.x, -8f, 8f);
@@ -88,7 +88,7 @@ public class PickupHealth : MonoBehaviour
 
         // Generar el power-up
         SpawnCoin(selectedPowerUp, spawnPosition);
-        Debug.Log($"PowerUp generado: {selectedPowerUp.name} en posición {spawnPosition}");
+        Debug.Log($"PowerUp generado: {selectedPowerUp.name} en posiciï¿½n {spawnPosition}");
     }
 
     void SpawnCoin(GameObject coinPrefab, Vector3 spawnPosition)
@@ -131,9 +131,13 @@ public class PickupHealth : MonoBehaviour
         }
     }
 
+
+    public void set_1(){
+        vidas = 1;
+    }
     public void TocarPelota()
     {
-        // Mostrar partículas con CADA impacto, no solo al final
+        // Mostrar partï¿½culas con CADA impacto, no solo al final
         if (explosionPrefab != null)
         {
             GameObject particles = Instantiate(explosionPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
