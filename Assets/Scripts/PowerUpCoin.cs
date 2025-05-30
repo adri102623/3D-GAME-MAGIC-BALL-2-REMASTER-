@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PowerUpCoin : MonoBehaviour
 {
-    public enum PowerUpType { Maximize, ScaleBarrier, UnScaleBarrier}
+    public enum PowerUpType { Maximize, ScaleBarrier, UnScaleBarrier }
     public PowerUpType powerUpType; // Tipo de power-up (Maximizar o Minimizar)
     public float speed = 5f; // Velocidad fija de movimiento
     private float targetZ; // Eje Z de la nave
@@ -31,22 +31,28 @@ public class PowerUpCoin : MonoBehaviour
     }
 
     private void IncrementScoreForPowerUp()
-{
-    if (ScoreManager.Instance != null)
     {
-        ScoreManager.Instance.IncrementScoreForPowerUp();
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.IncrementScoreForPowerUp();
+        }
+        else
+        {
+            Debug.LogWarning("ScoreManager not found! Make sure ScoreManager is in the scene.");
+        }
     }
-    else
-    {
-        Debug.LogWarning("ScoreManager not found! Make sure ScoreManager is in the scene.");
-    }
-}
 
     void OnTriggerEnter(Collider other)
     {
         // Si colisiona con el frontTrigger, aplicar el power-up y destruir la moneda
         if (other.CompareTag("FrontTrigger"))
         {
+            // Reproducir sonido de power-up
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayPowerUpSound();
+            }
+
             IncrementScoreForPowerUp();
             if (powerUpType == PowerUpType.Maximize)
             {

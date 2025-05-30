@@ -149,11 +149,21 @@ public class PickupHealth : MonoBehaviour
         vidas--;
         if (vidas <= 0)
         {
+            // Reproducir sonido de destrucción
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayDestroySound();
+            }
             SpawnPowerUp();
             Destroy(gameObject);
         }
         else
         {
+            // Reproducir sonido de destrucción
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayHitSound();
+            }
             UpdateMaterial();
         }
     }

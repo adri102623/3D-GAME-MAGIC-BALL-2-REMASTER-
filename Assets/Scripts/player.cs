@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update.
     void Start()
     {
-        count = 0;
+        //count = 0;
         // Get and store the Rigidbody component attached to the player.
         rb = GetComponent<Rigidbody>();
 
