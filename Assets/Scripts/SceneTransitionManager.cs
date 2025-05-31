@@ -10,6 +10,7 @@ public class SceneTransitionManager : MonoBehaviour
     public string[] levelNames = { "lvl1", "lvl2", "lvl3", "lvl4", "lvl5" };
     public string menuSceneName = "Menu";
     public string creditsSceneName = "Credtis";
+    public string gameOverSceneName = "GameOver"; // Escena de Game Over existente
     
     private int currentLevelIndex = 0;
     
@@ -106,6 +107,14 @@ public class SceneTransitionManager : MonoBehaviour
         if (IsGameLevel(scene.name))
         {
             StartLevelPresentation();
+            
+            // Añadir BallBoundaryChecker si no existe
+            if (FindFirstObjectByType<BallBoundaryChecker>() == null)
+            {
+                GameObject boundaryChecker = new GameObject("BallBoundaryChecker");
+                boundaryChecker.AddComponent<BallBoundaryChecker>();
+                Debug.Log("BallBoundaryChecker added to scene");
+            }
         }
     }
     
@@ -153,6 +162,12 @@ public class SceneTransitionManager : MonoBehaviour
     {
         Debug.Log("Loading Credits");
         SceneManager.LoadScene(creditsSceneName);
+    }
+    
+    public void LoadGameOver()
+    {
+        Debug.Log("Loading Game Over");
+        SceneManager.LoadScene(gameOverSceneName);
     }
     
     public void LoadNextLevel(string sceneName)

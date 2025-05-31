@@ -118,10 +118,17 @@ public class PickupHealth : MonoBehaviour
         // Posición para el spawn
         Vector3 spawnPosition = transform.position;
 
-        // Ajustar la posición si es necesario según el tipo de power-up
+        // Ajustar la posición según el tipo de power-up
         if (powerUpIndex == 1) // CoinScaleBarrier necesita estar en el rango [-8, 8] en X
         {
             spawnPosition.x = Mathf.Clamp(spawnPosition.x, -8f, 8f);
+        }
+
+        // Si es CoinMagnet, aparecer más arriba
+        if (selectedPowerUp.name.Contains("CoinMagnet"))
+        {
+            spawnPosition.y += 2f; // Añadir 2 unidades en altura
+            Debug.Log("CoinMagnet spawned higher at position: " + spawnPosition);
         }
 
         // Generar el power-up

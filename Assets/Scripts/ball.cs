@@ -338,7 +338,7 @@ public class Ball : MonoBehaviour
         // Posicionar la pelota ligeramente adelante del punto de contacto
         // para evitar que se vuelva a pegar inmediatamente
         Vector3 adjustedPosition = contactPoint;
-        adjustedPosition.z += ballRadius + 0.3f; // Radio de la bola + margen extra
+        adjustedPosition.z += ballRadius + 0.5f; // Radio de la bola + margen extra
         
         transform.position = adjustedPosition;
         
