@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Ball : MonoBehaviour
 {
@@ -14,24 +15,14 @@ public class Ball : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        // Dispara la pelota hacia adelante
-        rb.linearVelocity = Vector3.forward * initialSpeed;
+        if (rb != null)
+        {
+            // Dispara la pelota hacia adelante
+            rb.linearVelocity = Vector3.forward * initialSpeed;
+        }
         initialScale = transform.localScale;
         god = false;
     }
-
-    // void UpdatePickUpColliders()
-    // {
-    //     GameObject[] pickUps = GameObject.FindGameObjectsWithTag("PickUp");
-    //     foreach (GameObject pickUp in pickUps)
-    //     {
-    //         Collider collider = pickUp.GetComponent<Collider>();
-    //         if (collider != null)
-    //         {
-    //             collider.isTrigger = god; // Triggers en modo god, no triggers en modo normal
-    //         }
-    //     }
-    // }
 
     void Update()
     {
@@ -39,40 +30,48 @@ public class Ball : MonoBehaviour
         {
             god = !god;
             
-            GetComponent<Renderer>().material = god ? powerBallMaterial : defaultMaterial;
+            Renderer renderer = GetComponent<Renderer>();
+            if (renderer != null)
+            {
+                renderer.material = god ? powerBallMaterial : defaultMaterial;
+            }
             UpdatePickUpColliders(); // Actualizar colliders de PickUps
         }
     }
 
-    void UpdatePickUpColliders(){
-    GameObject[] pickUps = GameObject.FindGameObjectsWithTag("PickUp");
-    Collider ballCollider = GetComponent<Collider>();
-
-    foreach (GameObject pickUp in pickUps)
+    void UpdatePickUpColliders()
     {
-        Collider pickupCollider = pickUp.GetComponent<Collider>();
-        if (pickupCollider != null)
+        GameObject[] pickUps = GameObject.FindGameObjectsWithTag("PickUp");
+        Collider ballCollider = GetComponent<Collider>();
+
+        if (ballCollider == null) return;
+
+        foreach (GameObject pickUp in pickUps)
         {
-            // Ignore or re-enable collision with the ball
-            Physics.IgnoreCollision(ballCollider, pickupCollider, god);
+            if (pickUp == null) continue;
+            
+            Collider pickupCollider = pickUp.GetComponent<Collider>();
+            if (pickupCollider != null)
+            {
+                // Ignore or re-enable collision with the ball
+                Physics.IgnoreCollision(ballCollider, pickupCollider, god);
+            }
         }
-    }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        // Rebote manteniendo velocidad constante
-        rb.linearVelocity = rb.linearVelocity.normalized * initialSpeed;
-            if (god && other.CompareTag("PickUp")){
-                PickupHealth pickup = other.GetComponent<PickupHealth>();
-                if (pickup != null)
-                {
-                pickup.set_1();
+        if (other == null) return;
+
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            PickupHealth pickup = other.GetComponent<PickupHealth>();
+            if (pickup != null && !god)
+            {
                 pickup.TocarPelota();
-                }
             }
+        }
     }
-    
 
     public void ApplyPowerUp()
     {
@@ -93,8 +92,11 @@ public class Ball : MonoBehaviour
 
     System.Collections.IEnumerator DeactivateAfterPhysics(GameObject pickup)
     {
-        // Esperamos al final del frame para que la f�sica act�e
+        // Esperamos al final del frame para que la física actúe
         yield return new WaitForFixedUpdate();
-        pickup.SetActive(false);
+        if (pickup != null)
+        {
+            pickup.SetActive(false);
+        }
     }
 }
