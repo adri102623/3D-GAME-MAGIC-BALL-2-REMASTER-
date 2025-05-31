@@ -14,7 +14,7 @@ public class PickupHealth : MonoBehaviour
 
     [Header("Configuración de PowerUps")]
     [Range(0f, 1f)]
-    private float probabilidadPowerUp = 0.95f;
+    private float probabilidadPowerUp = 1f;
     private int numPowerUps = 6; // Cambiado de 5 a 6 para incluir CoinMagnet
 
     // Array para almacenar los prefabs cargados desde Resources

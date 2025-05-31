@@ -13,6 +13,10 @@ public class PowerUpCoin : MonoBehaviour
     
     public PowerUpType powerUpType; // Tipo de power-up
     public float speed = 5f; // Velocidad fija de movimiento
+    [Header("Rotación")]
+    public float rotationSpeed = 50f; // Velocidad de rotación en grados por segundo
+    public Vector3 rotationAxis = Vector3.up; // Eje de rotación (Y por defecto)
+    
     private float targetZ; // Eje Z de la nave
     private bool hasTarget = false;
 
@@ -30,6 +34,9 @@ public class PowerUpCoin : MonoBehaviour
         Vector3 newPosition = transform.position;
         newPosition.z -= speed * Time.deltaTime;
         transform.position = newPosition;
+
+        // Rotar la moneda sobre sí misma
+        transform.Rotate(rotationAxis * rotationSpeed * Time.deltaTime);
 
         // Si pasa el eje Z de la nave, destruir la moneda
         if (transform.position.z < targetZ)
