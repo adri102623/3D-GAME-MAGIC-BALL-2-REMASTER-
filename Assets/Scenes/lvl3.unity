@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 12750546}
   m_Layer: 0
   m_Name: Cone
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,7 +159,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &12750539
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1978,7 +1977,6 @@ MonoBehaviour:
   material2vidas: {fileID: 2100000, guid: dd19cd19bcd8cde4eb82b9832c8310d4, type: 2}
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &20925572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2022,7 +2020,7 @@ GameObject:
   - component: {fileID: 52794494}
   m_Layer: 0
   m_Name: tower
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2059,7 +2057,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &52794495
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2179,7 +2176,7 @@ GameObject:
   - component: {fileID: 83468860}
   m_Layer: 0
   m_Name: Cone (3)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2201,7 +2198,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &83468853
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4044,7 +4040,7 @@ GameObject:
   - component: {fileID: 141696392}
   m_Layer: 0
   m_Name: lava (14)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4081,7 +4077,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &141696393
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4364,7 +4359,7 @@ GameObject:
   - component: {fileID: 181396573}
   m_Layer: 0
   m_Name: tower (6)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4401,7 +4396,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &181396574
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4519,7 +4513,7 @@ GameObject:
   - component: {fileID: 193297301}
   m_Layer: 0
   m_Name: tower (15)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4556,7 +4550,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &193297302
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4741,7 +4734,6 @@ MonoBehaviour:
   material2vidas: {fileID: 2100000, guid: dd19cd19bcd8cde4eb82b9832c8310d4, type: 2}
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &227551636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4785,7 +4777,7 @@ GameObject:
   - component: {fileID: 235371895}
   m_Layer: 0
   m_Name: rock (13)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4822,7 +4814,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &235371896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4940,7 +4931,7 @@ GameObject:
   - component: {fileID: 239995480}
   m_Layer: 0
   m_Name: rock (22)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4977,7 +4968,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &239995481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5206,7 +5196,7 @@ GameObject:
   - component: {fileID: 271615593}
   m_Layer: 0
   m_Name: tower (1)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5243,7 +5233,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &271615594
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5361,7 +5350,7 @@ GameObject:
   - component: {fileID: 278394821}
   m_Layer: 0
   m_Name: tower (5)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5398,7 +5387,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &278394822
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5624,7 +5612,7 @@ GameObject:
   - component: {fileID: 286611605}
   m_Layer: 0
   m_Name: lava (21)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5661,7 +5649,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &286611606
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5779,7 +5766,7 @@ GameObject:
   - component: {fileID: 314523974}
   m_Layer: 0
   m_Name: tower (23)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5816,7 +5803,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &314523975
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5934,7 +5920,7 @@ GameObject:
   - component: {fileID: 342983434}
   m_Layer: 0
   m_Name: rock (19)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5971,7 +5957,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &342983435
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6089,7 +6074,7 @@ GameObject:
   - component: {fileID: 343807769}
   m_Layer: 0
   m_Name: lava (19)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6126,7 +6111,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &343807770
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6244,7 +6228,7 @@ GameObject:
   - component: {fileID: 355389346}
   m_Layer: 0
   m_Name: rock (12)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6281,7 +6265,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &355389347
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6399,7 +6382,7 @@ GameObject:
   - component: {fileID: 377674058}
   m_Layer: 0
   m_Name: lava
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6436,7 +6419,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &377674059
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6663,7 +6645,7 @@ GameObject:
   - component: {fileID: 439849777}
   m_Layer: 0
   m_Name: lava (32)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6700,7 +6682,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &439849778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6818,7 +6799,7 @@ GameObject:
   - component: {fileID: 449162920}
   m_Layer: 0
   m_Name: tower (12)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6855,7 +6836,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &449162921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6973,7 +6953,7 @@ GameObject:
   - component: {fileID: 462455580}
   m_Layer: 0
   m_Name: lava (12)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7010,7 +6990,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &462455581
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7128,7 +7107,7 @@ GameObject:
   - component: {fileID: 470645655}
   m_Layer: 0
   m_Name: lava (36)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7165,7 +7144,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &470645656
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7448,7 +7426,7 @@ GameObject:
   - component: {fileID: 471293456}
   m_Layer: 0
   m_Name: rock (8)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7485,7 +7463,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &471293457
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7705,7 +7682,7 @@ GameObject:
   - component: {fileID: 519773816}
   m_Layer: 0
   m_Name: lava (30)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7742,7 +7719,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &519773817
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7860,7 +7836,7 @@ GameObject:
   - component: {fileID: 577616601}
   m_Layer: 0
   m_Name: lava (22)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7897,7 +7873,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &577616602
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8015,7 +7990,7 @@ GameObject:
   - component: {fileID: 587603694}
   m_Layer: 0
   m_Name: lava (20)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8052,7 +8027,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &587603695
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8170,7 +8144,7 @@ GameObject:
   - component: {fileID: 589641901}
   m_Layer: 0
   m_Name: tower (9)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8207,7 +8181,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &589641902
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8325,7 +8298,7 @@ GameObject:
   - component: {fileID: 595242239}
   m_Layer: 0
   m_Name: lava (11)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8362,7 +8335,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &595242240
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8480,7 +8452,7 @@ GameObject:
   - component: {fileID: 601379705}
   m_Layer: 0
   m_Name: rock (6)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8517,7 +8489,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &601379706
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8635,7 +8606,7 @@ GameObject:
   - component: {fileID: 615194387}
   m_Layer: 0
   m_Name: lava (6)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8672,7 +8643,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &615194388
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8790,7 +8760,7 @@ GameObject:
   - component: {fileID: 636498768}
   m_Layer: 0
   m_Name: tower (31)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8827,7 +8797,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &636498769
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9112,7 +9081,7 @@ GameObject:
   - component: {fileID: 726199924}
   m_Layer: 0
   m_Name: Cone (5)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9134,7 +9103,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &726199917
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11085,7 +11053,7 @@ GameObject:
   - component: {fileID: 788648036}
   m_Layer: 0
   m_Name: rock (9)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11122,7 +11090,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &788648037
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11407,7 +11374,7 @@ GameObject:
   - component: {fileID: 830636734}
   m_Layer: 0
   m_Name: Cone (4)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11429,7 +11396,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &830636727
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13252,7 +13218,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &831368971
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13370,7 +13335,7 @@ GameObject:
   - component: {fileID: 860317661}
   m_Layer: 0
   m_Name: rock (25)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13407,7 +13372,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &860317662
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13525,7 +13489,7 @@ GameObject:
   - component: {fileID: 865757416}
   m_Layer: 0
   m_Name: tower (20)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13562,7 +13526,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &865757417
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13680,7 +13643,7 @@ GameObject:
   - component: {fileID: 892738327}
   m_Layer: 0
   m_Name: lava (27)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13717,7 +13680,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &892738328
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13835,7 +13797,7 @@ GameObject:
   - component: {fileID: 893611556}
   m_Layer: 0
   m_Name: tower (19)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13872,7 +13834,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &893611557
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14101,7 +14062,6 @@ MonoBehaviour:
   material2vidas: {fileID: 2100000, guid: dd19cd19bcd8cde4eb82b9832c8310d4, type: 2}
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &904541089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14223,7 +14183,7 @@ GameObject:
   - component: {fileID: 917118875}
   m_Layer: 0
   m_Name: lava (7)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14260,7 +14220,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &917118876
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14378,7 +14337,7 @@ GameObject:
   - component: {fileID: 924713297}
   m_Layer: 0
   m_Name: lava (5)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14415,7 +14374,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &924713298
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14533,7 +14491,7 @@ GameObject:
   - component: {fileID: 929684023}
   m_Layer: 0
   m_Name: tower (14)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14570,7 +14528,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &929684024
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14688,7 +14645,7 @@ GameObject:
   - component: {fileID: 933426220}
   m_Layer: 0
   m_Name: rock (17)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14725,7 +14682,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &933426221
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15008,7 +14964,7 @@ GameObject:
   - component: {fileID: 934450054}
   m_Layer: 0
   m_Name: tower (22)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15045,7 +15001,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &934450055
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15163,7 +15118,7 @@ GameObject:
   - component: {fileID: 934937278}
   m_Layer: 0
   m_Name: tower (26)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15200,7 +15155,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &934937279
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15318,7 +15272,7 @@ GameObject:
   - component: {fileID: 937844100}
   m_Layer: 0
   m_Name: tower (27)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15355,7 +15309,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &937844101
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15562,7 +15515,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!64 &942687793
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15601,7 +15553,7 @@ GameObject:
   - component: {fileID: 963702368}
   m_Layer: 0
   m_Name: tower (2)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15638,7 +15590,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &963702369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15756,7 +15707,7 @@ GameObject:
   - component: {fileID: 964219526}
   m_Layer: 0
   m_Name: lava (17)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15793,7 +15744,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &964219527
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15911,7 +15861,7 @@ GameObject:
   - component: {fileID: 964456287}
   m_Layer: 0
   m_Name: rock (30)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15948,7 +15898,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &964456288
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16066,7 +16015,7 @@ GameObject:
   - component: {fileID: 968420034}
   m_Layer: 0
   m_Name: lava (29)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16103,7 +16052,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &968420035
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16221,7 +16169,7 @@ GameObject:
   - component: {fileID: 984007832}
   m_Layer: 0
   m_Name: lava (35)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16258,7 +16206,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &984007833
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16376,7 +16323,7 @@ GameObject:
   - component: {fileID: 993841359}
   m_Layer: 0
   m_Name: lava (4)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16413,7 +16360,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &993841360
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16531,7 +16477,7 @@ GameObject:
   - component: {fileID: 1004389533}
   m_Layer: 0
   m_Name: lava (18)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16568,7 +16514,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1004389534
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16686,7 +16631,7 @@ GameObject:
   - component: {fileID: 1009630017}
   m_Layer: 0
   m_Name: lava (8)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16723,7 +16668,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1009630018
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16935,7 +16879,6 @@ MonoBehaviour:
   material2vidas: {fileID: 2100000, guid: dd19cd19bcd8cde4eb82b9832c8310d4, type: 2}
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1056796322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16979,7 +16922,7 @@ GameObject:
   - component: {fileID: 1084516712}
   m_Layer: 0
   m_Name: rock (29)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17016,7 +16959,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1084516713
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17167,7 +17109,6 @@ MonoBehaviour:
   material2vidas: {fileID: 2100000, guid: dd19cd19bcd8cde4eb82b9832c8310d4, type: 2}
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1086352194
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17211,7 +17152,7 @@ GameObject:
   - component: {fileID: 1106599447}
   m_Layer: 0
   m_Name: lava (1)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17248,7 +17189,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1106599448
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17366,7 +17306,7 @@ GameObject:
   - component: {fileID: 1118522636}
   m_Layer: 0
   m_Name: lava (26)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17403,7 +17343,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1118522637
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17558,7 +17497,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1145318242
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17676,7 +17614,7 @@ GameObject:
   - component: {fileID: 1169279867}
   m_Layer: 0
   m_Name: rock (3)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17713,7 +17651,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1169279868
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17831,7 +17768,7 @@ GameObject:
   - component: {fileID: 1179777488}
   m_Layer: 0
   m_Name: lava (38)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17868,7 +17805,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1179777489
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17986,7 +17922,7 @@ GameObject:
   - component: {fileID: 1197006256}
   m_Layer: 0
   m_Name: lava (13)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18023,7 +17959,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1197006257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18198,7 +18133,7 @@ GameObject:
   - component: {fileID: 1200012453}
   m_Layer: 0
   m_Name: lava (16)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18235,7 +18170,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1200012454
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18500,7 +18434,7 @@ GameObject:
   - component: {fileID: 1225666867}
   m_Layer: 0
   m_Name: tower (11)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18537,7 +18471,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1225666868
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18712,7 +18645,7 @@ GameObject:
   - component: {fileID: 1263716208}
   m_Layer: 0
   m_Name: lava (37)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18749,7 +18682,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1263716209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18867,7 +18799,7 @@ GameObject:
   - component: {fileID: 1266215148}
   m_Layer: 0
   m_Name: tower (21)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18904,7 +18836,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1266215149
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19022,7 +18953,7 @@ GameObject:
   - component: {fileID: 1279484143}
   m_Layer: 0
   m_Name: rock (5)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19059,7 +18990,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1279484144
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19177,7 +19107,7 @@ GameObject:
   - component: {fileID: 1287908163}
   m_Layer: 0
   m_Name: rock (31)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19214,7 +19144,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1287908164
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19332,7 +19261,7 @@ GameObject:
   - component: {fileID: 1295623879}
   m_Layer: 0
   m_Name: tower (7)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19369,7 +19298,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1295623880
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19567,7 +19495,7 @@ GameObject:
   - component: {fileID: 1310636661}
   m_Layer: 0
   m_Name: Cone (2)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19589,7 +19517,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1310636654
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21375,7 +21302,7 @@ GameObject:
   - component: {fileID: 1320973809}
   m_Layer: 0
   m_Name: lava (10)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21412,7 +21339,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1320973810
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21695,7 +21621,7 @@ GameObject:
   - component: {fileID: 1345072643}
   m_Layer: 0
   m_Name: lava (3)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21732,7 +21658,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1345072644
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21883,7 +21808,6 @@ MonoBehaviour:
   material2vidas: {fileID: 2100000, guid: dd19cd19bcd8cde4eb82b9832c8310d4, type: 2}
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1349285475
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21967,7 +21891,7 @@ GameObject:
   - component: {fileID: 1370082721}
   m_Layer: 0
   m_Name: rock (4)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22004,7 +21928,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1370082722
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22122,7 +22045,7 @@ GameObject:
   - component: {fileID: 1432438805}
   m_Layer: 0
   m_Name: lava (33)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22159,7 +22082,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1432438806
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22277,7 +22199,7 @@ GameObject:
   - component: {fileID: 1446860104}
   m_Layer: 0
   m_Name: rock
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22314,7 +22236,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1446860105
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22540,7 +22461,7 @@ GameObject:
   - component: {fileID: 1514366768}
   m_Layer: 0
   m_Name: tower (3)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22577,7 +22498,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1514366769
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22695,7 +22615,7 @@ GameObject:
   - component: {fileID: 1558820582}
   m_Layer: 0
   m_Name: lava (9)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22732,7 +22652,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1558820583
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22883,7 +22802,6 @@ MonoBehaviour:
   material2vidas: {fileID: 2100000, guid: dd19cd19bcd8cde4eb82b9832c8310d4, type: 2}
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1563717354
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22927,7 +22845,7 @@ GameObject:
   - component: {fileID: 1566526714}
   m_Layer: 0
   m_Name: tower (4)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22964,7 +22882,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1566526715
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23082,7 +22999,7 @@ GameObject:
   - component: {fileID: 1571702925}
   m_Layer: 0
   m_Name: tower (30)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23119,7 +23036,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1571702926
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23239,7 +23155,7 @@ GameObject:
   - component: {fileID: 1574245595}
   m_Layer: 0
   m_Name: Cone (1)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23261,7 +23177,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1574245588
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25170,7 +25085,7 @@ GameObject:
   - component: {fileID: 1588973530}
   m_Layer: 0
   m_Name: Cone (7)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25192,7 +25107,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1588973523
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26978,7 +26892,7 @@ GameObject:
   - component: {fileID: 1593090274}
   m_Layer: 0
   m_Name: rock (21)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27015,7 +26929,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1593090275
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27166,7 +27079,6 @@ MonoBehaviour:
   material2vidas: {fileID: 2100000, guid: dd19cd19bcd8cde4eb82b9832c8310d4, type: 2}
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1614164516
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27375,7 +27287,7 @@ GameObject:
   - component: {fileID: 1644488809}
   m_Layer: 0
   m_Name: rock (16)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27412,7 +27324,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1644488810
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27608,7 +27519,7 @@ GameObject:
   - component: {fileID: 1659317087}
   m_Layer: 0
   m_Name: rock (1)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27645,7 +27556,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1659317088
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27763,7 +27673,7 @@ GameObject:
   - component: {fileID: 1660704251}
   m_Layer: 0
   m_Name: tower (28)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27800,7 +27710,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1660704252
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27918,7 +27827,7 @@ GameObject:
   - component: {fileID: 1678518426}
   m_Layer: 0
   m_Name: lava (31)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27955,7 +27864,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1678518427
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28151,7 +28059,7 @@ GameObject:
   - component: {fileID: 1688404125}
   m_Layer: 0
   m_Name: lava (24)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28188,7 +28096,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1688404126
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28306,7 +28213,7 @@ GameObject:
   - component: {fileID: 1689061585}
   m_Layer: 0
   m_Name: rock (23)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28343,7 +28250,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1689061586
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28461,7 +28367,7 @@ GameObject:
   - component: {fileID: 1689506939}
   m_Layer: 0
   m_Name: rock (24)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28498,7 +28404,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1689506940
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28616,7 +28521,7 @@ GameObject:
   - component: {fileID: 1705131248}
   m_Layer: 0
   m_Name: rock (26)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28653,7 +28558,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1705131249
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28771,7 +28675,7 @@ GameObject:
   - component: {fileID: 1725842733}
   m_Layer: 0
   m_Name: tower (16)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28808,7 +28712,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1725842734
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28926,7 +28829,7 @@ GameObject:
   - component: {fileID: 1739035254}
   m_Layer: 0
   m_Name: tower (13)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28963,7 +28866,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1739035255
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29081,7 +28983,7 @@ GameObject:
   - component: {fileID: 1758533924}
   m_Layer: 0
   m_Name: rock (18)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29118,7 +29020,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1758533925
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29236,7 +29137,7 @@ GameObject:
   - component: {fileID: 1784184717}
   m_Layer: 0
   m_Name: tower (17)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29273,7 +29174,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1784184718
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29391,7 +29291,7 @@ GameObject:
   - component: {fileID: 1791552626}
   m_Layer: 0
   m_Name: lava (25)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29428,7 +29328,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1791552627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29603,7 +29502,7 @@ GameObject:
   - component: {fileID: 1832915231}
   m_Layer: 0
   m_Name: tower (29)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29640,7 +29539,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1832915232
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29758,7 +29656,7 @@ GameObject:
   - component: {fileID: 1837611102}
   m_Layer: 0
   m_Name: tower (24)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29795,7 +29693,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1837611103
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30078,7 +29975,7 @@ GameObject:
   - component: {fileID: 1840774318}
   m_Layer: 0
   m_Name: rock (15)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30115,7 +30012,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1840774319
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30296,7 +30192,7 @@ GameObject:
   - component: {fileID: 1855919309}
   m_Layer: 0
   m_Name: rock (11)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30333,7 +30229,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1855919310
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30451,7 +30346,7 @@ GameObject:
   - component: {fileID: 1862619483}
   m_Layer: 0
   m_Name: lava (23)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30488,7 +30383,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1862619484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30606,7 +30500,7 @@ GameObject:
   - component: {fileID: 1894111835}
   m_Layer: 0
   m_Name: rock (20)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30643,7 +30537,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1894111836
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30878,7 +30771,7 @@ GameObject:
   - component: {fileID: 1901686505}
   m_Layer: 0
   m_Name: lava (34)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30915,7 +30808,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1901686506
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31033,7 +30925,7 @@ GameObject:
   - component: {fileID: 1911660707}
   m_Layer: 0
   m_Name: rock (7)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31070,7 +30962,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1911660708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31225,7 +31116,7 @@ GameObject:
   - component: {fileID: 1916202959}
   m_Layer: 0
   m_Name: rock (2)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31262,7 +31153,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1916202960
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31380,7 +31270,7 @@ GameObject:
   - component: {fileID: 1938694255}
   m_Layer: 0
   m_Name: tower (25)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31417,7 +31307,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1938694256
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31537,7 +31426,7 @@ GameObject:
   - component: {fileID: 1958882883}
   m_Layer: 0
   m_Name: Cone (6)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31559,7 +31448,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1958882876
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33402,7 +33290,7 @@ GameObject:
   - component: {fileID: 1975929057}
   m_Layer: 0
   m_Name: rock (14)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33439,7 +33327,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1975929058
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33702,7 +33589,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1988192629
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33853,7 +33739,6 @@ MonoBehaviour:
   material2vidas: {fileID: 2100000, guid: dd19cd19bcd8cde4eb82b9832c8310d4, type: 2}
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &1991262194
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33897,7 +33782,7 @@ GameObject:
   - component: {fileID: 2017405630}
   m_Layer: 0
   m_Name: lava (28)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33934,7 +33819,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &2017405631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34104,6 +33988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LowPolySkeleton_Unity
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5ef67247d1c334d41bd49c9719015c6e, type: 3}
+      propertyPath: m_TagString
+      value: PickUp
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 5ef67247d1c334d41bd49c9719015c6e, type: 3}
       propertyPath: m_Controller
       value: 
@@ -34134,7 +34022,7 @@ GameObject:
   - component: {fileID: 2022026782}
   m_Layer: 0
   m_Name: rock (28)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34171,7 +34059,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &2022026783
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34289,7 +34176,7 @@ GameObject:
   - component: {fileID: 2063087682}
   m_Layer: 0
   m_Name: tower (18)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34326,7 +34213,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &2063087683
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34496,6 +34382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LowPolySkeleton_Unity (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5ef67247d1c334d41bd49c9719015c6e, type: 3}
+      propertyPath: m_TagString
+      value: PickUp
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 5ef67247d1c334d41bd49c9719015c6e, type: 3}
       propertyPath: m_Controller
       value: 
@@ -34526,7 +34416,7 @@ GameObject:
   - component: {fileID: 2092094317}
   m_Layer: 0
   m_Name: lava (15)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34563,7 +34453,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &2092094318
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34681,7 +34570,7 @@ GameObject:
   - component: {fileID: 2105608556}
   m_Layer: 0
   m_Name: rock (27)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34718,7 +34607,6 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  probabilidadPowerUp: 0.2
 --- !u!54 &2105608557
 Rigidbody:
   m_ObjectHideFlags: 0
