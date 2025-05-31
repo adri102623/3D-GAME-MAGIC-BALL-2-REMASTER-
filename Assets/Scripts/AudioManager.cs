@@ -25,9 +25,9 @@ public class AudioManager : MonoBehaviour
 
     [Header("Volume Settings")]
     [Range(0f, 1f)]
-    public float musicVolume = 0.45f;
+    private float musicVolume = 0.38f;
     [Range(0f, 1f)]
-    public float sfxVolume = 0.6f;
+    private float sfxVolume = 0.6f;
 
     private AudioClip currentMusic;
 

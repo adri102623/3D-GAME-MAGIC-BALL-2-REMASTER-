@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 8939548257129462858}
   - component: {fileID: 3931110650606559353}
   - component: {fileID: 1087628028503319016}
+  - component: {fileID: 7022439000737768870}
+  - component: {fileID: 2757791959401062072}
   m_Layer: 0
   m_Name: Cactus1
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,3 +88,43 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7022439000737768870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4930204207488187587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59668b894746678469e485d30a1cced8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  material3vidas: {fileID: 0}
+  material2vidas: {fileID: 0}
+  material1vida: {fileID: 0}
+  explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
+--- !u!64 &2757791959401062072
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4930204207488187587}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8662610069560990937, guid: 0b9fa9fdbeec75d43962c29f7514b400, type: 3}

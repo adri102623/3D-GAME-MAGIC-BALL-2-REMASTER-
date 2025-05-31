@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5063822528405995705}
   m_Layer: 0
   m_Name: PalmTreeTrioTwoSided
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,6 +74,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
 --- !u!1 &137890
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,7 +88,7 @@ GameObject:
   - component: {fileID: 2337888}
   m_Layer: 0
   m_Name: PalmTree_trio_leafs_2sided
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,7 +174,7 @@ GameObject:
   - component: {fileID: 2337890}
   m_Layer: 0
   m_Name: PalmTree_trio_trunk
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

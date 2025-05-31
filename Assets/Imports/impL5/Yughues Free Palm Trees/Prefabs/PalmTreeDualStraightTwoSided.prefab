@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2331442}
   m_Layer: 0
   m_Name: PalmTree_dual_trunk
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 2331444}
   m_Layer: 0
   m_Name: PalmTree_dual_leafs_2sided
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 4118879826303804913}
   m_Layer: 0
   m_Name: PalmTreeDualStraightTwoSided
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -247,4 +247,3 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3

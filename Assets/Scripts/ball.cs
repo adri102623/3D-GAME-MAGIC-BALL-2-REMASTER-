@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Ball : MonoBehaviour
 {
-    public float initialSpeed = 15f; // Velocidad fija de la pelota
+    public float initialSpeed = 15f; // Velocidad base de la pelota
+    private float speedMultiplier = 1f; // Multiplicador de velocidad
     private Rigidbody rb;
     private Vector3 initialScale;
     private float maxScaleFactor = 2f;
@@ -24,7 +25,7 @@ public class Ball : MonoBehaviour
             rb.useGravity = false;
 
             // Lanzar la pelota hacia adelante
-            rb.linearVelocity = Vector3.forward * initialSpeed;
+            rb.linearVelocity = Vector3.forward * GetCurrentSpeed();
         }
 
         initialScale = transform.localScale;
@@ -38,16 +39,17 @@ public class Ball : MonoBehaviour
         if (rb == null) return;
 
         float currentSpeed = rb.linearVelocity.magnitude;
+        float targetSpeed = GetCurrentSpeed();
 
         // Si está casi detenida (por bloqueo o rozamiento), relanzarla
         if (currentSpeed < 0.1f)
         {
-            rb.linearVelocity = Vector3.forward * initialSpeed;
+            rb.linearVelocity = Vector3.forward * targetSpeed;
         }
         else
         {
-            // Ajustar la magnitud de la velocidad para que siga siendo 'initialSpeed'
-            rb.linearVelocity = rb.linearVelocity.normalized * initialSpeed;
+            // Ajustar la magnitud de la velocidad para que mantenga la velocidad objetivo
+            rb.linearVelocity = rb.linearVelocity.normalized * targetSpeed;
         }
     }
 
@@ -148,6 +150,47 @@ public class Ball : MonoBehaviour
         Debug.Log("New scale applied: " + transform.localScale);
     }
 
+    // Nuevos métodos para gestión de velocidad
+    public void ApplySpeedUp()
+    {
+        speedMultiplier = 1.5f;
+        UpdateBallSpeed();
+        Debug.Log($"Speed increased! New multiplier: {speedMultiplier}, Current speed: {GetCurrentSpeed()}");
+    }
+
+    public void ApplySpeedDown()
+    {
+        speedMultiplier = 0.65f;
+        UpdateBallSpeed();
+        Debug.Log($"Speed decreased! New multiplier: {speedMultiplier}, Current speed: {GetCurrentSpeed()}");
+    }
+
+    public void ResetSpeedMultiplier()
+    {
+        speedMultiplier = 1f;
+        UpdateBallSpeed();
+        Debug.Log($"Speed reset! New multiplier: {speedMultiplier}, Current speed: {GetCurrentSpeed()}");
+    }
+
+    private void UpdateBallSpeed()
+    {
+        if (rb != null)
+        {
+            Vector3 currentDirection = rb.linearVelocity.normalized;
+            rb.linearVelocity = currentDirection * GetCurrentSpeed();
+        }
+    }
+
+    private float GetCurrentSpeed()
+    {
+        return initialSpeed * speedMultiplier;
+    }
+
+    public float GetSpeedMultiplier()
+    {
+        return speedMultiplier;
+    }
+
     IEnumerator DeactivateAfterPhysics(GameObject pickup)
     {
         yield return new WaitForFixedUpdate();
@@ -162,7 +205,7 @@ public class Ball : MonoBehaviour
     {
         if (rb != null)
         {
-            rb.linearVelocity = Vector3.forward * initialSpeed;
+            rb.linearVelocity = Vector3.forward * GetCurrentSpeed();
         }
     }
 
@@ -173,7 +216,7 @@ public class Ball : MonoBehaviour
         if (rb != null)
         {
             Vector3 currentDirection = rb.linearVelocity.normalized;
-            rb.linearVelocity = currentDirection * initialSpeed;
+            rb.linearVelocity = currentDirection * GetCurrentSpeed();
         }
     }
 }

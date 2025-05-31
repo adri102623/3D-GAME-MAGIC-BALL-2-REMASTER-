@@ -2,8 +2,15 @@ using UnityEngine;
 
 public class PowerUpCoin : MonoBehaviour
 {
-    public enum PowerUpType { Maximize, ScaleBarrier, UnScaleBarrier }
-    public PowerUpType powerUpType; // Tipo de power-up (Maximizar o Minimizar)
+    public enum PowerUpType { 
+        Maximize, 
+        ScaleBarrier, 
+        UnScaleBarrier, 
+        SpeedUp,      // Nuevo
+        SpeedDown     // Nuevo
+    }
+    
+    public PowerUpType powerUpType; // Tipo de power-up
     public float speed = 5f; // Velocidad fija de movimiento
     private float targetZ; // Eje Z de la nave
     private bool hasTarget = false;
@@ -54,6 +61,7 @@ public class PowerUpCoin : MonoBehaviour
             }
 
             IncrementScoreForPowerUp();
+            
             if (powerUpType == PowerUpType.Maximize)
             {
                 Ball ballController = FindFirstObjectByType<Ball>();
@@ -95,6 +103,34 @@ public class PowerUpCoin : MonoBehaviour
                     Debug.LogWarning("Player not found!");
                 }
                 Destroy(gameObject);
+            }
+            else if (powerUpType == PowerUpType.SpeedUp)
+            {
+                Ball ballController = FindFirstObjectByType<Ball>();
+                if (ballController != null)
+                {
+                    ballController.ApplySpeedUp();
+                    Debug.Log("Power-up applied: SpeedUp (1.5x speed)");
+                }
+                else
+                {
+                    Debug.LogWarning("Ball not found!");
+                }
+                Destroy(gameObject); // ← AÑADIDO: Destruir después de aplicar el efecto
+            }
+            else if (powerUpType == PowerUpType.SpeedDown)
+            {
+                Ball ballController = FindFirstObjectByType<Ball>();
+                if (ballController != null)
+                {
+                    ballController.ApplySpeedDown();
+                    Debug.Log("Power-up applied: SpeedDown (0.65x speed)");
+                }
+                else
+                {
+                    Debug.LogWarning("Ball not found!");
+                }
+                Destroy(gameObject); // ← AÑADIDO: Destruir después de aplicar el efecto
             }
         }
     }

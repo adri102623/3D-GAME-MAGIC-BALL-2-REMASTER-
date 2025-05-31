@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 38427358223116176}
   m_Layer: 0
   m_Name: Fence
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,4 +128,3 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3

@@ -14,8 +14,8 @@ public class PickupHealth : MonoBehaviour
 
     [Header("Configuración de PowerUps")]
     [Range(0f, 1f)]
-    public float probabilidadPowerUp = 0.2f; // 20% de probabilidad por defecto
-    private int numPowerUps = 3; // Número de power-ups disponibles
+    private float probabilidadPowerUp = 0.95f;
+    private int numPowerUps = 5;
 
     // Array para almacenar los prefabs cargados desde Resources
     private GameObject[] powerUpPrefabs;
@@ -44,8 +44,10 @@ public class PickupHealth : MonoBehaviour
         // Nombres de los prefabs en Resources/Prefabs/Upgrades/
         string[] nombresPowerUps = {
             "CoinMaximize",
-            "CoinScaleBarrier", 
-            "CoinUnScaleBarrier"
+            "CoinScaleBarrier",
+            "CoinUnScaleBarrier",
+            "CoinSpeedUp",
+            "CoinUnSpeed"
         };
 
         powerUpPrefabs = new GameObject[nombresPowerUps.Length];

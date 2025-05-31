@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8384344883881558288}
   m_Layer: 0
   m_Name: PalmTreeSingleStraightOneSided
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -97,6 +97,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
+  probabilidadPowerUp: 0.2
 --- !u!1 &124276
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +111,7 @@ GameObject:
   - component: {fileID: 2324274}
   m_Layer: 0
   m_Name: PalmTree_single_leafs_1sided
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -196,7 +197,7 @@ GameObject:
   - component: {fileID: 2324276}
   m_Layer: 0
   m_Name: PalmTree_single_trunk
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

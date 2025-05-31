@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3298213919479861641}
   m_Layer: 0
   m_Name: Building4
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,4 +129,3 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 6614216446236177724, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3

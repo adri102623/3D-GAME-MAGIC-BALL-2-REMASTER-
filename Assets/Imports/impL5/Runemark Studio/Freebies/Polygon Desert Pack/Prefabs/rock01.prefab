@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 6533793492870172263}
   m_Layer: 0
   m_Name: rock01
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
-  coinMaximizePrefab: {fileID: 0}
+  probabilidadPowerUp: 0.2
 --- !u!65 &6533793492870172263
 BoxCollider:
   m_ObjectHideFlags: 0

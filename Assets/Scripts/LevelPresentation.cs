@@ -173,14 +173,10 @@ public class LevelPresentation : MonoBehaviour
                 else
                 {
                     ballRb.isKinematic = false; // Restaurar física
-                                                // Reiniciar velocidad de la pelota
-                    ballRb.linearVelocity = Vector3.forward * ball.initialSpeed;
+                                                // Reiniciar velocidad de la pelota usando el método actualizado
+                    ball.ResetBall();
                 }
             }
-        }
-        else
-        {
-            Debug.LogWarning("Ball not found in scene during presentation control!");
         }
     }
 
