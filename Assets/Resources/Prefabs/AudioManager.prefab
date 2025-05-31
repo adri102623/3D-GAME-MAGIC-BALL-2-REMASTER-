@@ -46,9 +46,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 0}
   sfxSource: {fileID: 0}
-  backgroundMusic: {fileID: 0}
+  menuMusic: {fileID: 8300000, guid: 888e2c09158c11540944d063812de9c8, type: 3}
+  creditsMusic: {fileID: 8300000, guid: b42cf2489b698054d9b03e4b654ac5ad, type: 3}
+  level1Music: {fileID: 8300000, guid: d0d75e780e49ed64894d80e49448e6e3, type: 3}
+  level2Music: {fileID: 8300000, guid: fec109607ba2f7e46b312fd7567bfdd2, type: 3}
+  level3Music: {fileID: 8300000, guid: 01737655cbe32044f8f65ecc128a634d, type: 3}
+  level4Music: {fileID: 8300000, guid: a9fcee6c138f9c2449211522a7b048a3, type: 3}
+  level5Music: {fileID: 8300000, guid: fbd1e27e2b4a51448ba918d26843ff2c, type: 3}
   hitSound: {fileID: 8300000, guid: 5cf1bfd773d1c154b97d9857fdec0547, type: 3}
   destroySound: {fileID: 8300000, guid: 1775934b2735a3e47b1c9f133c3a1b03, type: 3}
   powerUpSound: {fileID: 8300000, guid: f643167c69cae2943b346d399364daed, type: 3}
+  wallsPlayerSound: {fileID: 8300000, guid: cebece71976a8e04b976adb1d8e40b16, type: 3}
   musicVolume: 0.45
   sfxVolume: 0.6

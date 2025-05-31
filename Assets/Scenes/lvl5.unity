@@ -172,7 +172,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!64 &16931435
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -487,7 +486,7 @@ GameObject:
   - component: {fileID: 199043452}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1722,7 +1721,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!4 &490677187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2978993476332076525, guid: 13c9cee80c690d443b28a9fe221c3a2c, type: 3}
@@ -2364,7 +2362,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!4 &693367576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482546, guid: 8a13b3dbbf597744192ac4a84ebb93c6, type: 3}
@@ -3308,7 +3305,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!1001 &1129083325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3687,7 +3683,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!1001 &1234122781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3773,7 +3768,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!1001 &1270944724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4430,7 +4424,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!4 &1499884244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4216356415566869647, guid: b2c64195a9ec2304cbea6a7f74dcf48f, type: 3}
@@ -5994,7 +5987,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!1001 &2019160603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6266,7 +6258,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!1 &2106643042
 GameObject:
   m_ObjectHideFlags: 0
@@ -6320,7 +6311,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!64 &2106643045
 MeshCollider:
   m_ObjectHideFlags: 0

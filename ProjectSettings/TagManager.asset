@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - FrontTrigger
   - ScoreText
+  - Walls
   layers:
   - Default
   - TransparentFX

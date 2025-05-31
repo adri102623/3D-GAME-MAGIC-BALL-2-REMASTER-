@@ -160,7 +160,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &12750539
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1980,7 +1979,6 @@ MonoBehaviour:
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &20925572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2062,7 +2060,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &52794495
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2205,7 +2202,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &83468853
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4086,7 +4082,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &141696393
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4407,7 +4402,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &181396574
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4563,7 +4557,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &193297302
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4676,7 +4669,7 @@ GameObject:
   - component: {fileID: 199043452}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4749,7 +4742,6 @@ MonoBehaviour:
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &227551636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4831,7 +4823,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &235371896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4987,7 +4978,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &239995481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5254,7 +5244,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &271615594
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5410,7 +5399,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &278394822
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5674,7 +5662,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &286611606
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5830,7 +5817,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &314523975
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5986,7 +5972,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &342983435
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6142,7 +6127,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &343807770
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6298,7 +6282,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &355389347
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6454,7 +6437,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &377674059
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6719,7 +6701,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &439849778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6875,7 +6856,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &449162921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7031,7 +7011,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &462455581
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7187,7 +7166,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &470645656
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7508,7 +7486,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &471293457
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7766,7 +7743,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &519773817
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7922,7 +7898,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &577616602
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8078,7 +8053,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &587603695
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8234,7 +8208,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &589641902
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8390,7 +8363,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &595242240
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8546,7 +8518,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &601379706
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8702,7 +8673,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &615194388
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8858,7 +8828,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &636498769
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9073,7 +9042,7 @@ GameObject:
   - component: {fileID: 715659189}
   m_Layer: 0
   m_Name: towers
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9166,7 +9135,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &726199917
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11155,7 +11123,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &788648037
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11463,7 +11430,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &830636727
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13287,7 +13253,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &831368971
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13443,7 +13408,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &860317662
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13599,7 +13563,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &865757417
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13755,7 +13718,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &892738328
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13911,7 +13873,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &893611557
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14141,7 +14102,6 @@ MonoBehaviour:
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &904541089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14301,7 +14261,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &917118876
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14457,7 +14416,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &924713298
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14613,7 +14571,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &929684024
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14769,7 +14726,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &933426221
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15090,7 +15046,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &934450055
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15246,7 +15201,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &934937279
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15402,7 +15356,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &937844101
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15610,7 +15563,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!64 &942687793
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15687,7 +15639,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &963702369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15843,7 +15794,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &964219527
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15999,7 +15949,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &964456288
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16155,7 +16104,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &968420035
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16311,7 +16259,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &984007833
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16467,7 +16414,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &993841360
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16623,7 +16569,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1004389534
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16779,7 +16724,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1009630018
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16992,7 +16936,6 @@ MonoBehaviour:
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1056796322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17074,7 +17017,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1084516713
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17226,7 +17168,6 @@ MonoBehaviour:
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1086352194
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17308,7 +17249,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1106599448
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17464,7 +17404,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1118522637
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17620,7 +17559,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1145318242
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17776,7 +17714,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1169279868
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17932,7 +17869,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1179777489
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18088,7 +18024,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1197006257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18301,7 +18236,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1200012454
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18414,7 +18348,7 @@ GameObject:
   - component: {fileID: 1202154725}
   m_Layer: 0
   m_Name: rio
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18604,7 +18538,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1225666868
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18817,7 +18750,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1263716209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18973,7 +18905,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1266215149
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19129,7 +19060,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1279484144
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19285,7 +19215,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1287908164
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19441,7 +19370,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1295623880
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19662,7 +19590,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1310636654
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21486,7 +21413,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1320973810
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21807,7 +21733,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1345072644
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21959,7 +21884,6 @@ MonoBehaviour:
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1349285475
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22081,7 +22005,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1370082722
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22237,7 +22160,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1432438806
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22393,7 +22315,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1446860105
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22657,7 +22578,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1514366769
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22813,7 +22733,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1558820583
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22965,7 +22884,6 @@ MonoBehaviour:
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1563717354
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23047,7 +22965,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1566526715
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23203,7 +23120,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1571702926
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23346,7 +23262,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1574245588
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25278,7 +25193,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1588973523
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27102,7 +27016,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1593090275
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27254,7 +27167,6 @@ MonoBehaviour:
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1614164516
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27501,7 +27413,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1644488810
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27735,7 +27646,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1659317088
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27891,7 +27801,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1660704252
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28047,7 +27956,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1678518427
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28281,7 +28189,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1688404126
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28437,7 +28344,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1689061586
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28593,7 +28499,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1689506940
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28749,7 +28654,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1705131249
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28905,7 +28809,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1725842734
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29061,7 +28964,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1739035255
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29217,7 +29119,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1758533925
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29373,7 +29274,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1784184718
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29529,7 +29429,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1791552627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29742,7 +29641,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1832915232
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29898,7 +29796,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1837611103
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30219,7 +30116,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1840774319
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30438,7 +30334,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1855919310
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30594,7 +30489,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1862619484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30750,7 +30644,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1894111836
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31023,7 +30916,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1901686506
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31179,7 +31071,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1911660708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31372,7 +31263,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1916202960
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31528,7 +31418,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1938694256
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31671,7 +31560,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1958882876
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33552,7 +33440,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1975929058
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33816,7 +33703,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1988192629
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33968,7 +33854,6 @@ MonoBehaviour:
   material1vida: {fileID: 2100000, guid: fd4b2ab66e43661498ff73e27aae9913, type: 2}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &1991262194
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34050,7 +33935,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &2017405631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34288,7 +34172,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &2022026783
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34444,7 +34327,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &2063087683
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34682,7 +34564,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &2092094318
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34838,7 +34719,6 @@ MonoBehaviour:
   material1vida: {fileID: 0}
   explosionPrefab: {fileID: 827070120454471495, guid: a174ad63f434bde42a65ecce234e2b1b, type: 3}
   probabilidadPowerUp: 0.2
-  numPowerUps: 3
 --- !u!54 &2105608557
 Rigidbody:
   m_ObjectHideFlags: 0

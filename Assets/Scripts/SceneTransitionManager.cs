@@ -9,6 +9,7 @@ public class SceneTransitionManager : MonoBehaviour
     [Header("Level Settings")]
     public string[] levelNames = { "lvl1", "lvl2", "lvl3", "lvl4", "lvl5" };
     public string menuSceneName = "Menu";
+    public string creditsSceneName = "Credtis";
     
     private int currentLevelIndex = 0;
     
@@ -26,14 +27,58 @@ public class SceneTransitionManager : MonoBehaviour
         }
     }
     
+    void Start()
+    {
+        // Reproducir música inicial de la escena actual
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayMusicForScene(currentScene);
+        }
+    }
+    
     void Update()
     {
-        // Teclas para acceso rápido a niveles (solo para testing)
-        if (Input.GetKeyDown(KeyCode.Alpha1)) LoadLevel(0);
-        if (Input.GetKeyDown(KeyCode.Alpha2)) LoadLevel(1);
-        if (Input.GetKeyDown(KeyCode.Alpha3)) LoadLevel(2);
-        if (Input.GetKeyDown(KeyCode.Alpha4)) LoadLevel(3);
-        if (Input.GetKeyDown(KeyCode.Alpha5)) LoadLevel(4);
+        // Teclas para acceso rápido a niveles (1-5)
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Debug.Log("Key 1 pressed - Loading Level 1");
+            LoadLevel(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Debug.Log("Key 2 pressed - Loading Level 2");
+            LoadLevel(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Debug.Log("Key 3 pressed - Loading Level 3");
+            LoadLevel(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Debug.Log("Key 4 pressed - Loading Level 4");
+            LoadLevel(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            Debug.Log("Key 5 pressed - Loading Level 5");
+            LoadLevel(4);
+        }
+        
+        // Tecla M para volver al menú
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            Debug.Log("Key M pressed - Loading Menu");
+            LoadMenu();
+        }
+        
+        // Tecla C para ir a créditos
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Debug.Log("Key C pressed - Loading Credits");
+            LoadCredits();
+        }
     }
     
     void OnDestroy()
@@ -43,6 +88,14 @@ public class SceneTransitionManager : MonoBehaviour
     
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Debug.Log($"Scene loaded: {scene.name}");
+        
+        // Cambiar música según la escena cargada
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayMusicForScene(scene.name);
+        }
+        
         // Notificar al ScoreManager que se cargó una nueva escena
         if (ScoreManager.Instance != null)
         {
@@ -67,6 +120,7 @@ public class SceneTransitionManager : MonoBehaviour
         if (levelIndex >= 0 && levelIndex < levelNames.Length)
         {
             currentLevelIndex = levelIndex;
+            Debug.Log($"Loading level: {levelNames[levelIndex]}");
             SceneManager.LoadScene(levelNames[levelIndex]);
         }
         else
@@ -84,14 +138,21 @@ public class SceneTransitionManager : MonoBehaviour
         }
         else
         {
-            // Último nivel completado, volver al menú o mostrar créditos
+            // Último nivel completado, volver al menú
             LoadMenu();
         }
     }
     
     public void LoadMenu()
     {
+        Debug.Log("Loading Menu");
         SceneManager.LoadScene(menuSceneName);
+    }
+    
+    public void LoadCredits()
+    {
+        Debug.Log("Loading Credits");
+        SceneManager.LoadScene(creditsSceneName);
     }
     
     public void LoadNextLevel(string sceneName)
