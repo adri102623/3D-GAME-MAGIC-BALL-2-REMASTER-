@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoinSpeedUp
       objectReference: {fileID: 0}
+    - target: {fileID: 1588090451174212, guid: c737dd230724d61469e1c672cf47ed9e, type: 3}
+      propertyPath: m_TagString
+      value: Coin
+      objectReference: {fileID: 0}
     - target: {fileID: 1987778546906186, guid: c737dd230724d61469e1c672cf47ed9e, type: 3}
       propertyPath: m_TagString
       value: PickUp
@@ -72,6 +76,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1588090451174212, guid: c737dd230724d61469e1c672cf47ed9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4068614877011310999}
     - targetCorrespondingSourceObject: {fileID: 1987778546906186, guid: c737dd230724d61469e1c672cf47ed9e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3736407485919904179}
@@ -112,6 +119,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954026886037239895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c48bf8d3fc8cfa746b2706d08802774f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpType: 3
+  speed: 5
+--- !u!1 &954703636468035417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1588090451174212, guid: c737dd230724d61469e1c672cf47ed9e, type: 3}
+  m_PrefabInstance: {fileID: 953194917617060893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4068614877011310999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954703636468035417}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c48bf8d3fc8cfa746b2706d08802774f, type: 3}
