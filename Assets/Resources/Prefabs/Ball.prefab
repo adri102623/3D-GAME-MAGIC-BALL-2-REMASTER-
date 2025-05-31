@@ -124,8 +124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialSpeed: 30
-  powerBallMaterial: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
-  defaultMaterial: {fileID: 2100000, guid: ca90a4e43f1de3f4c915dd7ec55275af, type: 2}
+  powerBallMaterial: {fileID: 2100000, guid: 21428a96d0502034cb142f2ee1aa5a0f, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 705ce4d382dbfba4897dbb9f3c178b7f, type: 2}
+  magneticMaterial: {fileID: 2100000, guid: d8e89eed91f917e488131d34be8e7a90, type: 2}
 --- !u!54 &1192262056079089729
 Rigidbody:
   m_ObjectHideFlags: 0

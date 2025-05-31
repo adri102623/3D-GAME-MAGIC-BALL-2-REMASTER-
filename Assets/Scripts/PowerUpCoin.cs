@@ -6,8 +6,9 @@ public class PowerUpCoin : MonoBehaviour
         Maximize, 
         ScaleBarrier, 
         UnScaleBarrier, 
-        SpeedUp,      // Nuevo
-        SpeedDown     // Nuevo
+        SpeedUp,
+        SpeedDown,
+        Magnet
     }
     
     public PowerUpType powerUpType; // Tipo de power-up
@@ -116,7 +117,7 @@ public class PowerUpCoin : MonoBehaviour
                 {
                     Debug.LogWarning("Ball not found!");
                 }
-                Destroy(gameObject); // ← AÑADIDO: Destruir después de aplicar el efecto
+                Destroy(gameObject);
             }
             else if (powerUpType == PowerUpType.SpeedDown)
             {
@@ -130,7 +131,21 @@ public class PowerUpCoin : MonoBehaviour
                 {
                     Debug.LogWarning("Ball not found!");
                 }
-                Destroy(gameObject); // ← AÑADIDO: Destruir después de aplicar el efecto
+                Destroy(gameObject);
+            }
+            else if (powerUpType == PowerUpType.Magnet)
+            {
+                Ball ballController = FindFirstObjectByType<Ball>();
+                if (ballController != null)
+                {
+                    ballController.ApplyMagnet();
+                    Debug.Log("Power-up applied: Magnet - Ball will stick to player");
+                }
+                else
+                {
+                    Debug.LogWarning("Ball not found!");
+                }
+                Destroy(gameObject);
             }
         }
     }
