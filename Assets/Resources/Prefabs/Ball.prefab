@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6144196076106363862}
   - component: {fileID: 6641010685347146589}
   - component: {fileID: 1192262056079089729}
+  - component: {fileID: 7446455380038421634}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -127,6 +128,7 @@ MonoBehaviour:
   powerBallMaterial: {fileID: 2100000, guid: 21428a96d0502034cb142f2ee1aa5a0f, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 705ce4d382dbfba4897dbb9f3c178b7f, type: 2}
   magneticMaterial: {fileID: 2100000, guid: d8e89eed91f917e488131d34be8e7a90, type: 2}
+  godZLimit: -35
 --- !u!54 &1192262056079089729
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -154,6 +156,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7446455380038421634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4304386961217797408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8039c71b4015bd647bf621eb1eb8a7a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyZ: -45
+  destroyXPositive: 60
+  destroyXNegative: -60
+  showDebugInfo: 1
 --- !u!1 &8871080733650902672
 GameObject:
   m_ObjectHideFlags: 0

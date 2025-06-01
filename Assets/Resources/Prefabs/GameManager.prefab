@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 106572485823317498}
   - component: {fileID: 4327111252680251035}
   - component: {fileID: 5354190668387061549}
+  - component: {fileID: 5087280459770303173}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -46,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
+  livesText: {fileID: 0}
 --- !u!114 &5354190668387061549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,3 +67,19 @@ MonoBehaviour:
   - lvl4
   - lvl5
   menuSceneName: Menu
+  creditsSceneName: Credtis
+  MaxScoreSceneName: MaxScore
+  gameOverSceneName: GameOver
+--- !u!114 &5087280459770303173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2579694075535247376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f325805b91c7304ea0cd2008310923f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showDebugInfo: 1

@@ -57,6 +57,12 @@ public class Ball : MonoBehaviour
         }
 
         SetPhysicsMaterial();
+        
+        // NUEVO: Añadir BallDestroyer si no existe
+        if (GetComponent<BallDestroyer>() == null)
+        {
+            gameObject.AddComponent<BallDestroyer>();
+        }
     }
 
     void FixedUpdate()
@@ -510,5 +516,128 @@ public class Ball : MonoBehaviour
             Vector3 currentDirection = rb.linearVelocity.normalized;
             rb.linearVelocity = currentDirection * GetCurrentSpeed();
         }
+    }
+
+    // CORREGIDO: Método para multiplicar bolas sin errores de NaN
+    public void ApplyBallMultiplier()
+    {
+        Debug.Log("Ball Multiplier activated! Spawning 2 additional balls...");
+        
+        // Obtener información de la bola actual
+        Vector3 currentPosition = transform.position;
+        float currentSpeed = GetCurrentSpeed();
+        Vector3 currentVelocity = rb.linearVelocity;
+        
+        // Cargar el prefab de la bola desde Resources
+        GameObject ballPrefab = Resources.Load<GameObject>("Prefabs/Ball");
+        if (ballPrefab == null)
+        {
+            Debug.LogError("Ball prefab not found in Resources/Prefabs/Ball");
+            return;
+        }
+        
+        // Crear 2 pelotas adicionales SIEMPRE
+        for (int i = 0; i < 2; i++)
+        {
+            // Posiciones separadas para evitar solapamiento
+            float offsetX = (i == 0) ? -1.5f : 1.5f;
+            Vector3 spawnPosition = currentPosition + new Vector3(offsetX, 0, 0);
+            
+            // Instanciar la nueva bola
+            GameObject newBall = Instantiate(ballPrefab, spawnPosition, Quaternion.identity);
+            
+            // Configurar la nueva bola
+            Ball newBallScript = newBall.GetComponent<Ball>();
+            if (newBallScript != null)
+            {
+                // CORREGIDO: Inicializar manualmente initialScale antes de usarlo
+                newBallScript.initialScale = newBall.transform.localScale;
+                
+                // Copiar propiedades de la bola original
+                newBallScript.initialSpeed = this.initialSpeed;
+                newBallScript.speedMultiplier = this.speedMultiplier;
+                
+                // NUEVO: Añadir BallDestroyer a las nuevas bolas
+                if (newBall.GetComponent<BallDestroyer>() == null)
+                {
+                    newBall.AddComponent<BallDestroyer>();
+                }
+                
+                // Configurar Rigidbody
+                Rigidbody newRb = newBall.GetComponent<Rigidbody>();
+                if (newRb != null)
+                {
+                    // Aplicar configuración de física similar
+                    newRb.linearDamping = 0f;
+                    newRb.angularDamping = 0f;
+                    newRb.useGravity = false;
+                    
+                    // Calcular dirección diferente para cada bola
+                    float angle = (i == 0) ? -30f : 30f; // -30° y +30° respecto a la dirección actual
+                    Vector3 newDirection = RotateVectorY(currentVelocity.normalized, angle);
+                    
+                    // Aplicar velocidad con la nueva dirección
+                    newRb.linearVelocity = newDirection * currentSpeed;
+                    
+                    Debug.Log($"New ball {i+1} spawned at {spawnPosition} with direction {newDirection} and speed {currentSpeed}");
+                }
+                
+                // Copiar todos los estados de la bola original
+                if (god) // Si la bola original está en modo god
+                {
+                    newBallScript.ApplyPowerUp_PowerBall();
+                }
+                
+                if (isMagnetic) // Si la bola original es magnética
+                {
+                    newBallScript.ApplyMagnet();
+                }
+                
+                // CORREGIDO: Calcular escala de forma segura
+                // Calcular el factor de escala actual respecto al tamaño original
+                float currentScaleFactor = this.transform.localScale.x / this.initialScale.x;
+                
+                // Verificar que no hay valores inválidos
+                if (float.IsNaN(currentScaleFactor) || float.IsInfinity(currentScaleFactor))
+                {
+                    currentScaleFactor = 1f; // Valor por defecto seguro
+                    Debug.LogWarning("Invalid scale factor detected, using default value 1.0");
+                }
+                
+                // Limitar el factor de escala a máximo x2 de la escala original
+                float clampedScaleFactor = Mathf.Clamp(currentScaleFactor, minScaleFactor, maxScaleFactor);
+                
+                // Aplicar la escala limitada usando la escala inicial de la nueva bola
+                Vector3 newBallScale = newBallScript.initialScale * clampedScaleFactor;
+                
+                // Verificar que la escala resultante es válida antes de aplicarla
+                if (!float.IsNaN(newBallScale.x) && !float.IsNaN(newBallScale.y) && !float.IsNaN(newBallScale.z))
+                {
+                    newBallScript.transform.localScale = newBallScale;
+                    Debug.Log($"New ball scale: Original={newBallScript.initialScale}, Current factor={currentScaleFactor:F2}, Clamped factor={clampedScaleFactor:F2}, Final scale={newBallScale}");
+                }
+                else
+                {
+                    Debug.LogError($"Invalid scale calculated: {newBallScale}. Using original scale.");
+                    // Mantener la escala original del prefab
+                }
+            }
+        }
+        
+        Debug.Log("Ball Multiplier: 2 additional balls created successfully!");
+    }
+
+    // Método auxiliar para rotar un vector en el eje Y
+    private Vector3 RotateVectorY(Vector3 vector, float degrees)
+    {
+        float radians = degrees * Mathf.Deg2Rad;
+        float cos = Mathf.Cos(radians);
+        float sin = Mathf.Sin(radians);
+        
+        return new Vector3(
+            vector.x * cos + vector.z * sin,
+            vector.y,
+            -vector.x * sin + vector.z * cos
+        );
     }
 }

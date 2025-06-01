@@ -11,7 +11,6 @@ public class BallBoundaryChecker : MonoBehaviour
     [Header("Debug")]
     public bool showDebugInfo = true; 
 
-    private Ball ball;
     private bool hasLostLife = false;
     private float checkInterval = 0.2f; 
 
@@ -19,9 +18,8 @@ public class BallBoundaryChecker : MonoBehaviour
     {
         if (showDebugInfo) Debug.Log($"BallBoundaryChecker: ENABLED in scene '{gameObject.scene.name}'. Initializing state...");
         hasLostLife = false;
-        ball = null; 
         StopAllCoroutines(); 
-        StartCoroutine(InitializeAndPeriodicCheckRoutine());
+        StartCoroutine(PeriodicCheckRoutine());
     }
 
     void OnDisable()
@@ -30,111 +28,81 @@ public class BallBoundaryChecker : MonoBehaviour
         StopAllCoroutines();
     }
 
-    private IEnumerator InitializeAndPeriodicCheckRoutine()
+    private IEnumerator PeriodicCheckRoutine()
     {
-        if (showDebugInfo) Debug.Log("BallBoundaryChecker: Coroutine InitializeAndPeriodicCheckRoutine STARTED.");
+        if (showDebugInfo) Debug.Log("BallBoundaryChecker: Starting periodic check routine...");
         yield return null; 
 
-        int attempts = 0;
-        int maxInitialAttempts = 50; 
-        float initialRetryInterval = 0.1f;
-
-        if (showDebugInfo) Debug.Log("BallBoundaryChecker: Starting INITIAL ball search phase...");
-        while (ball == null && attempts < maxInitialAttempts)
-        {
-            ball = FindFirstObjectByType<Ball>(); 
-
-            if (ball == null) 
-            {
-                GameObject ballGO = GameObject.FindGameObjectWithTag("Ball"); 
-                if (ballGO != null)
-                {
-                    ball = ballGO.GetComponent<Ball>();
-                    if (ball != null && showDebugInfo) Debug.Log("BallBoundaryChecker: Ball found via GameObject.FindGameObjectWithTag(\"Ball\")");
-                }
-            }
-
-            if (ball == null)
-            {
-                if (showDebugInfo) Debug.Log($"BallBoundaryChecker: Ball not found (Initial Attempt {attempts + 1}/{maxInitialAttempts}). Retrying in {initialRetryInterval}s...");
-                yield return new WaitForSeconds(initialRetryInterval);
-                attempts++;
-            }
-            else
-            {
-                if (showDebugInfo) Debug.Log($"BallBoundaryChecker: Ball INITIALIZED and FOUND: {ball.name}. Current Position: X={ball.transform.position.x:F2}, Z={ball.transform.position.z:F2}");
-                break; 
-            }
-        }
-
-        if (ball == null)
-        {
-            Debug.LogError("BallBoundaryChecker: CRITICAL - Ball NOT FOUND after initial intensive search. Periodic checks will continue trying, but this may indicate a problem.");
-        }
-
-        if (showDebugInfo) Debug.Log("BallBoundaryChecker: Starting PERIODIC check phase...");
         while (true) 
         {
-            if (ball == null)
+            // Buscar todas las bolas en la escena
+            Ball[] balls = FindObjectsByType<Ball>(FindObjectsSortMode.None);
+            
+            if (balls.Length == 0)
             {
-                ball = FindFirstObjectByType<Ball>();
-                 if (ball == null)
-                {
-                    GameObject ballGO = GameObject.FindGameObjectWithTag("Ball");
-                    if (ballGO != null) ball = ballGO.GetComponent<Ball>();
-                }
+                if (showDebugInfo) Debug.Log("BallBoundaryChecker: No balls found in scene.");
+                yield return new WaitForSeconds(checkInterval);
+                continue;
+            }
 
-                if (ball != null)
+            // Verificar cada bola y eliminar las que pasen los límites
+            bool anyBallRemoved = false;
+            foreach (Ball ball in balls)
+            {
+                if (ball == null) continue;
+
+                Vector3 ballPos = ball.transform.position;
+                
+                // Verificar límites Z y X
+                if (ballPos.z <= loseLifeZ || ballPos.x >= loseLifeXPositive || ballPos.x <= loseLifeXNegative)
                 {
-                    if (showDebugInfo) Debug.Log("BallBoundaryChecker: Ball (re)acquired in periodic check.");
-                }
-                else
-                {
-                    if (showDebugInfo) Debug.Log("BallBoundaryChecker: Ball still null in periodic check. Waiting for next interval.");
-                    yield return new WaitForSeconds(checkInterval * 2f); 
-                    continue; 
+                    string boundaryType = "";
+                    if (ballPos.z <= loseLifeZ) boundaryType = "Z";
+                    else if (ballPos.x >= loseLifeXPositive) boundaryType = "X+";
+                    else if (ballPos.x <= loseLifeXNegative) boundaryType = "X-";
+
+                    if (showDebugInfo) Debug.Log($"BallBoundaryChecker: Ball passed {boundaryType} boundary at {ballPos}. Removing ball...");
+                    
+                    // Eliminar la bola
+                    Destroy(ball.gameObject);
+                    anyBallRemoved = true;
                 }
             }
 
-            // MODIFICADO: Verificar tanto Z como X
-            Vector3 ballPos = ball.transform.position;
-            bool isNearBoundary = ballPos.z < (loseLifeZ + 10f) || 
-                                  ballPos.x > (loseLifeXPositive - 10f) || 
-                                  ballPos.x < (loseLifeXNegative + 10f);
-
-            if (showDebugInfo && isNearBoundary)
+            // Si se eliminó alguna bola, verificar si quedan bolas después de la eliminación
+            if (anyBallRemoved)
             {
-                Debug.Log($"BallBoundaryChecker: Periodic Check - Ball Position: X={ballPos.x:F2}, Z={ballPos.z:F2}, Boundaries: Z<={loseLifeZ}, X>={loseLifeXPositive} or X<={loseLifeXNegative}, HasLostLife: {hasLostLife}");
-            }
-
-            // MODIFICADO: Verificar límites Z y X
-            if (!hasLostLife && (ballPos.z <= loseLifeZ || ballPos.x >= loseLifeXPositive || ballPos.x <= loseLifeXNegative))
-            {
-                string boundaryType = "";
-                if (ballPos.z <= loseLifeZ) boundaryType = "Z";
-                else if (ballPos.x >= loseLifeXPositive) boundaryType = "X+";
-                else if (ballPos.x <= loseLifeXNegative) boundaryType = "X-";
-
-                if (showDebugInfo) Debug.Log($"BallBoundaryChecker: {boundaryType} boundary condition MET. Calling OnBallPassedBoundaryInternal.");
-                OnBallPassedBoundaryInternal(boundaryType);
+                // Esperar un frame para que se complete la destrucción
+                yield return new WaitForFixedUpdate();
+                
+                // Verificar cuántas bolas quedan
+                Ball[] remainingBalls = FindObjectsByType<Ball>(FindObjectsSortMode.None);
+                int validBallCount = 0;
+                
+                foreach (Ball ball in remainingBalls)
+                {
+                    if (ball != null && ball.gameObject != null) validBallCount++;
+                }
+                
+                if (showDebugInfo) Debug.Log($"BallBoundaryChecker: {validBallCount} balls remaining after boundary check.");
+                
+                // Si no quedan bolas válidas, perder vida
+                if (validBallCount == 0 && !hasLostLife)
+                {
+                    LoseLifeForNoBalls();
+                }
             }
 
             yield return new WaitForSeconds(checkInterval);
         }
     }
 
-    // MODIFICADO: Añadir parámetro para tipo de límite
-    private void OnBallPassedBoundaryInternal(string boundaryType = "Z")
+    private void LoseLifeForNoBalls()
     {
-        if (hasLostLife) 
-        {
-            if (showDebugInfo) Debug.Log("BallBoundaryChecker: OnBallPassedBoundaryInternal called, but hasLostLife is already true. Ignoring.");
-            return;
-        }
+        if (hasLostLife) return;
 
-        hasLostLife = true; 
-        string ballPos = (ball != null) ? $"X={ball.transform.position.x:F2}, Z={ball.transform.position.z:F2}" : "N/A (ball reference was null)";
-        Debug.Log($"BallBoundaryChecker: Ball PASSED {boundaryType} BOUNDARY at {ballPos}. Losing a life...");
+        hasLostLife = true;
+        Debug.Log("BallBoundaryChecker: No balls remaining in field. Losing a life...");
 
         if (ScoreManager.Instance != null)
         {
@@ -142,18 +110,16 @@ public class BallBoundaryChecker : MonoBehaviour
         }
         else
         {
-            Debug.LogError("BallBoundaryChecker: ScoreManager.Instance is NULL when trying to lose life! This is a critical issue.");
+            Debug.LogError("BallBoundaryChecker: ScoreManager.Instance is NULL when trying to lose life!");
         }
     }
 
     public void ResetBoundaryChecker()
     {
-        if (showDebugInfo) Debug.Log("BallBoundaryChecker: ResetBoundaryChecker called. Resetting hasLostLife and ball reference. Restarting main coroutine.");
+        if (showDebugInfo) Debug.Log("BallBoundaryChecker: ResetBoundaryChecker called. Resetting hasLostLife state.");
         hasLostLife = false;
-        ball = null; 
-
         StopAllCoroutines();
-        StartCoroutine(InitializeAndPeriodicCheckRoutine());
+        StartCoroutine(PeriodicCheckRoutine());
     }
 
     void OnDrawGizmos()
@@ -189,12 +155,10 @@ public class BallBoundaryChecker : MonoBehaviour
         UnityEditor.Handles.Label(centerLineXPos + Vector3.up * 1.5f, $"Life Boundary X+: {loseLifeXPositive}");
         UnityEditor.Handles.Label(centerLineXNeg + Vector3.up * 1.5f, $"Life Boundary X-: {loseLifeXNegative}");
         
-        // Ball position
-        if (ball != null)
-        {
-            UnityEditor.Handles.color = Color.white;
-            UnityEditor.Handles.Label(ball.transform.position + Vector3.up * 2f, $"Ball: X={ball.transform.position.x:F2}, Z={ball.transform.position.z:F2}");
-        }
+        // Ball count
+        Ball[] balls = FindObjectsByType<Ball>(FindObjectsSortMode.None);
+        UnityEditor.Handles.color = Color.white;
+        UnityEditor.Handles.Label(transform.position + Vector3.up * 3f, $"Balls in scene: {balls.Length}");
         #endif
     }
 }

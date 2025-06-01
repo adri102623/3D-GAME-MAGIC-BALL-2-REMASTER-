@@ -12,6 +12,7 @@ public class PowerUpCoin : MonoBehaviour
         Magnet,
         PowerBall,
         UnPowerBall,
+        BallMultiplier, 
         NextLevel
     }
     
@@ -111,9 +112,13 @@ public class PowerUpCoin : MonoBehaviour
                     break;
                 case PowerUpType.UnPowerBall:
                     if (ballController != null) ballController.ApplyUnPowerBall();
-                    else Debug.LogWarning("PowerUpCoin: Ball not found for Magnet!");
+                    else Debug.LogWarning("PowerUpCoin: Ball not found for UnPowerBall!");
                     break;
-                case PowerUpType.NextLevel: // NUEVO
+                case PowerUpType.BallMultiplier:
+                    if (ballController != null) ballController.ApplyBallMultiplier();
+                    else Debug.LogWarning("PowerUpCoin: Ball not found for BallMultiplier!");
+                    break;
+                case PowerUpType.NextLevel:
                     if (SceneTransitionManager.Instance != null)
                     {
                         Debug.Log("PowerUpCoin: NextLevel collected! Advancing to next level...");
