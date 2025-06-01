@@ -561,7 +561,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: vidas
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
@@ -944,7 +944,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: vidas
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
@@ -1455,7 +1455,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: vidas
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
@@ -3057,7 +3057,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: vidas
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
@@ -7069,7 +7069,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: vidas
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
@@ -7143,7 +7143,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: vidas
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
@@ -8553,7 +8553,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: vidas
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
@@ -8809,7 +8809,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: vidas
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
@@ -8967,7 +8967,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: vidas
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
