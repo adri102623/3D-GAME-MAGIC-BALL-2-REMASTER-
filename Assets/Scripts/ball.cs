@@ -15,6 +15,9 @@ public class Ball : MonoBehaviour
     public Material magneticMaterial; // Nuevo material para bola magnética
     private bool god;
 
+    public CameraIntroMove cameraIntroMove; 
+    private bool ballLaunched = false;
+
     // Variables para el sistema magnético
     private bool isMagnetic = false;
     private bool isStuckToPlayer = false;
@@ -42,8 +45,7 @@ public class Ball : MonoBehaviour
             rb.angularDamping = 0f;
             rb.useGravity = false;
 
-            // Lanzar la pelota hacia adelante
-            rb.linearVelocity = Vector3.forward * GetCurrentSpeed();
+           
         }
 
         initialScale = transform.localScale;
@@ -68,7 +70,8 @@ public class Ball : MonoBehaviour
     void FixedUpdate()
     {
         if (rb == null) return;
-
+         if (!cameraIntroMove.introFinished)
+        return;
         // Si está pegada al jugador, mantener posición relativa
         if (isStuckToPlayer && playerTransform != null)
         {
@@ -227,6 +230,15 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
+
+         if (!cameraIntroMove.introFinished)
+        return;
+
+        if (!ballLaunched)
+        {
+            LaunchBall();
+            ballLaunched = true;
+        }
         if (Input.GetKeyDown(KeyCode.G))
         {
             god = !god;
@@ -244,6 +256,14 @@ public class Ball : MonoBehaviour
         }
     }
 
+        
+    private void LaunchBall()
+    {
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.forward * GetCurrentSpeed();
+        }
+    }
 
     void UpdatePickUpColliders()
     {
@@ -550,6 +570,7 @@ public class Ball : MonoBehaviour
             Ball newBallScript = newBall.GetComponent<Ball>();
             if (newBallScript != null)
             {
+                newBallScript.cameraIntroMove = this.cameraIntroMove;
                 // CORREGIDO: Inicializar manualmente initialScale antes de usarlo
                 newBallScript.initialScale = newBall.transform.localScale;
                 
