@@ -16,7 +16,7 @@ public class PickupHealth : MonoBehaviour
 
     [Header("Configuración de PowerUps")]
     [Range(0f, 1f)]
-    private float probabilidadPowerUp = 1f; // 0.2f = 20% de probabilidad
+    private float probabilidadPowerUp = 0.2f; // 0.2f = 20% de probabilidad
     private int numPowerUps = 10; 
 
     // Array para almacenar los prefabs cargados desde Resources
