@@ -9,13 +9,15 @@ public class PickupHealth : MonoBehaviour
     public Material material2vidas;
     public Material material1vida;
 
+    private bool power = false;
+
     [Header("Efectos y Partículas")]
     public GameObject explosionPrefab;
 
     [Header("Configuración de PowerUps")]
     [Range(0f, 1f)]
     private float probabilidadPowerUp = 1f;
-    private int numPowerUps = 8; // INCREMENTADO para incluir CoinNextLevel
+    private int numPowerUps = 9; // INCREMENTADO para incluir CoinNextLevel
 
     // Array para almacenar los prefabs cargados desde Resources
     private GameObject[] powerUpPrefabs;
@@ -50,7 +52,8 @@ public class PickupHealth : MonoBehaviour
             "CoinUnSpeed",
             "CoinMagnet",
             "CoinPowerBall",
-            "CoinNextLevel" // NUEVO
+            "CoinUnPowerBall",
+            "CoinNextLevel"
         };
 
         powerUpPrefabs = new GameObject[nombresPowerUps.Length];
@@ -150,10 +153,12 @@ public class PickupHealth : MonoBehaviour
         }
     }
 
-    public void setVidas(int vidas)
+    public void setPower(int powerType)
     {
-        this.vidas = vidas;
+        if (powerType == 1) power = true;
+        else power = false;
     }
+
 
     void IncrementScore()
     {
@@ -180,9 +185,9 @@ public class PickupHealth : MonoBehaviour
 
         // Incrementar puntuación
         IncrementScore();
-        vidas--;
+        if(!power)vidas--;
 
-        if (vidas <= 0)
+        if (vidas <= 0 || power)
         {
             // Reproducir sonido de destrucción
             if (AudioManager.Instance != null)

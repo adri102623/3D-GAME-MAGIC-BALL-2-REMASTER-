@@ -166,7 +166,6 @@ public class Ball : MonoBehaviour
             PickupHealth pickup = other.GetComponent<PickupHealth>();
             if (pickup != null)
             {
-                if(god) pickup.setVidas(1);
                 pickup.TocarPelota();
             }
         }
@@ -182,13 +181,30 @@ public class Ball : MonoBehaviour
             StickToPlayer();
         }
     }
-    public void ApplyPowerUp_PowerBall()
+    public void ApplyUnPowerBall()
     {
         // Aplicar el material de la PowerBall
         Renderer renderer = GetComponent<Renderer>();
         if (renderer != null)
         {
             renderer.material = powerBallMaterial;
+            Debug.Log("PowerBall material applied!");
+        }
+        else
+        {
+            Debug.LogWarning("Renderer not found on the ball!");
+        }
+
+        UnUpdatePickUpColliders();
+    }
+
+    public void ApplyPowerUp_PowerBall()
+    {
+        // Aplicar el material de la PowerBall
+        Renderer renderer = GetComponent<Renderer>();
+        if (renderer != null)
+        {
+            renderer.material = defaultMaterial;
             Debug.Log("PowerBall material applied!");
         }
         else
@@ -229,9 +245,29 @@ public class Ball : MonoBehaviour
         {
             if (pickUp == null) continue;
             Collider pickupCollider = pickUp.GetComponent<Collider>();
+            PickupHealth pickup1 = pickUp.GetComponent<PickupHealth>();
+            pickup1.setPower(1);
             if (pickupCollider != null)
             {
                 Physics.IgnoreCollision(ballCollider, pickupCollider, true);
+            }
+        }
+    }
+    void UnUpdatePickUpColliders()
+    {
+        GameObject[] pickUps = GameObject.FindGameObjectsWithTag("PickUp");
+        Collider ballCollider = GetComponent<Collider>();
+        if (ballCollider == null) return;
+
+        foreach (GameObject pickUp in pickUps)
+        {
+            if (pickUp == null) continue;
+            Collider pickupCollider = pickUp.GetComponent<Collider>();
+            PickupHealth pickup1 = pickUp.GetComponent<PickupHealth>();
+            pickup1.setPower(0);
+            if (pickupCollider != null)
+            {
+                Physics.IgnoreCollision(ballCollider, pickupCollider, false);
             }
         }
     }

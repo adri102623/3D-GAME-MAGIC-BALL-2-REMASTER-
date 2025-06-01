@@ -11,7 +11,8 @@ public class PowerUpCoin : MonoBehaviour
         SpeedDown,
         Magnet,
         PowerBall,
-        NextLevel // NUEVO
+        NextLevel,
+        UnPowerBall
     }
     
     public PowerUpType powerUpType;
@@ -106,6 +107,10 @@ public class PowerUpCoin : MonoBehaviour
                     break;
                 case PowerUpType.Magnet:
                     if (ballController != null) ballController.ApplyMagnet();
+                    else Debug.LogWarning("PowerUpCoin: Ball not found for Magnet!");
+                    break;
+                case PowerUpType.UnPowerBall:
+                    if (ballController != null) ballController.ApplyUnPowerBall();
                     else Debug.LogWarning("PowerUpCoin: Ball not found for Magnet!");
                     break;
                 case PowerUpType.NextLevel: // NUEVO
