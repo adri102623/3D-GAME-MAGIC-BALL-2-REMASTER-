@@ -25,6 +25,9 @@ public class BallManager : MonoBehaviour
     void Start()
     {
         if (showDebugInfo) Debug.Log("BallManager: Initialized");
+        
+        // Reset del flag al inicio
+        hasLostLife = false;
     }
 
     public void OnBallDestroyed(Ball destroyedBall)
@@ -49,6 +52,7 @@ public class BallManager : MonoBehaviour
         
         if (showDebugInfo) Debug.Log($"BallManager: {validBallCount} balls remaining");
         
+        // CLAVE: Solo perder vida si no quedan bolas Y no se ha perdido ya
         if (validBallCount == 0 && !hasLostLife)
         {
             LoseLifeForNoBalls();
@@ -70,10 +74,18 @@ public class BallManager : MonoBehaviour
         }
     }
 
+    // CLAVE: Método para resetear estado al cargar nivel
     public void ResetBallManager()
     {
         hasLostLife = false;
         if (showDebugInfo) Debug.Log("BallManager: Reset completed");
+    }
+
+    // CLAVE: Reset automático al habilitar el objeto
+    void OnEnable()
+    {
+        hasLostLife = false;
+        if (showDebugInfo) Debug.Log("BallManager: OnEnable - hasLostLife reset");
     }
 
     public int GetBallCount()

@@ -219,6 +219,12 @@ public class ScoreManager : MonoBehaviour
     
     private void ReloadCurrentLevel()
     {
+        // Resetear BallManager antes de recargar nivel
+        if (BallManager.Instance != null)
+        {
+            BallManager.Instance.ResetBallManager();
+        }
+        
         string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         UnityEngine.SceneManagement.SceneManager.LoadScene(currentScene);
     }

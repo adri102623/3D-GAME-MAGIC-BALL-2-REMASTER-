@@ -38,7 +38,10 @@ public class BallDestroyer : MonoBehaviour
             if (showDebugInfo) Debug.Log($"Ball reached {boundaryType} boundary at {position}. Self-destroying...");
             
             // Notificar al BallManager antes de destruirse
-            BallManager.Instance?.OnBallDestroyed(ballComponent);
+            if (BallManager.Instance != null)
+            {
+                BallManager.Instance.OnBallDestroyed(ballComponent);
+            }
             
             Destroy(gameObject);
         }
