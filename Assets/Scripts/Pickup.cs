@@ -15,7 +15,7 @@ public class PickupHealth : MonoBehaviour
     [Header("Configuración de PowerUps")]
     [Range(0f, 1f)]
     private float probabilidadPowerUp = 1f;
-    private int numPowerUps = 6; // Cambiado de 5 a 6 para incluir CoinMagnet
+    private int numPowerUps = 7; 
 
     // Array para almacenar los prefabs cargados desde Resources
     private GameObject[] powerUpPrefabs;
@@ -48,7 +48,8 @@ public class PickupHealth : MonoBehaviour
             "CoinUnScaleBarrier",
             "CoinSpeedUp",
             "CoinUnSpeed",
-            "CoinMagnet"
+            "CoinMagnet",
+            "CoinPowerBall"
         };
 
         powerUpPrefabs = new GameObject[nombresPowerUps.Length];
@@ -119,15 +120,16 @@ public class PickupHealth : MonoBehaviour
         Vector3 spawnPosition = transform.position;
 
         // Ajustar la posición según el tipo de power-up
-        if (powerUpIndex == 1) // CoinScaleBarrier necesita estar en el rango [-8, 8] en X
+        if (selectedPowerUp.name.Contains("CoinScaleBarrier")) // CoinScaleBarrier necesita estar en el rango [-8, 8] en X
         {
             spawnPosition.x = Mathf.Clamp(spawnPosition.x, -8f, 8f);
+            spawnPosition.y += 2f;
         }
-
+        
         // Si es CoinMagnet, aparecer más arriba
         if (selectedPowerUp.name.Contains("CoinMagnet"))
         {
-            spawnPosition.y += 2f; // Añadir 2 unidades en altura
+            //spawnPosition.y += 2f; // Añadir 2 unidades en altura
             Debug.Log("CoinMagnet spawned higher at position: " + spawnPosition);
         }
 
@@ -146,6 +148,11 @@ public class PickupHealth : MonoBehaviour
         {
             powerUpCoin.SetTargetZ(playerTransform.position.z);
         }
+    }
+
+    public void setVidas(int vidas)
+    {
+        this.vidas = vidas;
     }
 
     void IncrementScore()

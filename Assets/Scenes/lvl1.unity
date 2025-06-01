@@ -2929,6 +2929,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8884579589741001385, guid: c8b963bdf2c3bd24e8af8d30e2db7f6f, type: 3}
+      propertyPath: m_Constraints
+      value: 124
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19742,6 +19746,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1192262056079089729, guid: fff3270414309004788c9164262bfe2b, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4304386961217797408, guid: fff3270414309004788c9164262bfe2b, type: 3}
       propertyPath: m_Name
       value: Ball
@@ -19785,6 +19793,10 @@ PrefabInstance:
     - target: {fileID: 5125954901120317146, guid: fff3270414309004788c9164262bfe2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641010685347146589, guid: fff3270414309004788c9164262bfe2b, type: 3}
+      propertyPath: godZLimit
+      value: -35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

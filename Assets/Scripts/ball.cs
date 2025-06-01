@@ -30,6 +30,8 @@ public class Ball : MonoBehaviour
     private float lastReleaseTime = 0f;
     private float releaseCooldown = 0.5f; // Medio segundo de cooldown
 
+    public float godZLimit = -35f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -83,9 +85,19 @@ public class Ball : MonoBehaviour
             // Ajustar la magnitud de la velocidad para que mantenga la velocidad objetivo
             rb.linearVelocity = rb.linearVelocity.normalized * targetSpeed;
         }
+
+       if (god && transform.position.z < godZLimit)
+        {   
+            Debug.Log($"Rebote god mode: Ball Z={transform.position.z}, godZLimit={godZLimit}");
+            Vector3 vel = rb.linearVelocity;
+            if (vel.z < 0) vel.z = -vel.z;
+            rb.linearVelocity = vel;
+            transform.position = new Vector3(transform.position.x, transform.position.y, godZLimit);
+            }
     }
 
     // Configura material de física para rebotes sin pérdida
+
     void SetPhysicsMaterial()
     {
         Collider ballCollider = GetComponent<Collider>();
@@ -152,8 +164,9 @@ public class Ball : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp"))
         {
             PickupHealth pickup = other.GetComponent<PickupHealth>();
-            if (pickup != null && !god)
+            if (pickup != null)
             {
+                if(god) pickup.setVidas(1);
                 pickup.TocarPelota();
             }
         }
@@ -169,20 +182,29 @@ public class Ball : MonoBehaviour
             StickToPlayer();
         }
     }
+    public void ApplyPowerUp_PowerBall()
+    {
+        // Aplicar el material de la PowerBall
+        Renderer renderer = GetComponent<Renderer>();
+        if (renderer != null)
+        {
+            renderer.material = powerBallMaterial;
+            Debug.Log("PowerBall material applied!");
+        }
+        else
+        {
+            Debug.LogWarning("Renderer not found on the ball!");
+        }
+
+        UpdatePickUpColliders();
+    }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
             god = !god;
-            Renderer renderer = GetComponent<Renderer>();
-            if (renderer != null)
-            {
-                renderer.material = god ? powerBallMaterial : GetCurrentMaterial();
-            }
-            UpdatePickUpColliders();
         }
-
         // Detectar espacio para liberar la pelota magnética
         if (Input.GetKeyDown(KeyCode.Space) && isStuckToPlayer)
         {
@@ -196,6 +218,7 @@ public class Ball : MonoBehaviour
         }
     }
 
+
     void UpdatePickUpColliders()
     {
         GameObject[] pickUps = GameObject.FindGameObjectsWithTag("PickUp");
@@ -208,11 +231,11 @@ public class Ball : MonoBehaviour
             Collider pickupCollider = pickUp.GetComponent<Collider>();
             if (pickupCollider != null)
             {
-                // Ignorar colisiones cuando es "god" (opcional)
-                Physics.IgnoreCollision(ballCollider, pickupCollider, god);
+                Physics.IgnoreCollision(ballCollider, pickupCollider, true);
             }
         }
     }
+
 
     public void ApplyPowerUp()
     {

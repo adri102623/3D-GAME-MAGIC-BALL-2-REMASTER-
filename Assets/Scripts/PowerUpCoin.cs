@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class PowerUpCoin : MonoBehaviour
 {
-    public enum PowerUpType { 
-        Maximize, 
-        ScaleBarrier, 
-        UnScaleBarrier, 
+    public enum PowerUpType
+    {
+        Maximize,
+        ScaleBarrier,
+        UnScaleBarrier,
         SpeedUp,
         SpeedDown,
-        Magnet
+        Magnet,
+        PowerBall
     }
     
     public PowerUpType powerUpType; // Tipo de power-up
@@ -60,7 +62,7 @@ public class PowerUpCoin : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // Si colisiona con el frontTrigger, aplicar el power-up y destruir la moneda
-        if (other.CompareTag("FrontTrigger"))
+        if (other.CompareTag("FrontTrigger") || other.CompareTag("Player"))
         {
             // Reproducir sonido de power-up
             if (AudioManager.Instance != null)
@@ -77,6 +79,20 @@ public class PowerUpCoin : MonoBehaviour
                 {
                     ballController.ApplyPowerUp();
                     Debug.Log("Power-up applied: MaximizeBall");
+                }
+                else
+                {
+                    Debug.LogWarning("Ball not found!");
+                }
+                Destroy(gameObject);
+            }
+            else if (powerUpType == PowerUpType.PowerBall)
+            {
+                Ball ballController = FindFirstObjectByType<Ball>();
+                if (ballController != null)
+                {
+                    ballController.ApplyPowerUp_PowerBall();
+                    Debug.Log("Power-up applied: PowerBall");
                 }
                 else
                 {
