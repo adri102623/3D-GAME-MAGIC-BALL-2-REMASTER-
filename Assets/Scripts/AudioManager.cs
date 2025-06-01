@@ -79,11 +79,11 @@ public class AudioManager : MonoBehaviour
     public void PlayMusicForScene(string sceneName)
     {
         AudioClip targetMusic = GetMusicForScene(sceneName);
-        
+
         if (targetMusic != null && targetMusic != currentMusic)
         {
             currentMusic = targetMusic;
-            
+
             if (musicSource != null)
             {
                 musicSource.clip = targetMusic;
@@ -99,7 +99,7 @@ public class AudioManager : MonoBehaviour
         {
             case "Menu":
                 return menuMusic;
-            case "Credtis": // Mantienes el typo original
+            case "Credtis":
                 return creditsMusic;
             case "lvl1":
                 return level1Music;

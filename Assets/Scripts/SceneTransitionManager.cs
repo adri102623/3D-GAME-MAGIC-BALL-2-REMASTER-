@@ -9,7 +9,7 @@ public class SceneTransitionManager : MonoBehaviour
     [Header("Level Settings")]
     public string[] levelNames = { "lvl1", "lvl2", "lvl3", "lvl4", "lvl5" };
     public string menuSceneName = "Menu";
-    public string creditsSceneName = "Credits";
+    public string creditsSceneName = "Credtis";
     public string MaxScoreSceneName = "MaxScore";
     public string gameOverSceneName = "GameOver";
 
@@ -70,7 +70,7 @@ public class SceneTransitionManager : MonoBehaviour
 
         if (IsGameLevel(scene.name))
         {
-            StartLevelPresentation(); 
+            StartLevelPresentation();
 
             BallBoundaryChecker boundaryChecker = FindFirstObjectByType<BallBoundaryChecker>();
             if (boundaryChecker == null)
@@ -81,7 +81,21 @@ public class SceneTransitionManager : MonoBehaviour
             else
             {
                 Debug.Log($"SceneTransitionManager: Found BallBoundaryChecker in '{scene.name}'. Calling ResetBoundaryChecker().");
-                boundaryChecker.ResetBoundaryChecker(); 
+                boundaryChecker.ResetBoundaryChecker();
+            }
+
+            // AÑADIR: Verificar que existe LevelProgressManager
+            LevelProgressManager progressManager = FindFirstObjectByType<LevelProgressManager>();
+            if (progressManager == null)
+            {
+                // Crear LevelProgressManager si no existe
+                GameObject progressObject = new GameObject("LevelProgressManager");
+                progressObject.AddComponent<LevelProgressManager>();
+                Debug.Log("SceneTransitionManager: Created LevelProgressManager for progress tracking.");
+            }
+            else
+            {
+                Debug.Log("SceneTransitionManager: Found existing LevelProgressManager.");
             }
         }
     }
@@ -109,14 +123,16 @@ public class SceneTransitionManager : MonoBehaviour
     public void LoadNextLevel()
     {
         currentLevelIndex++;
-        if (currentLevelIndex < levelNames.Length)
+
+        // MODIFICADO: Si estamos en el último nivel (lvl5), ir a créditos
+        if (currentLevelIndex >= levelNames.Length)
         {
-            LoadLevel(currentLevelIndex);
+            Debug.Log("SceneTransitionManager: All levels completed. Loading Credits.");
+            LoadCredits();
         }
         else
         {
-            Debug.Log("SceneTransitionManager: All levels completed. Loading Menu.");
-            LoadMenu(); 
+            LoadLevel(currentLevelIndex);
         }
     }
 

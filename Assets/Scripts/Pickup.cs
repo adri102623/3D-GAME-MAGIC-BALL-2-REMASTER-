@@ -15,7 +15,7 @@ public class PickupHealth : MonoBehaviour
     [Header("Configuración de PowerUps")]
     [Range(0f, 1f)]
     private float probabilidadPowerUp = 1f;
-    private int numPowerUps = 7; 
+    private int numPowerUps = 8; // INCREMENTADO para incluir CoinNextLevel
 
     // Array para almacenar los prefabs cargados desde Resources
     private GameObject[] powerUpPrefabs;
@@ -49,7 +49,8 @@ public class PickupHealth : MonoBehaviour
             "CoinSpeedUp",
             "CoinUnSpeed",
             "CoinMagnet",
-            "CoinPowerBall"
+            "CoinPowerBall",
+            "CoinNextLevel" // NUEVO
         };
 
         powerUpPrefabs = new GameObject[nombresPowerUps.Length];
@@ -106,8 +107,9 @@ public class PickupHealth : MonoBehaviour
             return;
         }
 
-        // Seleccionar un power-up aleatorio entre los disponibles
-        int powerUpIndex = Random.Range(0, Mathf.Min(numPowerUps, powerUpPrefabs.Length));
+        // MODIFICADO: Excluir CoinNextLevel de los spawns aleatorios normales
+        int availablePowerUps = powerUpPrefabs.Length - 1; // Excluir el último (CoinNextLevel)
+        int powerUpIndex = Random.Range(0, Mathf.Min(numPowerUps - 1, availablePowerUps));
         GameObject selectedPowerUp = powerUpPrefabs[powerUpIndex];
 
         if (selectedPowerUp == null)
@@ -120,16 +122,14 @@ public class PickupHealth : MonoBehaviour
         Vector3 spawnPosition = transform.position;
 
         // Ajustar la posición según el tipo de power-up
-        if (selectedPowerUp.name.Contains("CoinScaleBarrier")) // CoinScaleBarrier necesita estar en el rango [-8, 8] en X
+        if (selectedPowerUp.name.Contains("CoinScaleBarrier"))
         {
             spawnPosition.x = Mathf.Clamp(spawnPosition.x, -8f, 8f);
             spawnPosition.y += 2f;
         }
-        
-        // Si es CoinMagnet, aparecer más arriba
+
         if (selectedPowerUp.name.Contains("CoinMagnet"))
         {
-            //spawnPosition.y += 2f; // Añadir 2 unidades en altura
             Debug.Log("CoinMagnet spawned higher at position: " + spawnPosition);
         }
 
@@ -167,11 +167,9 @@ public class PickupHealth : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ball"))
         {
-            // Simplemente llamar a TocarPelota, ya no necesitamos llamar al método de Ball
             TocarPelota();
         }
     }
-
     public void TocarPelota()
     {
         // Mostrar partículas con CADA impacto, no solo al final
@@ -183,6 +181,7 @@ public class PickupHealth : MonoBehaviour
         // Incrementar puntuación
         IncrementScore();
         vidas--;
+
         if (vidas <= 0)
         {
             // Reproducir sonido de destrucción
@@ -190,12 +189,23 @@ public class PickupHealth : MonoBehaviour
             {
                 AudioManager.Instance.PlayDestroySound();
             }
+
+            // AÑADIR: Notificar al LevelProgressManager ANTES de destruir
+            if (LevelProgressManager.Instance != null)
+            {
+                LevelProgressManager.Instance.OnPickupDestroyed();
+            }
+            else
+            {
+                Debug.LogWarning("LevelProgressManager not found! Add it to the scene.");
+            }
+
             SpawnPowerUp();
             Destroy(gameObject);
         }
         else
         {
-            // Reproducir sonido de destrucción
+            // Reproducir sonido de hit
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlayHitSound();
