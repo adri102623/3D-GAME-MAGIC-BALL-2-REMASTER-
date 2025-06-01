@@ -1,75 +1,164 @@
 using UnityEngine;
+using System.Collections;
 
 public class BallBoundaryChecker : MonoBehaviour
 {
     [Header("Boundary Settings")]
-    private float loseLifeZ = -45f; // Posición Z donde se pierde una vida
-    
+    [SerializeField] private float loseLifeZ = -45f;
+
     [Header("Debug")]
-    public bool showDebugInfo = true;
-    
+    public bool showDebugInfo = true; 
+
     private Ball ball;
-    private bool hasLostLife = false; // Para evitar múltiples pérdidas de vida
-    
-    void Start()
+    private bool hasLostLife = false;
+    private float checkInterval = 0.2f; 
+
+    void OnEnable()
     {
-        // Buscar la pelota en la escena
-        ball = FindFirstObjectByType<Ball>();
+        if (showDebugInfo) Debug.Log($"BallBoundaryChecker: ENABLED in scene '{gameObject.scene.name}'. Initializing state...");
+        hasLostLife = false;
+        ball = null; 
+        StopAllCoroutines(); 
+        StartCoroutine(InitializeAndPeriodicCheckRoutine());
+    }
+
+    void OnDisable()
+    {
+        if (showDebugInfo) Debug.Log($"BallBoundaryChecker: DISABLED in scene '{gameObject.scene.name}'. Stopping coroutines.");
+        StopAllCoroutines();
+    }
+
+    private IEnumerator InitializeAndPeriodicCheckRoutine()
+    {
+        if (showDebugInfo) Debug.Log("BallBoundaryChecker: Coroutine InitializeAndPeriodicCheckRoutine STARTED.");
+        yield return null; 
+
+        int attempts = 0;
+        int maxInitialAttempts = 50; 
+        float initialRetryInterval = 0.1f;
+
+        if (showDebugInfo) Debug.Log("BallBoundaryChecker: Starting INITIAL ball search phase...");
+        while (ball == null && attempts < maxInitialAttempts)
+        {
+            ball = FindFirstObjectByType<Ball>(); 
+
+            if (ball == null) 
+            {
+                GameObject ballGO = GameObject.FindGameObjectWithTag("Ball"); 
+                if (ballGO != null)
+                {
+                    ball = ballGO.GetComponent<Ball>();
+                    if (ball != null && showDebugInfo) Debug.Log("BallBoundaryChecker: Ball found via GameObject.FindGameObjectWithTag(\"Ball\")");
+                }
+            }
+
+            if (ball == null)
+            {
+                if (showDebugInfo) Debug.Log($"BallBoundaryChecker: Ball not found (Initial Attempt {attempts + 1}/{maxInitialAttempts}). Retrying in {initialRetryInterval}s...");
+                yield return new WaitForSeconds(initialRetryInterval);
+                attempts++;
+            }
+            else
+            {
+                if (showDebugInfo) Debug.Log($"BallBoundaryChecker: Ball INITIALIZED and FOUND: {ball.name}. Current Z: {ball.transform.position.z:F2}");
+                break; 
+            }
+        }
+
         if (ball == null)
         {
-            Debug.LogWarning("Ball not found in scene!");
+            Debug.LogError("BallBoundaryChecker: CRITICAL - Ball NOT FOUND after initial intensive search. Periodic checks will continue trying, but this may indicate a problem.");
         }
-        else
+
+        if (showDebugInfo) Debug.Log("BallBoundaryChecker: Starting PERIODIC check phase...");
+        while (true) 
         {
-            Debug.Log("BallBoundaryChecker initialized - watching ball at Z boundary: " + loseLifeZ);
+            if (ball == null)
+            {
+                ball = FindFirstObjectByType<Ball>();
+                 if (ball == null)
+                {
+                    GameObject ballGO = GameObject.FindGameObjectWithTag("Ball");
+                    if (ballGO != null) ball = ballGO.GetComponent<Ball>();
+                }
+
+                if (ball != null)
+                {
+                    if (showDebugInfo) Debug.Log("BallBoundaryChecker: Ball (re)acquired in periodic check.");
+                }
+                else
+                {
+                    if (showDebugInfo) Debug.Log("BallBoundaryChecker: Ball still null in periodic check. Waiting for next interval.");
+                    yield return new WaitForSeconds(checkInterval * 2f); 
+                    continue; 
+                }
+            }
+
+            if (showDebugInfo)
+            {
+                if (ball.transform.position.z < (loseLifeZ + 10f)) {
+                     Debug.Log($"BallBoundaryChecker: Periodic Check - Ball Z: {ball.transform.position.z:F2}, Boundary: {loseLifeZ}, HasLostLife: {hasLostLife}");
+                }
+            }
+
+            if (ball.transform.position.z <= loseLifeZ && !hasLostLife)
+            {
+                if (showDebugInfo) Debug.Log("BallBoundaryChecker: Boundary condition MET. Calling OnBallPassedBoundaryInternal.");
+                OnBallPassedBoundaryInternal();
+            }
+
+            yield return new WaitForSeconds(checkInterval);
         }
     }
-    
-    void Update()
+
+    private void OnBallPassedBoundaryInternal()
     {
-        if (ball == null) return;
-        
-        // Verificar si la pelota ha pasado el límite
-        if (ball.transform.position.z <= loseLifeZ && !hasLostLife)
+        if (hasLostLife) 
         {
-            hasLostLife = true;
-            OnBallPassedBoundary();
+            if (showDebugInfo) Debug.Log("BallBoundaryChecker: OnBallPassedBoundaryInternal called, but hasLostLife is already true. Ignoring.");
+            return;
         }
-        
-        // Debug info
-        if (showDebugInfo && ball.transform.position.z < -30f)
-        {
-            Debug.Log($"Ball Z position: {ball.transform.position.z:F2} (Boundary: {loseLifeZ})");
-        }
-    }
-    
-    void OnBallPassedBoundary()
-    {
-        Debug.Log($"Ball passed boundary at Z = {ball.transform.position.z:F2}! Losing a life...");
-        
-        // Notificar al ScoreManager para perder una vida
+
+        hasLostLife = true; 
+        string ballZPos = (ball != null) ? ball.transform.position.z.ToString("F2") : "N/A (ball reference was null)";
+        Debug.Log($"BallBoundaryChecker: Ball PASSED BOUNDARY at Z={ballZPos}. Losing a life...");
+
         if (ScoreManager.Instance != null)
         {
             ScoreManager.Instance.LoseLife();
         }
         else
         {
-            Debug.LogError("ScoreManager not found!");
+            Debug.LogError("BallBoundaryChecker: ScoreManager.Instance is NULL when trying to lose life! This is a critical issue.");
         }
     }
-    
-    // Método para resetear el estado (útil si la pelota se reinicia)
+
     public void ResetBoundaryChecker()
     {
+        if (showDebugInfo) Debug.Log("BallBoundaryChecker: ResetBoundaryChecker called. Resetting hasLostLife and ball reference. Restarting main coroutine.");
         hasLostLife = false;
-        Debug.Log("BallBoundaryChecker reset");
+        ball = null; 
+
+        StopAllCoroutines();
+        StartCoroutine(InitializeAndPeriodicCheckRoutine());
     }
-    
-    // Visualizar el límite en el editor
+
     void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(new Vector3(-50, 0, loseLifeZ), new Vector3(50, 0, loseLifeZ));
-        Gizmos.DrawLine(new Vector3(-50, 10, loseLifeZ), new Vector3(50, 10, loseLifeZ));
+        if (!showDebugInfo && !Application.isEditor) return; 
+
+        Gizmos.color = hasLostLife ? Color.gray : Color.red; 
+        Vector3 centerLine = new Vector3(transform.position.x, transform.position.y, loseLifeZ);
+        Vector3 sizeLine = new Vector3(100, 0.2f, 0.2f); 
+        Gizmos.DrawCube(centerLine, sizeLine);
+
+        #if UNITY_EDITOR
+        UnityEditor.Handles.color = Gizmos.color;
+        UnityEditor.Handles.Label(centerLine + Vector3.up * 1.5f, $"Life Boundary Z: {loseLifeZ}");
+        if (ball != null)
+        {
+            UnityEditor.Handles.Label(ball.transform.position + Vector3.up * 2f, $"Ball Z: {ball.transform.position.z:F2}");
+        }
+        #endif
     }
 }

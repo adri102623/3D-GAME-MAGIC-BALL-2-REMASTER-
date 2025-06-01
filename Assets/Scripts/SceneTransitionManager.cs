@@ -5,17 +5,16 @@ using System.Collections;
 public class SceneTransitionManager : MonoBehaviour
 {
     public static SceneTransitionManager Instance { get; private set; }
-    
+
     [Header("Level Settings")]
     public string[] levelNames = { "lvl1", "lvl2", "lvl3", "lvl4", "lvl5" };
     public string menuSceneName = "Menu";
-    public string creditsSceneName = "Credtis";
+    public string creditsSceneName = "Credits";
+    public string MaxScoreSceneName = "MaxScore";
+    public string gameOverSceneName = "GameOver";
 
-    public string MaxScoreSceneName = "MaxScore"; // Escena de Max Score existente
-    public string gameOverSceneName = "GameOver"; // Escena de Game Over existente
-    
     private int currentLevelIndex = 0;
-    
+
     void Awake()
     {
         if (Instance == null)
@@ -29,200 +28,158 @@ public class SceneTransitionManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
     void Start()
     {
-        // Reproducir música inicial de la escena actual
         string currentScene = SceneManager.GetActiveScene().name;
         if (AudioManager.Instance != null)
         {
             AudioManager.Instance.PlayMusicForScene(currentScene);
         }
     }
-    
+
     void Update()
     {
-        // Teclas para acceso rápido a niveles (1-5)
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            Debug.Log("Key 1 pressed - Loading Level 1");
-            LoadLevel(0);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            Debug.Log("Key 2 pressed - Loading Level 2");
-            LoadLevel(1);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            Debug.Log("Key 3 pressed - Loading Level 3");
-            LoadLevel(2);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            Debug.Log("Key 4 pressed - Loading Level 4");
-            LoadLevel(3);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            Debug.Log("Key 5 pressed - Loading Level 5");
-            LoadLevel(4);
-        }
-        
-        // Tecla M para volver al menú
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            Debug.Log("Key M pressed - Loading Menu");
-            LoadMenu();
-        }
-        
-        // Tecla C para ir a créditos
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            Debug.Log("Key C pressed - Loading Credits");
-            LoadCredits();
-        }
+        if (Input.GetKeyDown(KeyCode.Alpha1)) LoadLevel(0);
+        if (Input.GetKeyDown(KeyCode.Alpha2)) LoadLevel(1);
+        if (Input.GetKeyDown(KeyCode.Alpha3)) LoadLevel(2);
+        if (Input.GetKeyDown(KeyCode.Alpha4)) LoadLevel(3);
+        if (Input.GetKeyDown(KeyCode.Alpha5)) LoadLevel(4);
+        if (Input.GetKeyDown(KeyCode.M)) LoadMenu();
+        if (Input.GetKeyDown(KeyCode.C)) LoadCredits();
     }
-    
+
     void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
-    
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log($"Scene loaded: {scene.name}");
-        
-        // Cambiar música según la escena cargada
+        Debug.Log($"SceneTransitionManager: Scene loaded: {scene.name}");
+
         if (AudioManager.Instance != null)
         {
             AudioManager.Instance.PlayMusicForScene(scene.name);
         }
-        
-        // Notificar al ScoreManager que se cargó una nueva escena
+
         if (ScoreManager.Instance != null)
         {
             ScoreManager.Instance.OnSceneLoaded();
         }
-        
-        // Iniciar presentación del nivel si es un nivel de juego
+
         if (IsGameLevel(scene.name))
         {
-            StartLevelPresentation();
-            
-            // Añadir BallBoundaryChecker si no existe
-            if (FindFirstObjectByType<BallBoundaryChecker>() == null)
+            StartLevelPresentation(); 
+
+            BallBoundaryChecker boundaryChecker = FindFirstObjectByType<BallBoundaryChecker>();
+            if (boundaryChecker == null)
             {
-                GameObject boundaryChecker = new GameObject("BallBoundaryChecker");
-                boundaryChecker.AddComponent<BallBoundaryChecker>();
-                Debug.Log("BallBoundaryChecker added to scene");
+                Debug.LogError($"CRITICAL ERROR: BallBoundaryChecker was NOT FOUND in game level scene '{scene.name}'. " +
+                               "It MUST be manually placed in each level scene for the game to work correctly in builds.");
+            }
+            else
+            {
+                Debug.Log($"SceneTransitionManager: Found BallBoundaryChecker in '{scene.name}'. Calling ResetBoundaryChecker().");
+                boundaryChecker.ResetBoundaryChecker(); 
             }
         }
     }
-    
+
     public void StartFirstLevel()
     {
         currentLevelIndex = 0;
         LoadLevel(currentLevelIndex);
     }
-    
+
     public void LoadLevel(int levelIndex)
     {
         if (levelIndex >= 0 && levelIndex < levelNames.Length)
         {
             currentLevelIndex = levelIndex;
-            Debug.Log($"Loading level: {levelNames[levelIndex]}");
+            Debug.Log($"SceneTransitionManager: Loading level: {levelNames[levelIndex]} (Index: {levelIndex})");
             SceneManager.LoadScene(levelNames[levelIndex]);
         }
         else
         {
-            Debug.LogWarning($"Level index {levelIndex} is out of range!");
+            Debug.LogWarning($"SceneTransitionManager: Level index {levelIndex} is out of range!");
         }
     }
-    
+
     public void LoadNextLevel()
     {
-        int nextLevelIndex = currentLevelIndex + 1;
-        if (nextLevelIndex < levelNames.Length)
+        currentLevelIndex++;
+        if (currentLevelIndex < levelNames.Length)
         {
-            LoadLevel(nextLevelIndex);
+            LoadLevel(currentLevelIndex);
         }
         else
         {
-            // Último nivel completado, volver al menú
-            LoadMenu();
+            Debug.Log("SceneTransitionManager: All levels completed. Loading Menu.");
+            LoadMenu(); 
         }
     }
-    
+
     public void LoadMenu()
     {
-        Debug.Log("Loading Menu");
+        Debug.Log("SceneTransitionManager: Loading Menu scene: " + menuSceneName);
         SceneManager.LoadScene(menuSceneName);
     }
-    
+
     public void LoadCredits()
     {
-        Debug.Log("Loading Credits");
+        Debug.Log("SceneTransitionManager: Loading Credits scene: " + creditsSceneName);
         SceneManager.LoadScene(creditsSceneName);
     }
 
     public void LoadMaxScore()
     {
-        Debug.Log("Loading Max Score");
+        Debug.Log("SceneTransitionManager: Loading MaxScore scene: " + MaxScoreSceneName);
         SceneManager.LoadScene(MaxScoreSceneName);
     }
-    
+
     public void LoadGameOver()
     {
-        Debug.Log("Loading Game Over");
+        Debug.Log("SceneTransitionManager: Loading GameOver scene: " + gameOverSceneName);
         SceneManager.LoadScene(gameOverSceneName);
     }
-    
-    public void LoadNextLevel(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
-    
-    public void LoadNextLevel(int sceneIndex)
-    {
-        SceneManager.LoadScene(sceneIndex);
-    }
-    
+
     private bool IsGameLevel(string sceneName)
     {
-        foreach (string levelName in levelNames)
+        foreach (string level in levelNames)
         {
-            if (sceneName == levelName)
+            if (level == sceneName)
                 return true;
         }
         return false;
     }
-    
+
     private void StartLevelPresentation()
     {
-        // Buscar el componente LevelPresentation en la escena
         LevelPresentation presentation = FindFirstObjectByType<LevelPresentation>();
         if (presentation != null)
         {
+            Debug.Log("SceneTransitionManager: Starting level presentation.");
             presentation.StartPresentation();
         }
         else
         {
-            Debug.LogWarning("LevelPresentation component not found in the scene!");
+            Debug.LogWarning("SceneTransitionManager: LevelPresentation component not found in the scene for StartLevelPresentation call!");
         }
     }
-    
+
     public int GetCurrentLevelIndex()
     {
         return currentLevelIndex;
     }
-    
+
     public string GetCurrentLevelName()
     {
         if (currentLevelIndex >= 0 && currentLevelIndex < levelNames.Length)
         {
             return levelNames[currentLevelIndex];
         }
-        return "";
+        Debug.LogWarning("SceneTransitionManager: GetCurrentLevelName called with invalid currentLevelIndex: " + currentLevelIndex);
+        return string.Empty;
     }
 }

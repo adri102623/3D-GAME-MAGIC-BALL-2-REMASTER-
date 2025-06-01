@@ -31,6 +31,7 @@ public class Ball : MonoBehaviour
     private float releaseCooldown = 0.5f; // Medio segundo de cooldown
 
     public float godZLimit = -35f;
+    public bool showDebugInfo = true; // Añadido para solucionar error CS0103
 
     void Start()
     {
@@ -57,6 +58,7 @@ public class Ball : MonoBehaviour
         }
 
         SetPhysicsMaterial();
+        UpdateVisualMaterial();
     }
 
     void FixedUpdate()
@@ -76,27 +78,25 @@ public class Ball : MonoBehaviour
         float targetSpeed = GetCurrentSpeed();
 
         // Si está casi detenida (por bloqueo o rozamiento), relanzarla
-        if (currentSpeed < 0.1f)
+        if (currentSpeed < 0.1f && !isStuckToPlayer)
         {
-            rb.linearVelocity = Vector3.forward * targetSpeed;
+            rb.linearVelocity = (rb.linearVelocity.normalized != Vector3.zero ? rb.linearVelocity.normalized : Vector3.forward) * targetSpeed;
         }
-        else
+        else if (!isStuckToPlayer)
         {
             // Ajustar la magnitud de la velocidad para que mantenga la velocidad objetivo
             rb.linearVelocity = rb.linearVelocity.normalized * targetSpeed;
         }
 
-       if (god && transform.position.z < godZLimit)
+       if (god && transform.position.z < godZLimit && !isStuckToPlayer)
         {   
-            Debug.Log($"Rebote god mode: Ball Z={transform.position.z}, godZLimit={godZLimit}");
+            if (showDebugInfo) Debug.Log($"Rebote god mode: Ball Z={transform.position.z}, godZLimit={godZLimit}");
             Vector3 vel = rb.linearVelocity;
             if (vel.z < 0) vel.z = -vel.z;
             rb.linearVelocity = vel;
-            transform.position = new Vector3(transform.position.x, transform.position.y, godZLimit);
-            }
+            transform.position = new Vector3(transform.position.x, transform.position.y, godZLimit + 0.1f);
+        }
     }
-
-    // Configura material de física para rebotes sin pérdida
 
     void SetPhysicsMaterial()
     {
@@ -116,16 +116,13 @@ public class Ball : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log($"Ball collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
+        if (showDebugInfo) Debug.Log($"Ball collided with: {collision.gameObject.name}, Tag: {collision.gameObject.tag}");
 
-        // Si es magnética y colisiona con Player o FrontTrigger, pegarse
-        // pero solo si no se acaba de liberar (cooldown)
         if (isMagnetic && (collision.gameObject.CompareTag("Player") || 
                           collision.gameObject.CompareTag("FrontTrigger")) &&
             Time.time - lastReleaseTime > releaseCooldown)
         {
-            Debug.Log("Magnetic ball collided with player/front trigger - sticking!");
-            // Guardar el punto de contacto exacto
+            if (showDebugInfo) Debug.Log("Magnetic ball collided with player/front trigger - sticking!");
             if (collision.contacts.Length > 0)
             {
                 contactPoint = collision.contacts[0].point;
@@ -138,29 +135,26 @@ public class Ball : MonoBehaviour
             return;
         }
 
-        // Reproducir sonido cuando la pelota toque paredes, FrontTrigger o Player
         if (collision.gameObject.CompareTag("Walls") ||
             collision.gameObject.CompareTag("FrontTrigger") ||
             collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Playing wall/player sound");
+            if (showDebugInfo) Debug.Log("Playing wall/player sound");
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlayWallsPlayerSound();
             }
             else
             {
-                Debug.LogWarning("AudioManager.Instance is null!");
+                if (showDebugInfo) Debug.LogWarning("AudioManager.Instance is null!");
             }
         }
     }
 
-    // Añadir detección por trigger también
     void OnTriggerEnter(Collider other)
     {
         if (other == null) return;
 
-        // Detectar pickup
         if (other.gameObject.CompareTag("PickUp"))
         {
             PickupHealth pickup = other.GetComponent<PickupHealth>();
@@ -171,32 +165,27 @@ public class Ball : MonoBehaviour
             }
         }
 
-        // Detectar colisión magnética por trigger
-        // pero solo si no se acaba de liberar (cooldown)
         if (isMagnetic && other.CompareTag("FrontTrigger") &&
             Time.time - lastReleaseTime > releaseCooldown)
         {
-            Debug.Log("Magnetic ball triggered with FrontTrigger - sticking!");
-            // Guardar posición actual como punto de contacto
+            if (showDebugInfo) Debug.Log("Magnetic ball triggered with FrontTrigger - sticking!");
             contactPoint = transform.position;
             StickToPlayer();
         }
     }
     public void ApplyPowerUp_PowerBall()
     {
-        // Aplicar el material de la PowerBall
         Renderer renderer = GetComponent<Renderer>();
         if (renderer != null)
         {
             renderer.material = powerBallMaterial;
-            Debug.Log("PowerBall material applied!");
+            if (showDebugInfo) Debug.Log("PowerBall material applied!");
         }
         else
         {
-            Debug.LogWarning("Renderer not found on the ball!");
+            if (showDebugInfo) Debug.LogWarning("Renderer not found on the ball!");
         }
-
-        UpdatePickUpColliders();
+        UpdatePickUpColliders(true); // Ignorar pickups con PowerBall
     }
 
     void Update()
@@ -204,22 +193,20 @@ public class Ball : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             god = !god;
+            UpdateVisualMaterial();
         }
-        // Detectar espacio para liberar la pelota magnética
         if (Input.GetKeyDown(KeyCode.Space) && isStuckToPlayer)
         {
             ReleaseBall();
         }
 
-        // Debug: Tecla M para testing del magnetismo
         if (Input.GetKeyDown(KeyCode.M))
         {
             ApplyMagnet();
         }
     }
 
-
-    void UpdatePickUpColliders()
+    public void UpdatePickUpColliders(bool ignore)
     {
         GameObject[] pickUps = GameObject.FindGameObjectsWithTag("PickUp");
         Collider ballCollider = GetComponent<Collider>();
@@ -231,65 +218,56 @@ public class Ball : MonoBehaviour
             Collider pickupCollider = pickUp.GetComponent<Collider>();
             if (pickupCollider != null)
             {
-                Physics.IgnoreCollision(ballCollider, pickupCollider, true);
+                Physics.IgnoreCollision(ballCollider, pickupCollider, ignore);
             }
         }
+        if (showDebugInfo) Debug.Log($"Ball: PickUp colliders set to ignore: {ignore}");
     }
 
-
-    public void ApplyPowerUp()
+    public void ApplyPowerUp() // Este es el que se usa para escalar la bola (antes ApplyScaleUp)
     {
-        Vector3 newScale = transform.localScale;
-        newScale *= 2f; // crecer al doble
-
-        // Limitar el escalado entre 0.5x y 2x de la escala original
+        Vector3 newScale = transform.localScale * 1.5f; // Crecer un 50%
         float scaleFactor = newScale.x / initialScale.x;
         scaleFactor = Mathf.Clamp(scaleFactor, minScaleFactor, maxScaleFactor);
         newScale = initialScale * scaleFactor;
 
         transform.localScale = newScale;
-        Debug.Log("New scale applied: " + transform.localScale);
+        if (showDebugInfo) Debug.Log("New scale applied: " + transform.localScale);
     }
 
-    // Nuevos métodos para gestión de velocidad
     public void ApplySpeedUp()
     {
-        speedMultiplier = 1.5f;
+        speedMultiplier = Mathf.Min(speedMultiplier * 1.25f, 2.0f);
         UpdateBallSpeed();
-        Debug.Log($"Speed increased! New multiplier: {speedMultiplier}, Current speed: {GetCurrentSpeed()}");
+        if (showDebugInfo) Debug.Log($"Speed increased! New multiplier: {speedMultiplier}, Current speed: {GetCurrentSpeed()}");
     }
 
     public void ApplySpeedDown()
     {
-        speedMultiplier = 0.65f;
+        speedMultiplier = Mathf.Max(speedMultiplier * 0.75f, 0.5f);
         UpdateBallSpeed();
-        Debug.Log($"Speed decreased! New multiplier: {speedMultiplier}, Current speed: {GetCurrentSpeed()}");
+        if (showDebugInfo) Debug.Log($"Speed decreased! New multiplier: {speedMultiplier}, Current speed: {GetCurrentSpeed()}");
     }
 
     public void ResetSpeedMultiplier()
     {
         speedMultiplier = 1f;
         UpdateBallSpeed();
-        Debug.Log($"Speed reset! New multiplier: {speedMultiplier}, Current speed: {GetCurrentSpeed()}");
+        if (showDebugInfo) Debug.Log($"Speed reset! New multiplier: {speedMultiplier}, Current speed: {GetCurrentSpeed()}");
     }
 
-    // Nuevo método para aplicar efecto magnético
     public void ApplyMagnet()
     {
         isMagnetic = true;
-        Debug.Log("Ball is now magnetic! Next collision with player will stick the ball for 10 seconds.");
+        if (showDebugInfo) Debug.Log("Ball is now magnetic! Next collision with player will stick the ball for " + magneticEffectDuration + " seconds.");
         
-        // Si ya había un efecto magnético activo, detenerlo y reiniciar
         if (magneticEffectCoroutine != null)
         {
             StopCoroutine(magneticEffectCoroutine);
-            Debug.Log("Previous magnetic effect cancelled - restarting timer.");
+            if (showDebugInfo) Debug.Log("Previous magnetic effect cancelled - restarting timer.");
         }
         
-        // Iniciar nuevo contador de duración
         magneticEffectCoroutine = StartCoroutine(MagneticEffectTimer());
-        
-        // Cambiar material visual para indicar que es magnética
         UpdateVisualMaterial();
     }
 
@@ -297,18 +275,16 @@ public class Ball : MonoBehaviour
     {
         yield return new WaitForSeconds(magneticEffectDuration);
         
-        // Si la pelota está pegada al jugador, liberarla automáticamente
         if (isStuckToPlayer)
         {
-            Debug.Log("Magnetic effect expired - auto-releasing ball!");
+            if (showDebugInfo) Debug.Log("Magnetic effect expired - auto-releasing ball!");
             ReleaseBall();
         }
         
-        // Eliminar efecto magnético
         isMagnetic = false;
         UpdateVisualMaterial();
         magneticEffectCoroutine = null;
-        Debug.Log("Magnetic effect has expired after 10 seconds.");
+        if (showDebugInfo) Debug.Log("Magnetic effect has expired after " + magneticEffectDuration + " seconds.");
     }
 
     private void UpdateVisualMaterial()
@@ -322,7 +298,7 @@ public class Ball : MonoBehaviour
             }
             else if (isMagnetic)
             {
-                renderer.material = magneticMaterial != null ? magneticMaterial : powerBallMaterial;
+                renderer.material = magneticMaterial != null ? magneticMaterial : defaultMaterial;
             }
             else
             {
@@ -331,12 +307,10 @@ public class Ball : MonoBehaviour
         }
     }
 
-    private Material GetCurrentMaterial()
+    private Material GetCurrentMaterial() // No usado activamente pero puede ser útil
     {
-        if (isMagnetic)
-        {
-            return magneticMaterial != null ? magneticMaterial : powerBallMaterial;
-        }
+        if (god) return powerBallMaterial;
+        if (isMagnetic) return magneticMaterial != null ? magneticMaterial : defaultMaterial;
         return defaultMaterial;
     }
 
@@ -344,67 +318,70 @@ public class Ball : MonoBehaviour
     {
         if (playerTransform == null) 
         {
-            Debug.LogWarning("PlayerTransform is null, cannot stick ball!");
+            if (showDebugInfo) Debug.LogWarning("PlayerTransform is null, cannot stick ball!");
             return;
         }
 
         isStuckToPlayer = true;
         
-        // Calcular el radio de la pelota para posicionarla correctamente
         Collider ballCollider = GetComponent<Collider>();
-        float ballRadius = 0.5f; // Valor por defecto
+        float ballRadius = 0.5f; 
         if (ballCollider is SphereCollider sphere)
         {
             ballRadius = sphere.radius * transform.localScale.x;
         }
         
-        // Posicionar la pelota ligeramente adelante del punto de contacto
-        // para evitar que se vuelva a pegar inmediatamente
         Vector3 adjustedPosition = contactPoint;
-        adjustedPosition.z += ballRadius + 0.5f; // Radio de la bola + margen extra
+        // Ajustar la Z para que se pegue al frente del jugador, considerando la dirección del jugador
+        Vector3 playerForward = playerTransform != null ? playerTransform.forward : Vector3.forward;
+        adjustedPosition = playerTransform.position + playerForward * ( (playerTransform.localScale.z / 2f) + ballRadius + 0.1f ); // Asume que el pivot del jugador está en su centro.
+                                                                                                                                  // Y que la barrera/nave tiene una profundidad.
         
         transform.position = adjustedPosition;
+        transform.rotation = playerTransform.rotation; // Alinear rotación
         
-        // Calcular offset relativo al jugador desde la posición ajustada
-        stuckOffset = adjustedPosition - playerTransform.position;
+        stuckOffset = transform.position - playerTransform.position; // Recalcular offset
         
-        // Detener la pelota
-        rb.linearVelocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-        rb.isKinematic = true; // Hacer kinematic para evitar física
+        if(rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.isKinematic = true; 
+        }
 
-        // Actualizar material visual
         UpdateVisualMaterial();
-
-        Debug.Log($"Ball stuck to player at adjusted position {adjustedPosition} (contact was at {contactPoint})! Press SPACE to release or wait 10 seconds for auto-release.");
+        if (showDebugInfo) Debug.Log($"Ball stuck to player at adjusted position {adjustedPosition} (contact was at {contactPoint})! Press SPACE to release or wait {magneticEffectDuration} seconds for auto-release.");
     }
 
     private void ReleaseBall()
     {
+        if (!isStuckToPlayer) return;
+
         isStuckToPlayer = false;
-        rb.isKinematic = false; // Restaurar física
+        if(rb != null) rb.isKinematic = false; 
         
-        // Registrar el tiempo de liberación para el cooldown
         lastReleaseTime = Time.time;
 
-        // Lanzar la pelota hacia adelante desde la posición actual
-        Vector3 releaseVelocity = Vector3.forward * GetCurrentSpeed();
-        rb.linearVelocity = releaseVelocity;
+        Vector3 releaseDirection = playerTransform != null ? playerTransform.forward : Vector3.forward;
+        Vector3 releaseVelocity = releaseDirection * GetCurrentSpeed();
+        if(rb != null)
+        {
+            rb.linearVelocity = releaseVelocity;
+            rb.AddForce(releaseDirection * 3f, ForceMode.Impulse);
+        }
 
-        // Pequeño impulso adicional para asegurar separación
-        rb.AddForce(Vector3.forward * 3f, ForceMode.Impulse);
-
-        // Restaurar material visual normal
         UpdateVisualMaterial();
-
-        Debug.Log("Ball released from player!");
+        if (showDebugInfo) Debug.Log("Ball released from player!");
     }
 
     private void UpdateBallSpeed()
     {
-        if (rb != null && !isStuckToPlayer) // No actualizar velocidad si está pegada
+        if (rb != null && !isStuckToPlayer) 
         {
             Vector3 currentDirection = rb.linearVelocity.normalized;
+            if (currentDirection == Vector3.zero && rb.linearVelocity.magnitude < 0.1f) {
+                 currentDirection = Vector3.forward; 
+            }
             rb.linearVelocity = currentDirection * GetCurrentSpeed();
         }
     }
@@ -429,32 +406,61 @@ public class Ball : MonoBehaviour
         return isMagnetic;
     }
 
-    IEnumerator DeactivateAfterPhysics(GameObject pickup)
+    public void DeactivateGameObjectAfterPhysics(GameObject go) // Usado por PickupHealth
     {
-        yield return new WaitForFixedUpdate();
-        if (pickup != null)
+        StartCoroutine(DeactivateRoutine(go));
+    }
+
+    private IEnumerator DeactivateRoutine(GameObject go)
+    {
+        yield return new WaitForFixedUpdate(); 
+        if (go != null)
         {
-            pickup.SetActive(false);
+            go.SetActive(false);
+        }
+    }
+    
+    public void ResetBallStateAndPosition(Vector3 startPosition, Vector3 startDirection)
+    {
+        if (showDebugInfo) Debug.Log("Ball: Resetting state and position.");
+        transform.position = startPosition;
+        transform.rotation = Quaternion.LookRotation(startDirection.normalized != Vector3.zero ? startDirection.normalized : Vector3.forward);
+        transform.localScale = initialScale; 
+        speedMultiplier = 1f; 
+        god = false;
+        isMagnetic = false;
+        if (isStuckToPlayer) ReleaseBall(); 
+        if (magneticEffectCoroutine != null) StopCoroutine(magneticEffectCoroutine);
+        magneticEffectCoroutine = null;
+
+        UpdateVisualMaterial();
+
+        if (rb != null)
+        {
+            rb.isKinematic = false; 
+            rb.linearVelocity = startDirection.normalized * GetCurrentSpeed();
+            rb.angularVelocity = Vector3.zero;
         }
     }
 
-    // Reiniciar la pelota
+    // Este es el ResetBall que LevelPresentation está buscando
     public void ResetBall()
     {
-        if (rb != null && !isStuckToPlayer) // No reiniciar si está pegada
+        // Implementación simple: resetear velocidad y dirección si no está pegada.
+        // Para un reseteo completo de posición, usar ResetBallStateAndPosition.
+        if (rb != null && !isStuckToPlayer)
         {
-            rb.linearVelocity = Vector3.forward * GetCurrentSpeed();
+            rb.linearVelocity = Vector3.forward * GetCurrentSpeed(); // Lanza hacia adelante
+            rb.angularVelocity = Vector3.zero;
+            transform.position = new Vector3(0, 1, 0); // Posición inicial por defecto (ajustar si es necesario)
+            transform.rotation = Quaternion.identity;
         }
+        if (showDebugInfo) Debug.Log("Ball: ResetBall() called. Velocity and angular velocity reset. Position reset to default.");
     }
 
-    // Cambiar velocidad (dificultad)
     public void SetSpeed(float newSpeed)
     {
         initialSpeed = newSpeed;
-        if (rb != null && !isStuckToPlayer) // No cambiar velocidad si está pegada
-        {
-            Vector3 currentDirection = rb.linearVelocity.normalized;
-            rb.linearVelocity = currentDirection * GetCurrentSpeed();
-        }
+        UpdateBallSpeed();
     }
 }
