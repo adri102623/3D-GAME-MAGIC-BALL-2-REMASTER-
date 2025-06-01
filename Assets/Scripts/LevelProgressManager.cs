@@ -9,7 +9,8 @@ public class LevelProgressManager : MonoBehaviour
     private int destroyedPickups = 0;
     
     [Header("CoinNextLevel Settings")]
-    public int pickupsToSpawnTrophy = 1;
+    [Range(0f, 100f)]
+    public float trophySpawnPercentage = 95f; 
     private bool trophySpawned = false;
     
     [Header("Debug")]
@@ -20,7 +21,7 @@ public class LevelProgressManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            // NO usar DontDestroyOnLoad para que se resetee en cada nivel
+            
         }
         else
         {
@@ -35,13 +36,12 @@ public class LevelProgressManager : MonoBehaviour
         
         if (showProgressDebug)
         {
-            Debug.Log($"LevelProgressManager: Level started with {totalPickups} total pickups. Trophy will spawn after destroying {pickupsToSpawnTrophy} pickup(s).");
+            Debug.Log($"LevelProgressManager: Level started with {totalPickups} total pickups. Trophy will spawn at {trophySpawnPercentage}% completion.");
         }
     }
     
     void CountTotalPickups()
     {
-        // CORREGIDO: Usar FindObjectsByType en lugar de FindObjectsOfType
         GameObject[] pickups = GameObject.FindGameObjectsWithTag("PickUp");
         totalPickups = pickups.Length;
         destroyedPickups = 0;
@@ -66,8 +66,8 @@ public class LevelProgressManager : MonoBehaviour
             Debug.Log($"PROGRESS: {destroyedPickups}/{totalPickups} destroyed ({percentage:F1}%)");
         }
         
-        // NUEVO: Verificar si debe aparecer el trofeo usando contador
-        if (!trophySpawned && destroyedPickups >= pickupsToSpawnTrophy)
+        // Verificar si debe aparecer el trofeo usando porcentaje
+        if (!trophySpawned && percentage >= trophySpawnPercentage)
         {
             SpawnTrophy();
         }
@@ -84,7 +84,7 @@ public class LevelProgressManager : MonoBehaviour
     {
         trophySpawned = true;
         
-        Debug.Log($"TROPHY SPAWNING: {destroyedPickups} pickups destroyed, spawning CoinNextLevel trophy!");
+        Debug.Log($"TROPHY SPAWNING: {destroyedPickups} pickups destroyed ({GetCompletionPercentage():F1}%), spawning CoinNextLevel trophy!");
         
         // Cargar el prefab desde Resources
         GameObject trophyPrefab = Resources.Load<GameObject>("Prefabs/Upgrades/CoinNextLevel");
@@ -119,7 +119,7 @@ public class LevelProgressManager : MonoBehaviour
         Debug.Log($"TROPHY SPAWNED: CoinNextLevel trophy spawned at position {spawnPosition}");
     }
     
-    // NUEVO: Método para encontrar posición del trofeo
+    // Método para encontrar posición del trofeo
     Vector3 FindTrophySpawnPosition()
     {
         // Buscar el player para determinar una buena posición
@@ -186,7 +186,7 @@ public class LevelProgressManager : MonoBehaviour
     {
         Debug.Log($"Current Progress: {GetProgressString()}");
         Debug.Log($"Trophy spawned: {trophySpawned}");
-        Debug.Log($"Pickups needed for trophy: {pickupsToSpawnTrophy}");
+        Debug.Log($"Trophy spawn percentage: {trophySpawnPercentage}%");
     }
     
     // Método para recontear pickups (útil si se crean dinámicamente)
@@ -196,14 +196,14 @@ public class LevelProgressManager : MonoBehaviour
         Debug.Log($"LevelProgressManager: Recounted pickups. New total: {totalPickups}");
     }
     
-    // NUEVO: Método para cambiar el contador dinámicamente
-    public void SetPickupsNeededForTrophy(int count)
+    // MODIFICADO: Método para cambiar el porcentaje dinámicamente
+    public void SetTrophySpawnPercentage(float percentage)
     {
-        pickupsToSpawnTrophy = count;
-        Debug.Log($"Trophy spawn requirement changed to: {pickupsToSpawnTrophy} pickups");
+        trophySpawnPercentage = Mathf.Clamp(percentage, 0f, 100f);
+        Debug.Log($"Trophy spawn requirement changed to: {trophySpawnPercentage}%");
     }
     
-    // NUEVO: Verificar si el trofeo ya fue spawneado
+    // Verificar si el trofeo ya fue spawneado
     public bool IsTrophySpawned()
     {
         return trophySpawned;

@@ -5,6 +5,8 @@ public class BallBoundaryChecker : MonoBehaviour
 {
     [Header("Boundary Settings")]
     [SerializeField] private float loseLifeZ = -45f;
+    [SerializeField] private float loseLifeXPositive = 60f;
+    [SerializeField] private float loseLifeXNegative = -60f;
 
     [Header("Debug")]
     public bool showDebugInfo = true; 
@@ -60,7 +62,7 @@ public class BallBoundaryChecker : MonoBehaviour
             }
             else
             {
-                if (showDebugInfo) Debug.Log($"BallBoundaryChecker: Ball INITIALIZED and FOUND: {ball.name}. Current Z: {ball.transform.position.z:F2}");
+                if (showDebugInfo) Debug.Log($"BallBoundaryChecker: Ball INITIALIZED and FOUND: {ball.name}. Current Position: X={ball.transform.position.x:F2}, Z={ball.transform.position.z:F2}");
                 break; 
             }
         }
@@ -94,24 +96,35 @@ public class BallBoundaryChecker : MonoBehaviour
                 }
             }
 
-            if (showDebugInfo)
+            // MODIFICADO: Verificar tanto Z como X
+            Vector3 ballPos = ball.transform.position;
+            bool isNearBoundary = ballPos.z < (loseLifeZ + 10f) || 
+                                  ballPos.x > (loseLifeXPositive - 10f) || 
+                                  ballPos.x < (loseLifeXNegative + 10f);
+
+            if (showDebugInfo && isNearBoundary)
             {
-                if (ball.transform.position.z < (loseLifeZ + 10f)) {
-                     Debug.Log($"BallBoundaryChecker: Periodic Check - Ball Z: {ball.transform.position.z:F2}, Boundary: {loseLifeZ}, HasLostLife: {hasLostLife}");
-                }
+                Debug.Log($"BallBoundaryChecker: Periodic Check - Ball Position: X={ballPos.x:F2}, Z={ballPos.z:F2}, Boundaries: Z<={loseLifeZ}, X>={loseLifeXPositive} or X<={loseLifeXNegative}, HasLostLife: {hasLostLife}");
             }
 
-            if (ball.transform.position.z <= loseLifeZ && !hasLostLife)
+            // MODIFICADO: Verificar límites Z y X
+            if (!hasLostLife && (ballPos.z <= loseLifeZ || ballPos.x >= loseLifeXPositive || ballPos.x <= loseLifeXNegative))
             {
-                if (showDebugInfo) Debug.Log("BallBoundaryChecker: Boundary condition MET. Calling OnBallPassedBoundaryInternal.");
-                OnBallPassedBoundaryInternal();
+                string boundaryType = "";
+                if (ballPos.z <= loseLifeZ) boundaryType = "Z";
+                else if (ballPos.x >= loseLifeXPositive) boundaryType = "X+";
+                else if (ballPos.x <= loseLifeXNegative) boundaryType = "X-";
+
+                if (showDebugInfo) Debug.Log($"BallBoundaryChecker: {boundaryType} boundary condition MET. Calling OnBallPassedBoundaryInternal.");
+                OnBallPassedBoundaryInternal(boundaryType);
             }
 
             yield return new WaitForSeconds(checkInterval);
         }
     }
 
-    private void OnBallPassedBoundaryInternal()
+    // MODIFICADO: Añadir parámetro para tipo de límite
+    private void OnBallPassedBoundaryInternal(string boundaryType = "Z")
     {
         if (hasLostLife) 
         {
@@ -120,8 +133,8 @@ public class BallBoundaryChecker : MonoBehaviour
         }
 
         hasLostLife = true; 
-        string ballZPos = (ball != null) ? ball.transform.position.z.ToString("F2") : "N/A (ball reference was null)";
-        Debug.Log($"BallBoundaryChecker: Ball PASSED BOUNDARY at Z={ballZPos}. Losing a life...");
+        string ballPos = (ball != null) ? $"X={ball.transform.position.x:F2}, Z={ball.transform.position.z:F2}" : "N/A (ball reference was null)";
+        Debug.Log($"BallBoundaryChecker: Ball PASSED {boundaryType} BOUNDARY at {ballPos}. Losing a life...");
 
         if (ScoreManager.Instance != null)
         {
@@ -148,16 +161,39 @@ public class BallBoundaryChecker : MonoBehaviour
         if (!showDebugInfo && !Application.isEditor) return; 
 
         Gizmos.color = hasLostLife ? Color.gray : Color.red; 
-        Vector3 centerLine = new Vector3(transform.position.x, transform.position.y, loseLifeZ);
-        Vector3 sizeLine = new Vector3(100, 0.2f, 0.2f); 
-        Gizmos.DrawCube(centerLine, sizeLine);
+        
+        // LÍNEA Z (original)
+        Vector3 centerLineZ = new Vector3(transform.position.x, transform.position.y, loseLifeZ);
+        Vector3 sizeLineZ = new Vector3(100, 0.2f, 0.2f); 
+        Gizmos.DrawCube(centerLineZ, sizeLineZ);
+
+        // LÍNEAS X
+        Gizmos.color = hasLostLife ? Color.gray : Color.blue; 
+        
+        // Línea X positiva
+        Vector3 centerLineXPos = new Vector3(loseLifeXPositive, transform.position.y, transform.position.z);
+        Vector3 sizeLineX = new Vector3(0.2f, 0.2f, 100); 
+        Gizmos.DrawCube(centerLineXPos, sizeLineX);
+        
+        // Línea X negativa
+        Vector3 centerLineXNeg = new Vector3(loseLifeXNegative, transform.position.y, transform.position.z);
+        Gizmos.DrawCube(centerLineXNeg, sizeLineX);
 
         #if UNITY_EDITOR
-        UnityEditor.Handles.color = Gizmos.color;
-        UnityEditor.Handles.Label(centerLine + Vector3.up * 1.5f, $"Life Boundary Z: {loseLifeZ}");
+        // Labels Z
+        UnityEditor.Handles.color = Color.red;
+        UnityEditor.Handles.Label(centerLineZ + Vector3.up * 1.5f, $"Life Boundary Z: {loseLifeZ}");
+        
+        // Labels X
+        UnityEditor.Handles.color = Color.blue;
+        UnityEditor.Handles.Label(centerLineXPos + Vector3.up * 1.5f, $"Life Boundary X+: {loseLifeXPositive}");
+        UnityEditor.Handles.Label(centerLineXNeg + Vector3.up * 1.5f, $"Life Boundary X-: {loseLifeXNegative}");
+        
+        // Ball position
         if (ball != null)
         {
-            UnityEditor.Handles.Label(ball.transform.position + Vector3.up * 2f, $"Ball Z: {ball.transform.position.z:F2}");
+            UnityEditor.Handles.color = Color.white;
+            UnityEditor.Handles.Label(ball.transform.position + Vector3.up * 2f, $"Ball: X={ball.transform.position.x:F2}, Z={ball.transform.position.z:F2}");
         }
         #endif
     }
