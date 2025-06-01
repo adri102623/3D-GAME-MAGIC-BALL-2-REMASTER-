@@ -318,7 +318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -2427,11 +2427,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -2802,11 +2802,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -2942,7 +2942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -3725,11 +3725,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -4047,11 +4047,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -5049,7 +5049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -5650,7 +5650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59668b894746678469e485d30a1cced8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 1
+  vidas: 2
   material3vidas: {fileID: 0}
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
@@ -6459,11 +6459,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -7805,7 +7805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -8171,7 +8171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -8527,7 +8527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -8761,7 +8761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -9018,11 +9018,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -10266,11 +10266,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -12069,7 +12069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -12199,11 +12199,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -12320,11 +12320,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -12428,7 +12428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -12555,7 +12555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -13088,11 +13088,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -13323,7 +13323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -13463,11 +13463,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -13893,11 +13893,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -14287,7 +14287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -14417,11 +14417,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -15171,7 +15171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59668b894746678469e485d30a1cced8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 1
+  vidas: 2
   material3vidas: {fileID: 0}
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
@@ -15303,11 +15303,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -15593,7 +15593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -16095,7 +16095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -16373,7 +16373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59668b894746678469e485d30a1cced8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 1
+  vidas: 2
   material3vidas: {fileID: 0}
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
@@ -16510,11 +16510,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -16790,11 +16790,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -17077,7 +17077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -17238,7 +17238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59668b894746678469e485d30a1cced8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 1
+  vidas: 2
   material3vidas: {fileID: 0}
   material2vidas: {fileID: 0}
   material1vida: {fileID: 0}
@@ -17434,11 +17434,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -18755,11 +18755,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -19101,11 +19101,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 
@@ -19537,7 +19537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: m_Enabled
@@ -20139,11 +20139,11 @@ PrefabInstance:
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material1vida
       value: 
-      objectReference: {fileID: 2100000, guid: 1d542056ecdebf745a0a2b9867b97e71, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: material2vidas
       value: 
-      objectReference: {fileID: 2100000, guid: b3d99fa4ac4e57a43a7d9993d8d1ff24, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4629119908887066647, guid: a5c26d30d205d1d47887bb33550c5b7f, type: 3}
       propertyPath: explosionPrefab
       value: 

@@ -426,6 +426,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1901521425}
     m_Modifications:
+    - target: {fileID: 1777743545568400696, guid: c8592ae1c51f03e4a8f78ce59a6433b9, type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8613049357029381422, guid: c8592ae1c51f03e4a8f78ce59a6433b9, type: 3}
       propertyPath: m_Name
       value: Rock_002 (3)
@@ -555,6 +559,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214397479}
     m_Modifications:
+    - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
+      propertyPath: vidas
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -620,6 +628,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1901521425}
     m_Modifications:
+    - target: {fileID: 1777743545568400696, guid: c8592ae1c51f03e4a8f78ce59a6433b9, type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8613049357029381422, guid: c8592ae1c51f03e4a8f78ce59a6433b9, type: 3}
       propertyPath: m_Name
       value: Rock_002 (2)
@@ -930,6 +942,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214397479}
     m_Modifications:
+    - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
+      propertyPath: vidas
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1437,6 +1453,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214397479}
     m_Modifications:
+    - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
+      propertyPath: vidas
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1735,6 +1755,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1901521425}
     m_Modifications:
+    - target: {fileID: 3553986386321955284, guid: d461bde81a31c7546b8ca4bd4de3b937, type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8498971446905571726, guid: d461bde81a31c7546b8ca4bd4de3b937, type: 3}
       propertyPath: m_Name
       value: Rock_013 (1)
@@ -3031,6 +3055,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214397479}
     m_Modifications:
+    - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
+      propertyPath: vidas
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5242,6 +5270,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1901521425}
     m_Modifications:
+    - target: {fileID: 1777743545568400696, guid: c8592ae1c51f03e4a8f78ce59a6433b9, type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8613049357029381422, guid: c8592ae1c51f03e4a8f78ce59a6433b9, type: 3}
       propertyPath: m_Name
       value: Rock_002
@@ -6553,6 +6585,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1901521425}
     m_Modifications:
+    - target: {fileID: 1777743545568400696, guid: c8592ae1c51f03e4a8f78ce59a6433b9, type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8613049357029381422, guid: c8592ae1c51f03e4a8f78ce59a6433b9, type: 3}
       propertyPath: m_Name
       value: Rock_002 (1)
@@ -6898,6 +6934,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1901521425}
     m_Modifications:
+    - target: {fileID: 3553986386321955284, guid: d461bde81a31c7546b8ca4bd4de3b937, type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8498971446905571726, guid: d461bde81a31c7546b8ca4bd4de3b937, type: 3}
       propertyPath: m_Name
       value: Rock_013
@@ -7027,6 +7067,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214397479}
     m_Modifications:
+    - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
+      propertyPath: vidas
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7097,6 +7141,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214397479}
     m_Modifications:
+    - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
+      propertyPath: vidas
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7432,6 +7480,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1901521425}
     m_Modifications:
+    - target: {fileID: 3553986386321955284, guid: d461bde81a31c7546b8ca4bd4de3b937, type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8498971446905571726, guid: d461bde81a31c7546b8ca4bd4de3b937, type: 3}
       propertyPath: m_Name
       value: Rock_013 (2)
@@ -7742,6 +7794,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1901521425}
     m_Modifications:
+    - target: {fileID: 3553986386321955284, guid: d461bde81a31c7546b8ca4bd4de3b937, type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8498971446905571726, guid: d461bde81a31c7546b8ca4bd4de3b937, type: 3}
       propertyPath: m_Name
       value: Rock_013 (3)
@@ -8419,6 +8475,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1901521425}
     m_Modifications:
+    - target: {fileID: 3553986386321955284, guid: d461bde81a31c7546b8ca4bd4de3b937, type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8498971446905571726, guid: d461bde81a31c7546b8ca4bd4de3b937, type: 3}
       propertyPath: m_Name
       value: Rock_013 (4)
@@ -8491,6 +8551,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214397479}
     m_Modifications:
+    - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
+      propertyPath: vidas
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8743,6 +8807,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214397479}
     m_Modifications:
+    - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
+      propertyPath: vidas
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8897,6 +8965,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214397479}
     m_Modifications:
+    - target: {fileID: 2537793427335894597, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
+      propertyPath: vidas
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5765432225412579059, guid: 6ecd8b4bc211e454ea918d6d527c28f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
