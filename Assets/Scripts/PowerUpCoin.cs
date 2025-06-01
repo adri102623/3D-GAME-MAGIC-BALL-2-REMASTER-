@@ -11,8 +11,8 @@ public class PowerUpCoin : MonoBehaviour
         SpeedDown,
         Magnet,
         PowerBall,
-        NextLevel,
-        UnPowerBall
+        UnPowerBall,
+        NextLevel
     }
     
     public PowerUpType powerUpType;

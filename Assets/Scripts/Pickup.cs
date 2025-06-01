@@ -17,7 +17,7 @@ public class PickupHealth : MonoBehaviour
     [Header("Configuración de PowerUps")]
     [Range(0f, 1f)]
     private float probabilidadPowerUp = 1f;
-    private int numPowerUps = 9; // INCREMENTADO para incluir CoinNextLevel
+    private int numPowerUps = 9;
 
     // Array para almacenar los prefabs cargados desde Resources
     private GameObject[] powerUpPrefabs;
@@ -110,7 +110,7 @@ public class PickupHealth : MonoBehaviour
             return;
         }
 
-        // MODIFICADO: Excluir CoinNextLevel de los spawns aleatorios normales
+        // Excluir CoinNextLevel de los spawns aleatorios normales
         int availablePowerUps = powerUpPrefabs.Length - 1; // Excluir el último (CoinNextLevel)
         int powerUpIndex = Random.Range(0, Mathf.Min(numPowerUps - 1, availablePowerUps));
         GameObject selectedPowerUp = powerUpPrefabs[powerUpIndex];
@@ -210,7 +210,7 @@ public class PickupHealth : MonoBehaviour
         }
         else
         {
-            // Reproducir sonido de hit
+            // Reproducir sonido de hitquin
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlayHitSound();

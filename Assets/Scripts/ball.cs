@@ -183,35 +183,39 @@ public class Ball : MonoBehaviour
     }
     public void ApplyUnPowerBall()
     {
-        // Aplicar el material de la PowerBall
+        // CORREGIDO: Aplicar el material DEFAULT (quitar PowerBall)
         Renderer renderer = GetComponent<Renderer>();
         if (renderer != null)
         {
-            renderer.material = powerBallMaterial;
-            Debug.Log("PowerBall material applied!");
+            renderer.material = defaultMaterial;
+            Debug.Log("Default material applied! PowerBall mode OFF");
         }
         else
         {
             Debug.LogWarning("Renderer not found on the ball!");
         }
 
+        // Actualizar el estado god
+        god = false;
         UnUpdatePickUpColliders();
     }
 
     public void ApplyPowerUp_PowerBall()
     {
-        // Aplicar el material de la PowerBall
+        // CORREGIDO: Aplicar el material POWERBALL (activar PowerBall)
         Renderer renderer = GetComponent<Renderer>();
         if (renderer != null)
         {
-            renderer.material = defaultMaterial;
-            Debug.Log("PowerBall material applied!");
+            renderer.material = powerBallMaterial;
+            Debug.Log("PowerBall material applied! PowerBall mode ON");
         }
         else
         {
             Debug.LogWarning("Renderer not found on the ball!");
         }
 
+        // Actualizar el estado god
+        god = true;
         UpdatePickUpColliders();
     }
 
@@ -244,9 +248,16 @@ public class Ball : MonoBehaviour
         foreach (GameObject pickUp in pickUps)
         {
             if (pickUp == null) continue;
+            
             Collider pickupCollider = pickUp.GetComponent<Collider>();
             PickupHealth pickup1 = pickUp.GetComponent<PickupHealth>();
-            pickup1.setPower(1);
+            
+            // Verificar que pickup1 no sea null antes de usarlo
+            if (pickup1 != null)
+            {
+                pickup1.setPower(1);
+            }
+            
             if (pickupCollider != null)
             {
                 Physics.IgnoreCollision(ballCollider, pickupCollider, true);
@@ -262,9 +273,16 @@ public class Ball : MonoBehaviour
         foreach (GameObject pickUp in pickUps)
         {
             if (pickUp == null) continue;
+            
             Collider pickupCollider = pickUp.GetComponent<Collider>();
             PickupHealth pickup1 = pickUp.GetComponent<PickupHealth>();
-            pickup1.setPower(0);
+            
+            // Verificar que pickup1 no sea null antes de usarlo
+            if (pickup1 != null)
+            {
+                pickup1.setPower(0);
+            }
+            
             if (pickupCollider != null)
             {
                 Physics.IgnoreCollision(ballCollider, pickupCollider, false);
