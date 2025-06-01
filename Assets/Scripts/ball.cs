@@ -70,8 +70,11 @@ public class Ball : MonoBehaviour
     void FixedUpdate()
     {
         if (rb == null) return;
-         if (!cameraIntroMove.introFinished)
-        return;
+        
+        //  Verificar que cameraIntroMove no sea null
+        if (cameraIntroMove != null && !cameraIntroMove.introFinished)
+            return;
+
         // Si está pegada al jugador, mantener posición relativa
         if (isStuckToPlayer && playerTransform != null)
         {
@@ -95,14 +98,14 @@ public class Ball : MonoBehaviour
             rb.linearVelocity = rb.linearVelocity.normalized * targetSpeed;
         }
 
-       if (god && transform.position.z < godZLimit)
+        if (god && transform.position.z < godZLimit)
         {   
             Debug.Log($"Rebote god mode: Ball Z={transform.position.z}, godZLimit={godZLimit}");
             Vector3 vel = rb.linearVelocity;
             if (vel.z < 0) vel.z = -vel.z;
             rb.linearVelocity = vel;
             transform.position = new Vector3(transform.position.x, transform.position.y, godZLimit);
-            }
+        }
     }
 
     // Configura material de física para rebotes sin pérdida
@@ -192,7 +195,7 @@ public class Ball : MonoBehaviour
     }
     public void ApplyUnPowerBall()
     {
-        // CORREGIDO: Aplicar el material DEFAULT (quitar PowerBall)
+        //  Aplicar el material DEFAULT (quitar PowerBall)
         Renderer renderer = GetComponent<Renderer>();
         if (renderer != null)
         {
@@ -211,7 +214,7 @@ public class Ball : MonoBehaviour
 
     public void ApplyPowerUp_PowerBall()
     {
-        // CORREGIDO: Aplicar el material POWERBALL (activar PowerBall)
+        //  Aplicar el material POWERBALL (activar PowerBall)
         Renderer renderer = GetComponent<Renderer>();
         if (renderer != null)
         {
@@ -231,7 +234,7 @@ public class Ball : MonoBehaviour
     void Update()
     {
 
-         if (!cameraIntroMove.introFinished)
+         if (cameraIntroMove != null && !cameraIntroMove.introFinished)
         return;
 
         if (!ballLaunched)
@@ -253,6 +256,33 @@ public class Ball : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             ApplyMagnet();
+        }
+        
+        // NUEVO: Añadir teclas 1-5 para cambiar niveles
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if (SceneTransitionManager.Instance != null)
+                SceneTransitionManager.Instance.LoadLevel(0); // lvl1
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (SceneTransitionManager.Instance != null)
+                SceneTransitionManager.Instance.LoadLevel(1); // lvl2
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (SceneTransitionManager.Instance != null)
+                SceneTransitionManager.Instance.LoadLevel(2); // lvl3
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            if (SceneTransitionManager.Instance != null)
+                SceneTransitionManager.Instance.LoadLevel(3); // lvl4
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            if (SceneTransitionManager.Instance != null)
+                SceneTransitionManager.Instance.LoadLevel(4); // lvl5
         }
     }
 
@@ -538,7 +568,7 @@ public class Ball : MonoBehaviour
         }
     }
 
-    // CORREGIDO: Método para multiplicar bolas sin errores de NaN
+    //  Método para multiplicar bolas sin errores de NaN
     public void ApplyBallMultiplier()
     {
         Debug.Log("Ball Multiplier activated! Spawning 2 additional balls...");
@@ -570,8 +600,10 @@ public class Ball : MonoBehaviour
             Ball newBallScript = newBall.GetComponent<Ball>();
             if (newBallScript != null)
             {
+                //  Asignar cameraIntroMove si existe
                 newBallScript.cameraIntroMove = this.cameraIntroMove;
-                // CORREGIDO: Inicializar manualmente initialScale antes de usarlo
+                
+                //  Inicializar manualmente initialScale antes de usarlo
                 newBallScript.initialScale = newBall.transform.localScale;
                 
                 // Copiar propiedades de la bola original
@@ -614,7 +646,7 @@ public class Ball : MonoBehaviour
                     newBallScript.ApplyMagnet();
                 }
                 
-                // CORREGIDO: Calcular escala de forma segura
+                //  Calcular escala de forma segura
                 // Calcular el factor de escala actual respecto al tamaño original
                 float currentScaleFactor = this.transform.localScale.x / this.initialScale.x;
                 

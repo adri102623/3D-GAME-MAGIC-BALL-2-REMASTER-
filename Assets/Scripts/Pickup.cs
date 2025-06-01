@@ -16,7 +16,7 @@ public class PickupHealth : MonoBehaviour
 
     [Header("Configuración de PowerUps")]
     [Range(0f, 1f)]
-    private float probabilidadPowerUp = 1f;
+    private float probabilidadPowerUp = 1f; // 0.2f = 20% de probabilidad
     private int numPowerUps = 10; 
 
     // Array para almacenar los prefabs cargados desde Resources
@@ -24,6 +24,10 @@ public class PickupHealth : MonoBehaviour
 
     private Transform playerTransform;
     private Renderer rend;
+
+    // NUEVO: Variables para sistema de testing
+    private static bool testMode = false;
+    private static int currentTestIndex = 0;
 
     void Start()
     {
@@ -39,6 +43,26 @@ public class PickupHealth : MonoBehaviour
 
         // Cargar prefabs desde Resources
         CargarPrefabsPowerUps();
+    }
+
+    // NUEVO: Método Update para detectar teclas de testing
+    void Update()
+    {
+        // Tecla T para activar modo test (orden secuencial)
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            testMode = true;
+            currentTestIndex = 0;
+            Debug.Log("TEST MODE ACTIVATED: PowerUps will spawn in sequential order starting from index 0");
+        }
+
+        // Tecla R para volver a modo random
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            testMode = false;
+            currentTestIndex = 0;
+            Debug.Log("RANDOM MODE ACTIVATED: PowerUps will spawn randomly");
+        }
     }
 
     void CargarPrefabsPowerUps()
@@ -111,10 +135,30 @@ public class PickupHealth : MonoBehaviour
             return;
         }
 
-        // Excluir CoinNextLevel de los spawns aleatorios normales
-        int availablePowerUps = powerUpPrefabs.Length - 1; // Excluir solo el último (CoinNextLevel)
-        int powerUpIndex = Random.Range(0, Mathf.Min(numPowerUps - 1, availablePowerUps));
-        GameObject selectedPowerUp = powerUpPrefabs[powerUpIndex];
+        GameObject selectedPowerUp;
+        int powerUpIndex;
+
+        // MODIFICADO: Lógica de selección según el modo
+        if (testMode)
+        {
+            // MODO TEST: Selección secuencial (excluyendo CoinNextLevel)
+            int availablePowerUps = powerUpPrefabs.Length - 1; // Excluir CoinNextLevel
+            powerUpIndex = currentTestIndex % availablePowerUps; // Ciclar por los disponibles
+            selectedPowerUp = powerUpPrefabs[powerUpIndex];
+            
+            currentTestIndex++; // Incrementar para la siguiente vez
+            
+            Debug.Log($"TEST MODE: Spawning PowerUp index {powerUpIndex} ({selectedPowerUp.name})");
+        }
+        else
+        {
+            // MODO RANDOM: Selección aleatoria (excluyendo CoinNextLevel)
+            int availablePowerUps = powerUpPrefabs.Length - 1; // Excluir solo el último (CoinNextLevel)
+            powerUpIndex = Random.Range(0, Mathf.Min(numPowerUps - 1, availablePowerUps));
+            selectedPowerUp = powerUpPrefabs[powerUpIndex];
+            
+            Debug.Log($"RANDOM MODE: Spawning PowerUp index {powerUpIndex} ({selectedPowerUp.name})");
+        }
 
         if (selectedPowerUp == null)
         {
