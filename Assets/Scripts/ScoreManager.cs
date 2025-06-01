@@ -16,7 +16,6 @@ public class ScoreManager : MonoBehaviour
     [Header("UI References")]
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI livesText; // Texto para mostrar vidas
-    
     private int currentScore = 0;
     
     void Awake()
@@ -199,16 +198,24 @@ public class ScoreManager : MonoBehaviour
     }
     
     private void OnGameOver()
+{
+    // Guardar high score si es necesario
+    int highScore = HighScoreManager.LoadHighScore();
+    if (currentScore > highScore)
     {
-        // NO resetear aquí, solo destruir UI y ir a GameOver
-        Debug.Log("Game Over - Going to GameOver scene");
-        
-        // Destruir UI de juego antes de cargar GameOver
-        DestroyGameUI();
-        
-        // Cargar escena GameOver (mantener el comportamiento original)
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+        HighScoreManager.SaveHighScore(currentScore);
+        Debug.Log("¡Nuevo récord! " + currentScore);
     }
+
+    // NO resetear aquí, solo destruir UI y ir a GameOver
+    Debug.Log("Game Over - Going to GameOver scene");
+    
+    // Destruir UI de juego antes de cargar GameOver
+    DestroyGameUI();
+    
+    // Cargar escena GameOver (mantener el comportamiento original)
+    UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+}
     
     private void ReloadCurrentLevel()
     {

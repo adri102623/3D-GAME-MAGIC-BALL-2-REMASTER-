@@ -47,16 +47,30 @@ public class ButtonController : MonoBehaviour
             SceneManager.LoadScene("Credtis");
         }
     }
+    
+    public void MaxScore()
+    {
+        Debug.Log("MaxScore button pressed");
+        
+        if (SceneTransitionManager.Instance != null)
+        {
+            SceneTransitionManager.Instance.LoadMaxScore();
+        }
+        else
+        {
+            SceneManager.LoadScene("MaxScore");
+        }
+    }
 
     public void QuitGame()
     {
         Debug.Log("Quit button pressed");
         Application.Quit();
-        
+
         // Para testing en el editor
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+#endif
     }
     
     // Métodos adicionales para testing de niveles específicos
