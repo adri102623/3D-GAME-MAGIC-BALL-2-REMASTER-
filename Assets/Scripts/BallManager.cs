@@ -24,14 +24,41 @@ public class BallManager : MonoBehaviour
 
     void Start()
     {
-        if (showDebugInfo) Debug.Log("BallManager: Initialized");
-        
-        // Reset del flag al inicio
-        hasLostLife = false;
+        // Solo inicializar si estamos en un nivel de juego
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (IsGameLevel(currentScene))
+        {
+            if (showDebugInfo) Debug.Log("BallManager: Initialized for game level");
+            hasLostLife = false;
+        }
+        else
+        {
+            if (showDebugInfo) Debug.Log($"BallManager: Skipping initialization in non-game scene: {currentScene}");
+        }
+    }
+
+    // NUEVO: Verificar si es nivel de juego
+    private bool IsGameLevel(string sceneName)
+    {
+        string[] levelNames = { "lvl1", "lvl2", "lvl3", "lvl4", "lvl5" };
+        foreach (string levelName in levelNames)
+        {
+            if (sceneName == levelName)
+                return true;
+        }
+        return false;
     }
 
     public void OnBallDestroyed(Ball destroyedBall)
     {
+        // Solo procesar si estamos en un nivel de juego
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (!IsGameLevel(currentScene))
+        {
+            if (showDebugInfo) Debug.Log($"BallManager: Ball destroyed in non-game scene '{currentScene}' - ignoring");
+            return;
+        }
+        
         if (showDebugInfo) Debug.Log($"BallManager: Ball {destroyedBall.name} was destroyed");
         
         // Esperar un frame para verificar bolas restantes

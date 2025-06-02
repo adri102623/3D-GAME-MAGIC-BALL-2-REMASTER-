@@ -22,11 +22,38 @@ public class SceneTransitionManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
             SceneManager.sceneLoaded += OnSceneLoaded;
+            
+            // NUEVO: Desactivar componentes que no se necesitan en Menu
+            string currentScene = SceneManager.GetActiveScene().name;
+            ConfigureManagerForScene(currentScene);
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    // NUEVO: Configurar qué componentes están activos según la escena
+    void ConfigureManagerForScene(string sceneName)
+    {
+        // Obtener componentes del GameManager
+        BallBoundaryChecker boundaryChecker = GetComponent<BallBoundaryChecker>();
+        BallManager ballManager = GetComponent<BallManager>();
+        
+        bool isGameLevel = IsGameLevel(sceneName);
+        
+        // En Menu: desactivar componentes de juego
+        if (boundaryChecker != null)
+        {
+            boundaryChecker.enabled = isGameLevel;
+        }
+        
+        if (ballManager != null)
+        {
+            ballManager.enabled = isGameLevel;
+        }
+        
+        Debug.Log($"GameManager configured for scene '{sceneName}' - Game components enabled: {isGameLevel}");
     }
 
     void Start()
@@ -57,6 +84,9 @@ public class SceneTransitionManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log($"SceneTransitionManager: Scene loaded: {scene.name}");
+        
+        // NUEVO: Reconfigurar componentes para la nueva escena
+        ConfigureManagerForScene(scene.name);
 
         if (AudioManager.Instance != null)
         {
@@ -72,6 +102,7 @@ public class SceneTransitionManager : MonoBehaviour
         {
             StartLevelPresentation();
 
+            // MODIFICADO: Solo verificar BallBoundaryChecker si está activo
             BallBoundaryChecker boundaryChecker = FindFirstObjectByType<BallBoundaryChecker>();
             if (boundaryChecker == null)
             {
@@ -82,6 +113,9 @@ public class SceneTransitionManager : MonoBehaviour
             {
                 Debug.Log($"SceneTransitionManager: Found BallBoundaryChecker in '{scene.name}'. Calling ResetBoundaryChecker().");
                 boundaryChecker.ResetBoundaryChecker();
+                
+                // NUEVO: Asegurar que esté habilitado en niveles de juego
+                boundaryChecker.enabled = true;
             }
 
             // AÑADIR: Verificar que existe LevelProgressManager
@@ -97,6 +131,26 @@ public class SceneTransitionManager : MonoBehaviour
             {
                 Debug.Log("SceneTransitionManager: Found existing LevelProgressManager.");
             }
+            
+            // NUEVO: Asegurar que BallManager esté activo y reseteado
+            BallManager ballManager = BallManager.Instance;
+            if (ballManager != null)
+            {
+                ballManager.enabled = true;
+                ballManager.ResetBallManager();
+                Debug.Log("BallManager activated and reset for game level");
+            }
+        }
+        else
+        {
+            // En escenas no-juego, desactivar componentes de juego
+            BallBoundaryChecker boundaryChecker = GetComponent<BallBoundaryChecker>();
+            BallManager ballManager = GetComponent<BallManager>();
+            
+            if (boundaryChecker != null) boundaryChecker.enabled = false;
+            if (ballManager != null) ballManager.enabled = false;
+            
+            Debug.Log($"Game components disabled for non-game scene: {scene.name}");
         }
     }
 

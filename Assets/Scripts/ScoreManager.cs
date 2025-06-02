@@ -24,21 +24,31 @@ public class ScoreManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            Debug.Log("ScoreManager: Instance created and set to DontDestroyOnLoad");
         }
         else
         {
+            Debug.Log("ScoreManager: Duplicate instance destroyed");
             Destroy(gameObject);
         }
     }
     
     void Start()
     {
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        Debug.Log($"ScoreManager: Start called in scene '{currentScene}'");
+        
         // Solo inicializar UI si estamos en un nivel de juego
-        if (IsGameLevel(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name))
+        if (IsGameLevel(currentScene))
         {
+            Debug.Log("ScoreManager: Initializing UI for game level");
             InitializeUI();
             UpdateScoreUI();
             UpdateLivesUI();
+        }
+        else
+        {
+            Debug.Log($"ScoreManager: Skipping UI initialization in non-game scene: {currentScene}");
         }
     }
     

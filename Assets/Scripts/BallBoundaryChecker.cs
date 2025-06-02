@@ -15,14 +15,22 @@ public class BallBoundaryChecker : MonoBehaviour
 
     void OnEnable()
     {
-        if (showDebugInfo) Debug.Log($"BallBoundaryChecker: ENABLED in scene '{gameObject.scene.name}'. Starting checks...");
-        StopAllCoroutines(); 
-        StartCoroutine(PeriodicCheckRoutine());
+        // Solo iniciar si estamos en un nivel de juego
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (IsGameLevel(currentScene))
+        {
+            if (showDebugInfo) Debug.Log("BallBoundaryChecker: OnEnable - Starting coroutine for game level");
+            StartCoroutine(PeriodicCheckRoutine());
+        }
+        else
+        {
+            if (showDebugInfo) Debug.Log($"BallBoundaryChecker: OnEnable - Skipping start in non-game scene: {currentScene}");
+        }
     }
 
     void OnDisable()
     {
-        if (showDebugInfo) Debug.Log($"BallBoundaryChecker: DISABLED in scene '{gameObject.scene.name}'. Stopping coroutines.");
+        if (showDebugInfo) Debug.Log("BallBoundaryChecker: OnDisable - Stopping all coroutines");
         StopAllCoroutines();
     }
 
@@ -67,9 +75,29 @@ public class BallBoundaryChecker : MonoBehaviour
         }
     }
 
+    // NUEVO: Verificar si es nivel de juego
+    private bool IsGameLevel(string sceneName)
+    {
+        string[] levelNames = { "lvl1", "lvl2", "lvl3", "lvl4", "lvl5" };
+        foreach (string levelName in levelNames)
+        {
+            if (sceneName == levelName)
+                return true;
+        }
+        return false;
+    }
+
     // MANTENIDO: Para compatibilidad con SceneTransitionManager
     public void ResetBoundaryChecker()
     {
+        // Solo funcionar si estamos en un nivel de juego
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (!IsGameLevel(currentScene))
+        {
+            if (showDebugInfo) Debug.Log($"BallBoundaryChecker: ResetBoundaryChecker called in non-game scene '{currentScene}' - ignoring");
+            return;
+        }
+        
         if (showDebugInfo) Debug.Log("BallBoundaryChecker: ResetBoundaryChecker called. Restarting checks.");
         StopAllCoroutines();
         StartCoroutine(PeriodicCheckRoutine());
