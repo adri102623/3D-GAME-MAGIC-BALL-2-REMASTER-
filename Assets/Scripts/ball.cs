@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic; // Añadido para usar List<T>
 
 public class Ball : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Ball : MonoBehaviour
 
     public Material powerBallMaterial;
     public Material defaultMaterial;
-    public Material magneticMaterial; // Nuevo material para bola magnética
+    public Material magneticMaterial; //  material para bola magnética
     private bool god;
 
     public CameraIntroMove cameraIntroMove; 
@@ -26,7 +27,7 @@ public class Ball : MonoBehaviour
     private Vector3 contactPoint; // Punto exacto de contacto
     
     // Variables para duración del efecto magnético
-    private float magneticEffectDuration = 10f; // 10 segundos
+    private float magneticEffectDuration = 10f; 
     private Coroutine magneticEffectCoroutine;
     
     // Variables para evitar re-pegado inmediato
@@ -60,7 +61,7 @@ public class Ball : MonoBehaviour
 
         SetPhysicsMaterial();
         
-        // NUEVO: Añadir BallDestroyer si no existe
+        //  Añadir BallDestroyer si no existe
         if (GetComponent<BallDestroyer>() == null)
         {
             gameObject.AddComponent<BallDestroyer>();
@@ -258,7 +259,13 @@ public class Ball : MonoBehaviour
             ApplyMagnet();
         }
         
-        // NUEVO: Añadir teclas 1-5 para cambiar niveles
+        //  Tecla P para destruir un pickup aleatoriamente
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            DestroyRandomPickup();
+        }
+        
+        //  Añadir teclas 1-5 para cambiar niveles
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if (SceneTransitionManager.Instance != null)
@@ -286,6 +293,74 @@ public class Ball : MonoBehaviour
         }
     }
 
+    //  Método para destruir un pickup aleatoriamente
+    private void DestroyRandomPickup()
+    {
+        // Buscar todos los objetos con tag "PickUp"
+        GameObject[] allPickups = GameObject.FindGameObjectsWithTag("PickUp");
+        List<GameObject> mainPickups = new List<GameObject>();
+        
+        // Filtrar para obtener solo los objetos principales
+        foreach (GameObject pickup in allPickups)
+        {
+            bool isMainPickup = true;
+            Transform parent = pickup.transform.parent;
+            
+            while (parent != null)
+            {
+                if (parent.CompareTag("PickUp"))
+                {
+                    isMainPickup = false;
+                    break;
+                }
+                parent = parent.parent;
+            }
+            
+            if (isMainPickup && pickup.GetComponent<PickupHealth>() != null)
+            {
+                mainPickups.Add(pickup);
+            }
+        }
+        
+        if (mainPickups.Count == 0)
+        {
+            Debug.Log("No main pickups found to destroy!");
+            return;
+        }
+        
+        // Seleccionar un pickup principal aleatorio
+        int randomIndex = Random.Range(0, mainPickups.Count);
+        GameObject selectedPickup = mainPickups[randomIndex];
+        
+        if (selectedPickup == null)
+        {
+            Debug.LogWarning("Selected pickup is null!");
+            return;
+        }
+        
+        PickupHealth pickupHealth = selectedPickup.GetComponent<PickupHealth>();
+        if (pickupHealth == null)
+        {
+            Debug.LogWarning($"Pickup {selectedPickup.name} doesn't have PickupHealth component!");
+            return;
+        }
+        
+        Debug.Log($"P key pressed: Destroying main pickup '{selectedPickup.name}' with {pickupHealth.vidas} lives");
+        
+        // Forzar destrucción completa reduciendo todas las vidas a 0
+        while (pickupHealth.vidas > 0)
+        {
+            pickupHealth.TocarPelota();
+            
+            // Verificar si el objeto fue destruido para evitar bucle infinito
+            if (selectedPickup == null || pickupHealth == null)
+            {
+                break;
+            }
+        }
+        
+        Debug.Log("Main pickup destruction completed via P key!");
+    }
         
     private void LaunchBall()
     {
@@ -361,7 +436,7 @@ public class Ball : MonoBehaviour
         Debug.Log("New scale applied: " + transform.localScale);
     }
 
-    // Nuevos métodos para gestión de velocidad
+    //  métodos para gestión de velocidad
     public void ApplySpeedUp()
     {
         speedMultiplier = 1.5f;
@@ -383,7 +458,7 @@ public class Ball : MonoBehaviour
         Debug.Log($"Speed reset! New multiplier: {speedMultiplier}, Current speed: {GetCurrentSpeed()}");
     }
 
-    // Nuevo método para aplicar efecto magnético
+    //  método para aplicar efecto magnético
     public void ApplyMagnet()
     {
         isMagnetic = true;
@@ -396,7 +471,7 @@ public class Ball : MonoBehaviour
             Debug.Log("Previous magnetic effect cancelled - restarting timer.");
         }
         
-        // Iniciar nuevo contador de duración
+        // Iniciar  contador de duración
         magneticEffectCoroutine = StartCoroutine(MagneticEffectTimer());
         
         // Cambiar material visual para indicar que es magnética
@@ -610,7 +685,7 @@ public class Ball : MonoBehaviour
                 newBallScript.initialSpeed = this.initialSpeed;
                 newBallScript.speedMultiplier = this.speedMultiplier;
                 
-                // NUEVO: Añadir BallDestroyer a las nuevas bolas
+                //  Añadir BallDestroyer a las nuevas bolas
                 if (newBall.GetComponent<BallDestroyer>() == null)
                 {
                     newBall.AddComponent<BallDestroyer>();

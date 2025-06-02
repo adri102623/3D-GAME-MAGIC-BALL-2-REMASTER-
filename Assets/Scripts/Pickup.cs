@@ -16,7 +16,7 @@ public class PickupHealth : MonoBehaviour
 
     [Header("Configuración de PowerUps")]
     [Range(0f, 1f)]
-    private float probabilidadPowerUp = 0.2f; // 0.2f = 20% de probabilidad
+    private float probabilidadPowerUp = 0.15f; // 0.15f = 15% de probabilidad
     private int numPowerUps = 10; 
 
     // Array para almacenar los prefabs cargados desde Resources
@@ -25,7 +25,7 @@ public class PickupHealth : MonoBehaviour
     private Transform playerTransform;
     private Renderer rend;
 
-    // NUEVO: Variables para sistema de testing
+    //  Variables para sistema de testing
     private static bool testMode = false;
     private static int currentTestIndex = 0;
 
@@ -45,7 +45,7 @@ public class PickupHealth : MonoBehaviour
         CargarPrefabsPowerUps();
     }
 
-    // NUEVO: Método Update para detectar teclas de testing
+    //  Método Update para detectar teclas de testing
     void Update()
     {
         // Tecla T para activar modo test (orden secuencial)
@@ -138,7 +138,7 @@ public class PickupHealth : MonoBehaviour
         GameObject selectedPowerUp;
         int powerUpIndex;
 
-        // MODIFICADO: Lógica de selección según el modo
+        // Lógica de selección según el modo
         if (testMode)
         {
             // MODO TEST: Selección secuencial (excluyendo CoinNextLevel)
@@ -166,20 +166,12 @@ public class PickupHealth : MonoBehaviour
             return;
         }
 
-        // Posición para el spawn
+        // MODIFICADO: Posición para el spawn - todos los power-ups con +2 en Y
         Vector3 spawnPosition = transform.position;
+        spawnPosition.y += 2f; // Todos los power-ups spawnen 2 unidades más alto
 
-        // Ajustar la posición según el tipo de power-up
-        if (selectedPowerUp.name.Contains("CoinScaleBarrier"))
-        {
-            spawnPosition.x = Mathf.Clamp(spawnPosition.x, -8f, 8f);
-            spawnPosition.y += 2f;
-        }
-
-        if (selectedPowerUp.name.Contains("CoinMagnet"))
-        {
-            Debug.Log("CoinMagnet spawned higher at position: " + spawnPosition);
-        }
+        // ELIMINADO: Las reglas específicas de posición por tipo de power-up
+        // Ahora todos mantienen X y Z del bloque, solo cambia Y con +2
 
         // Generar el power-up
         SpawnCoin(selectedPowerUp, spawnPosition);

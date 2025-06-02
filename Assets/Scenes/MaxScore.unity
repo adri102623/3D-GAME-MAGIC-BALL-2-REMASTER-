@@ -223,60 +223,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &916396568
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 916396570}
-  - component: {fileID: 916396569}
-  m_Layer: 0
-  m_Name: SceneTransitionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &916396569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916396568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5733aeb16a4a52d40b8d448822de690f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelNames:
-  - lvl1
-  - lvl2
-  - lvl3
-  - lvl4
-  - lvl5
-  menuSceneName: Menu
-  creditsSceneName: Credtis
-  MaxScoreSceneName: MaxScore
-  gameOverSceneName: GameOver
---- !u!4 &916396570
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916396568}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 505.42093, y: 260.40945, z: -65.696175}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1124194933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,6 +854,5 @@ SceneRoots:
   - {fileID: 676199187}
   - {fileID: 1193783198}
   - {fileID: 7253215843289415296}
-  - {fileID: 916396570}
   - {fileID: 1124194933}
   - {fileID: 1882647489}
